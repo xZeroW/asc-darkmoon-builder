@@ -62,6 +62,7 @@ function getCardRequirements(card: Card) {
     if (!text?.startsWith('Requires ')) continue
     const requirement = text.slice('Requires '.length).trim()
     if (/^level\s+\d+$/i.test(requirement) || /^primary stat:/i.test(requirement)) continue
+    if (/^path of /i.test(requirement)) continue
     const alternatives = requirement.split(/,|\s+or\s+/i)
       .map((value) => value.trim().replace(/[.]$/, ''))
       .filter((value) => value && !gearRequirements.has(value.toLowerCase()))
