@@ -228,6 +228,7 @@ function App() {
     const indexes = slots.map((slot, index) => ({ slot, index })).filter(({ slot }) => slot.category === activeTab)
     const index = indexes[slotIndex]?.index
     if (index === undefined) return
+    setTooltip(null)
     setSlots((current) => current.map((slot, itemIndex) => itemIndex === index ? { ...slot, card: null } : slot))
   }
 
