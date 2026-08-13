@@ -50,14 +50,10 @@ both `Talent` and `TalentAbility` entries.
 ## Scan the in-game Skill Cards panel
 
 The client data contains candidate cards, but the game UI can apply additional
-realm or panel filters. The diagnostic addon in `addon/AscensionCardScanner`
-captures the runtime UI state and relevant globals.
+realm or panel filters. The scanner is installed directly in the game client at:
 
-Copy it to the client:
-
-```bash
-cp -r addon/AscensionCardScanner \
-  "/home/xzerow/Games/ascension-wow/drive_c/Program Files/Ascension Launcher/resources/ascension-live/Interface/AddOns/"
+```text
+/home/xzerow/Games/ascension-wow/drive_c/Program Files/Ascension Launcher/resources/ascension-live/Interface/AddOns/AscensionCardScanner
 ```
 
 In-game:
@@ -73,9 +69,8 @@ The scan is saved to:
 WTF/Account/<account>/SavedVariables/AscensionCardScanner.lua
 ```
 
-This first version is diagnostic. It reveals the actual frame and API names so
-the final exporter can read the complete card list instead of guessing from the
-static client files.
+The scanner exports the complete runtime pool and reads each rendered row's
+displayed required level rather than guessing from static client files.
 
 ## Convert the runtime pool
 
@@ -89,5 +84,5 @@ luajit scripts/export_runtime_pool.lua \
 ```
 
 `data/darkmoon-card-pool.json` is the authoritative Darkmoon normal-card pool.
-It contains names, spell IDs, item IDs, card IDs, card quality, rank, icon, and
-the `ability`, `starter_skill`, or `talent` category.
+It contains names, spell IDs, item IDs, card IDs, card quality, rank, displayed
+required level, icon, and the `ability`, `starter_skill`, or `talent` category.

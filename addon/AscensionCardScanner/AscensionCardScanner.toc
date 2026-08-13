@@ -1,8 +1,0 @@
-## Interface: 30300
-## Title: Ascension Card Scanner
-## Notes: Diagnostic scanner for the Ascension Skill Cards panel
-## Author: Local build generator
-## Version: 0.1.0
-## SavedVariables: AscensionCardScannerDB
-
-AscensionCardScanner.lua
