@@ -52,11 +52,15 @@ export function discoverRelationships(cards: RelationshipCard[]) {
   return relationships
 }
 
-// Suggested cards are named directly in a selected card's game text.
+// Suggestions cover both directions: cards named by the selected build and
+// cards whose game text explicitly modifies a selected card.
 export function discoverSuggestions(selectedCards: RelationshipCard[], candidates: RelationshipCard[]) {
   const selectedIds = new Set(selectedCards.map((card) => card.cardId))
-  const text = selectedCards.map(getText).join('\n')
-  return new Set(candidates.filter((card) =>
-    !selectedIds.has(card.cardId) && card.name.length >= 4 && hasReference(text, card.name),
+  const selectedText = selectedCards.map(getText).join('\n')
+  return new Set(candidates.filter((candidate) =>
+    !selectedIds.has(candidate.cardId)
+    && candidate.name.length >= 4
+    && (hasReference(selectedText, candidate.name)
+      || selectedCards.some((selected) => hasReference(getText(candidate), selected.name))),
   ).map((card) => card.cardId))
 }
