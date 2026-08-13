@@ -36,30 +36,6 @@ function makeSlots(): Slot[] {
   })
 }
 
-function seededRandom(seed: number) {
-  let value = seed >>> 0
-  return () => {
-    value += 0x6d2b79f5
-    let output = value
-    output = Math.imul(output ^ (output >>> 15), output | 1)
-    output ^= output + Math.imul(output ^ (output >>> 7), output | 61)
-    return ((output ^ (output >>> 14)) >>> 0) / 4294967296
-  }
-}
-
-function randomize(slots: Slot[], seed: number) {
-  const random = seededRandom(seed)
-  const used = new Set<number>()
-  return slots.map((slot) => {
-    const candidates = allCards.filter(
-      (card) => card.category === slot.category && !used.has(card.spellId),
-    )
-    const card = candidates[Math.floor(random() * candidates.length)] ?? null
-    if (card) used.add(card.spellId)
-    return { ...slot, card }
-  })
-}
-
 function CardIcon({ card }: { card: Card }) {
   const initials = card.name.replace(/[^a-zA-Z]/g, '').slice(0, 2).toUpperCase()
   const iconUrl = card.iconUrl ? `${import.meta.env.BASE_URL}${card.iconUrl}` : undefined
@@ -71,7 +47,7 @@ function CardIcon({ card }: { card: Card }) {
 
 function App() {
   const [activeTab, setActiveTab] = useState<Category>('starter_skill')
-  const [slots, setSlots] = useState<Slot[]>(() => randomize(makeSlots(), Date.now()))
+  const [slots, setSlots] = useState<Slot[]>(makeSlots)
   const [search, setSearch] = useState('')
 
   const visibleSlots = slots.filter((slot) => slot.category === activeTab)
