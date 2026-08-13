@@ -56,11 +56,14 @@ export function discoverRelationships(cards: RelationshipCard[]) {
 // cards whose game text explicitly modifies a selected card.
 export function discoverSuggestions(selectedCards: RelationshipCard[], candidates: RelationshipCard[]) {
   const selectedIds = new Set(selectedCards.map((card) => card.cardId))
-  const selectedText = selectedCards.map(getText).join('\n')
-  return new Set(candidates.filter((candidate) =>
-    !selectedIds.has(candidate.cardId)
-    && candidate.name.length >= 4
-    && (hasReference(selectedText, candidate.name)
-      || selectedCards.some((selected) => hasReference(getText(candidate), selected.name))),
-  ).map((card) => card.cardId))
+  const suggestions = new Map<number, string[]>()
+  for (const candidate of candidates) {
+    if (selectedIds.has(candidate.cardId) || candidate.name.length < 4) continue
+    const sources = selectedCards.filter((selected) =>
+      hasReference(getText(selected), candidate.name)
+      || hasReference(getText(candidate), selected.name),
+    ).map((selected) => selected.name)
+    if (sources.length) suggestions.set(candidate.cardId, sources)
+  }
+  return suggestions
 }

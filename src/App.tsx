@@ -25,6 +25,7 @@ type Tooltip = {
   card: Card
   x: number
   y: number
+  suggestedBy?: string[]
 }
 
 const tabs: { category: Category; label: string; shortLabel: string }[] = [
@@ -103,7 +104,7 @@ function CardIcon({ card }: { card: Card }) {
 }
 
 function SpellTooltip({ tooltip }: { tooltip: Tooltip }) {
-  const { card, x, y } = tooltip
+  const { card, x, y, suggestedBy } = tooltip
   return <aside className="spell-tooltip" style={{ left: x + 16, top: y + 16 }} role="tooltip">
     <h3>{card.name}</h3>
     {card.tooltipLines ? <div className="tooltip-lines">
@@ -122,6 +123,7 @@ function SpellTooltip({ tooltip }: { tooltip: Tooltip }) {
       <p className="tooltip-rank">{card.rank === card.maxRank ? 'Rank ' + card.rank : `Rank ${card.rank}/${card.maxRank}`}</p>
       {card.description && <p className="tooltip-description">{card.description}</p>}
     </>}
+    {suggestedBy && <p className="tooltip-suggestion">Suggested by: {suggestedBy.join(', ')}</p>}
     <div className="tooltip-footer">
       <span>Skill Card</span>
       <span>Spell ID {card.spellId}</span>
@@ -129,12 +131,13 @@ function SpellTooltip({ tooltip }: { tooltip: Tooltip }) {
   </aside>
 }
 
-function CardList({ cards, golden, slots, onSelect, onShowTooltip, onMoveTooltip, onHideTooltip }: {
+function CardList({ cards, golden, slots, suggestedBy, onSelect, onShowTooltip, onMoveTooltip, onHideTooltip }: {
   cards: Card[]
   golden: boolean
   slots: Slot[]
+  suggestedBy: Map<number, string[]>
   onSelect: (card: Card, golden: boolean) => void
-  onShowTooltip: (card: Card, event: PointerEvent) => void
+  onShowTooltip: (card: Card, event: PointerEvent, suggestedBy?: string[]) => void
   onMoveTooltip: (event: PointerEvent) => void
   onHideTooltip: () => void
 }) {
@@ -154,7 +157,7 @@ function CardList({ cards, golden, slots, onSelect, onShowTooltip, onMoveTooltip
       <div className="card-list-window" style={{ transform: `translateY(${firstRow * cardRowHeight}px)` }}>
         {cardsToRender.map((card) => {
           const selected = slots.some((slot) => slot.card?.spellId === card.spellId)
-          return <button key={card.cardId} className={selected ? 'collection-card selected' : 'collection-card'} onClick={() => onSelect(card, golden)} disabled={selected} onPointerEnter={(event) => onShowTooltip(card, event)} onPointerMove={onMoveTooltip} onPointerLeave={onHideTooltip}>
+          return <button key={card.cardId} className={selected ? 'collection-card selected' : 'collection-card'} onClick={() => onSelect(card, golden)} disabled={selected} onPointerEnter={(event) => onShowTooltip(card, event, suggestedBy.get(card.cardId))} onPointerMove={onMoveTooltip} onPointerLeave={onHideTooltip}>
             <CardIcon card={card} />
             <span className="list-name">{card.name}</span>
             <span className={`quality-dot ${qualityClass[card.quality] ?? 'common'}`} />
@@ -199,7 +202,7 @@ function App() {
   const selectedNames = new Set(slots.flatMap((slot) => slot.card ? [normalizeName(slot.card.name)] : []))
   const selectedCards = slots.flatMap((slot) => slot.card ? [slot.card] : [])
   const activeRelationships = discoverRelationships(slots.flatMap((slot) => slot.card ? [slot.card] : []))
-  const suggestedCardIds = discoverSuggestions(selectedCards, Object.values(cardsByCategory).flat())
+  const suggestedByCardId = discoverSuggestions(selectedCards, Object.values(cardsByCategory).flat())
   const missingRequirements = new Map<number, string[]>()
   for (const slot of slots) {
     if (!slot.card) continue
@@ -221,7 +224,7 @@ function App() {
   const filteredCards = (cardsByCategory[activeTab] ?? []).filter((card) =>
     (card.name.toLowerCase().includes(normalizedSearch)
       || card.description?.toLowerCase().includes(normalizedSearch))
-    && (!showSuggestions || suggestedCardIds.has(card.cardId)),
+    && (!showSuggestions || suggestedByCardId.has(card.cardId)),
   )
 
   function removeCard(slotIndex: number) {
@@ -244,8 +247,8 @@ function App() {
     setSlots(makeSlots())
   }
 
-  function showTooltip(card: Card, event: PointerEvent) {
-    setTooltip({ card, x: event.clientX, y: event.clientY })
+  function showTooltip(card: Card, event: PointerEvent, suggestedBy?: string[]) {
+    setTooltip({ card, x: event.clientX, y: event.clientY, suggestedBy })
   }
 
   function moveTooltip(event: PointerEvent) {
@@ -337,7 +340,7 @@ function App() {
             {([false, true] as const).map((golden) => (
               <section key={String(golden)} className={golden ? 'collection-pane golden-pane' : 'collection-pane'}>
                 <h3>{golden ? 'Golden Cards' : 'Normal Cards'}</h3>
-                <CardList key={`${activeTab}-${golden}-${search}`} cards={filteredCards} golden={golden} slots={slots} onSelect={selectCard} onShowTooltip={showTooltip} onMoveTooltip={moveTooltip} onHideTooltip={() => setTooltip(null)} />
+                <CardList key={`${activeTab}-${golden}-${search}`} cards={filteredCards} golden={golden} slots={slots} suggestedBy={suggestedByCardId} onSelect={selectCard} onShowTooltip={showTooltip} onMoveTooltip={moveTooltip} onHideTooltip={() => setTooltip(null)} />
               </section>
             ))}
           </aside>
