@@ -62,6 +62,7 @@ for _, pool in ipairs(export.pools or {}) do
             isWildcard = item.IsWildcard,
             isDraftMode = item.IsDraftMode,
             icon = item.icon,
+            requiredLevel = item.requiredLevel,
         }
     end
 end

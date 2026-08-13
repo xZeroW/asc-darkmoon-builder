@@ -2,13 +2,15 @@ import { useState } from 'react'
 import pool from '../data/darkmoon-card-pool.json'
 
 type Category = 'starter_skill' | 'ability' | 'talent'
-type Card = (typeof pool.records)[number]
+type Card = (typeof pool.records)[number] & { requiredLevel?: number | null }
 type Slot = {
   category: Category
   golden: boolean
   card: Card | null
   locked: boolean
 }
+
+const allCards: Card[] = pool.records
 
 const tabs: { category: Category; label: string; shortLabel: string }[] = [
   { category: 'starter_skill', label: 'Starter Skill Cards', shortLabel: 'Starter Skills' },
@@ -52,7 +54,7 @@ function randomize(slots: Slot[], seed: number) {
   const used = new Set(slots.flatMap((slot) => (slot.locked && slot.card ? [slot.card.spellId] : [])))
   return slots.map((slot) => {
     if (slot.locked && slot.card) return slot
-    const candidates = pool.records.filter(
+    const candidates = allCards.filter(
       (card) => card.category === slot.category && !used.has(card.spellId),
     )
     const card = candidates[Math.floor(random() * candidates.length)] ?? null
@@ -73,7 +75,7 @@ function App() {
   const [seed, setSeed] = useState(() => String(Math.floor(Math.random() * 1_000_000_000)))
 
   const visibleSlots = slots.filter((slot) => slot.category === activeTab)
-  const filteredCards = pool.records.filter(
+  const filteredCards = allCards.filter(
     (card) => card.category === activeTab && card.name.toLowerCase().includes(search.toLowerCase()),
   )
 
@@ -184,7 +186,7 @@ function App() {
                   <CardIcon card={card} />
                   <span className="list-name">{card.name}</span>
                   <span className={`quality-dot ${qualityClass[card.quality] ?? 'common'}`} />
-                  <span className="rank">{card.rank}</span>
+                  <span className="rank">{card.requiredLevel ?? '?'}</span>
                 </button>
               })}
             </div>

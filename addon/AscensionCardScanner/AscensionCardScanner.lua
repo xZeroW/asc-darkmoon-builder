@@ -327,6 +327,9 @@ local function collectListItems(list)
             record.name = name
             record.rankText = rank
             record.icon = icon
+            if GetSpellLevelLearned then
+                record.requiredLevel = GetSpellLevelLearned(item.SpellID)
+            end
             record.visibleIndex = visibleIndex
             record.sourceIndex = sourceIndex
             items[#items + 1] = record
