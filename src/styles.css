@@ -93,6 +93,8 @@ button { cursor: pointer; }
 .collection-card { width: 100%; min-height: 54px; display: grid; grid-template-columns: 40px 1fr 9px 26px; align-items: center; gap: 9px; border: 1px solid #30332d; border-bottom-color: #000; background: linear-gradient(90deg, #10130f, #030403); color: #d6d2b9; padding: 6px; text-align: left; }
 .collection-card:hover:not(:disabled) { background: linear-gradient(90deg, #2a2b1d, #12140d); border-color: #918049; }
 .collection-card.selected { opacity: .45; }
+.show-more { width: 100%; border: 1px solid #625e42; background: linear-gradient(#39392f, #10110f); color: #f3ce0b; padding: 8px; font: 700 12px Arial, sans-serif; }
+.show-more:hover { border-color: #d3a620; color: #fff4c0; }
 .collection-card .card-icon { width: 34px; height: 34px; font-size: 10px; }
 .list-name { overflow: hidden; color: #1d9fff; font: 700 15px Arial, sans-serif; text-overflow: ellipsis; white-space: nowrap; }
 .rank { display: grid; place-items: center; width: 24px; height: 24px; border: 2px solid #a99d61; border-radius: 50%; background: #050505; color: #fff6c5; font: 700 13px Arial, sans-serif; }

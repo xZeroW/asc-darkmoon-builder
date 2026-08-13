@@ -45,6 +45,7 @@ const qualityClass: Record<string, string> = {
   SKILL_CARD_EPIC: 'epic',
   SKILL_CARD_LEGENDARY: 'legendary',
 }
+const cardsPerPage = 100
 
 function makeSlots(): Slot[] {
   return tabs.flatMap(({ category }) => {
@@ -92,6 +93,7 @@ function App() {
   const [search, setSearch] = useState('')
   const [cardsByCategory, setCardsByCategory] = useState<Partial<Record<Category, Card[]>>>({})
   const [tooltip, setTooltip] = useState<Tooltip | null>(null)
+  const [visibleCardCount, setVisibleCardCount] = useState(cardsPerPage)
 
   useEffect(() => {
     if (cardsByCategory[activeTab]) return
@@ -110,6 +112,7 @@ function App() {
     card.name.toLowerCase().includes(normalizedSearch)
     || card.description?.toLowerCase().includes(normalizedSearch),
   )
+  const renderedCards = filteredCards.slice(0, visibleCardCount)
 
   function removeCard(slotIndex: number) {
     const indexes = slots.map((slot, index) => ({ slot, index })).filter(({ slot }) => slot.category === activeTab)
@@ -149,7 +152,7 @@ function App() {
 
         <div className="tabs" role="tablist" aria-label="Skill card categories">
           {tabs.map((tab) => (
-            <button key={tab.category} className={activeTab === tab.category ? 'tab active' : 'tab'} onClick={() => setActiveTab(tab.category)}>
+            <button key={tab.category} className={activeTab === tab.category ? 'tab active' : 'tab'} onClick={() => { setTooltip(null); setVisibleCardCount(cardsPerPage); setActiveTab(tab.category) }}>
               {tab.label}
             </button>
           ))}
@@ -157,7 +160,7 @@ function App() {
           <button className="reset-button" onClick={reset}>Reset build</button>
           <div className="top-search">
             <span aria-hidden="true">⌕</span>
-            <input placeholder="Search" value={search} onFocus={() => setTooltip(null)} onChange={(event) => { setTooltip(null); setSearch(event.target.value) }} />
+            <input placeholder="Search" value={search} onFocus={() => setTooltip(null)} onChange={(event) => { setTooltip(null); setVisibleCardCount(cardsPerPage); setSearch(event.target.value) }} />
             <button onClick={() => setSearch('')} aria-label="Clear search">×</button>
           </div>
         </div>
@@ -209,7 +212,7 @@ function App() {
               <section key={String(golden)} className={golden ? 'collection-pane golden-pane' : 'collection-pane'}>
                 <h3>{golden ? 'Golden Cards' : 'Normal Cards'}</h3>
                 <div className="card-list">
-                  {filteredCards.map((card) => {
+                  {renderedCards.map((card) => {
                     const selected = slots.some((slot) => slot.golden === golden && slot.card?.spellId === card.spellId)
                     return <button key={card.cardId} className={selected ? 'collection-card selected' : 'collection-card'} onClick={() => selectCard(card, golden)} disabled={selected} onPointerEnter={(event) => showTooltip(card, event)} onPointerMove={moveTooltip} onPointerLeave={() => setTooltip(null)}>
                       <CardIcon card={card} />
@@ -218,6 +221,9 @@ function App() {
                       <span className="rank">{card.requiredLevel ?? '?'}</span>
                     </button>
                   })}
+                  {visibleCardCount < filteredCards.length && <button className="show-more" onClick={() => setVisibleCardCount((count) => count + cardsPerPage)}>
+                    Show more cards
+                  </button>}
                 </div>
               </section>
             ))}
