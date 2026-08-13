@@ -47,6 +47,28 @@ const qualityClass: Record<string, string> = {
 }
 const cardRowHeight = 54
 const overscanRows = 8
+const gearRequirements = new Set([
+  'daggers', 'fist weapons', 'melee weapon', 'one-handed melee weapon', 'ranged weapon', 'shields',
+])
+
+function normalizeName(value: string) {
+  return value.replace(/[".]/g, '').trim().toLowerCase()
+}
+
+function getCardRequirements(card: Card) {
+  const requirements: string[][] = []
+  for (const line of card.tooltipLines ?? []) {
+    const text = line.left?.split('\n', 1)[0]?.trim()
+    if (!text?.startsWith('Requires ')) continue
+    const requirement = text.slice('Requires '.length).trim()
+    if (/^level\s+\d+$/i.test(requirement) || /^primary stat:/i.test(requirement)) continue
+    const alternatives = requirement.split(/,|\s+or\s+/i)
+      .map((value) => value.trim().replace(/[.]$/, ''))
+      .filter((value) => value && !gearRequirements.has(value.toLowerCase()))
+    if (alternatives.length) requirements.push(alternatives)
+  }
+  return requirements
+}
 
 function makeSlots(): Slot[] {
   return tabs.flatMap(({ category }) => {
@@ -144,6 +166,16 @@ function App() {
   }, [activeTab, cardsByCategory])
 
   const visibleSlots = slots.filter((slot) => slot.category === activeTab)
+  const selectedNames = new Set(slots.flatMap((slot) => slot.card ? [normalizeName(slot.card.name)] : []))
+  const missingRequirements = new Map<number, string[]>()
+  for (const slot of slots) {
+    if (!slot.card) continue
+    const missing = getCardRequirements(slot.card)
+      .filter((alternatives) => !alternatives.some((requirement) => selectedNames.has(normalizeName(requirement))))
+      .map((alternatives) => alternatives.join(' or '))
+    if (missing.length) missingRequirements.set(slot.card.cardId, missing)
+  }
+  const activeWarnings = visibleSlots.flatMap((slot) => slot.card ? (missingRequirements.get(slot.card.cardId) ?? []).map((requirement) => `${slot.card!.name}: requires ${requirement}`) : [])
   const normalizedSearch = search.toLowerCase()
   const filteredCards = (cardsByCategory[activeTab] ?? []).filter((card) =>
     card.name.toLowerCase().includes(normalizedSearch)
@@ -210,11 +242,14 @@ function App() {
               </div>
             </div>
             <p className="instruction">Select from the collection to add a card. Gold frames indicate Golden Card slots.</p>
+            {activeWarnings.length > 0 && <div className="requirement-warnings" role="alert">
+              {activeWarnings.map((warning) => <p key={warning}>{warning}</p>)}
+            </div>}
             <div className={activeTab === 'starter_skill' ? 'slot-grid starter-slot-grid' : 'slot-grid'}>
               {visibleSlots.map((slot, index) => (
                 <article
                   key={`${slot.category}-${index}`}
-                  className={`slot ${slot.golden ? 'golden-slot' : ''} ${slot.card ? 'filled' : 'empty'}`}
+                  className={`slot ${slot.golden ? 'golden-slot' : ''} ${slot.card ? 'filled' : 'empty'} ${slot.card && missingRequirements.has(slot.card.cardId) ? 'invalid-slot' : ''}`}
                   onPointerEnter={slot.card ? (event) => showTooltip(slot.card!, event) : undefined}
                   onPointerMove={slot.card ? moveTooltip : undefined}
                   onPointerLeave={slot.card ? () => setTooltip(null) : undefined}
@@ -232,6 +267,7 @@ function App() {
                     </div>
                     <CardIcon card={slot.card} />
                     <h3>{slot.card.name}</h3>
+                    {missingRequirements.has(slot.card.cardId) && <span className="requirement-marker">Missing requirement</span>}
                   </> : <>
                     <span className="empty-mark">✧</span>
                     <p>{slot.golden ? 'Golden Card slot' : 'Card slot'}</p>
