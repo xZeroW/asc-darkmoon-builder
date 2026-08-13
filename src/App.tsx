@@ -86,11 +86,11 @@ function App() {
     setSlots((current) => current.map((slot, itemIndex) => itemIndex === index ? { ...slot, card: null } : slot))
   }
 
-  function selectCard(card: Card) {
-    const existing = slots.some((slot) => slot.card?.spellId === card.spellId)
+  function selectCard(card: Card, golden: boolean) {
+    const existing = slots.some((slot) => slot.golden === golden && slot.card?.spellId === card.spellId)
     if (existing) return
-    const targetIndex = slots.findIndex((slot) => slot.category === activeTab && !slot.card)
-    const fallbackIndex = slots.findIndex((slot) => slot.category === activeTab)
+    const targetIndex = slots.findIndex((slot) => slot.category === activeTab && slot.golden === golden && !slot.card)
+    const fallbackIndex = slots.findIndex((slot) => slot.category === activeTab && slot.golden === golden)
     const index = targetIndex === -1 ? fallbackIndex : targetIndex
     if (index === -1) return
     setSlots((current) => current.map((slot, itemIndex) => itemIndex === index ? { ...slot, card } : slot))
@@ -116,6 +116,7 @@ function App() {
             </button>
           ))}
           <span className="tabs-spacer" />
+          <button className="reset-button" onClick={reset}>Reset build</button>
           <div className="top-search">
             <span aria-hidden="true">⌕</span>
             <input placeholder="Search" value={search} onChange={(event) => setSearch(event.target.value)} />
@@ -132,7 +133,7 @@ function App() {
               </div>
             </div>
             <p className="instruction">Select from the collection to add a card. Gold frames indicate Golden Card slots.</p>
-            <div className="slot-grid">
+            <div className={activeTab === 'starter_skill' ? 'slot-grid starter-slot-grid' : 'slot-grid'}>
               {visibleSlots.map((slot, index) => (
                 <article key={`${slot.category}-${index}`} className={`slot ${slot.golden ? 'golden-slot' : ''} ${slot.card ? 'filled' : 'empty'}`}>
                   {slot.card ? <>
@@ -155,24 +156,25 @@ function App() {
           <aside className="collection">
             <div className="collection-title">{tabs.find((tab) => tab.category === activeTab)?.label} Collection</div>
             <p className="collection-count">{filteredCards.length.toLocaleString()} cards available</p>
-            <div className="card-list">
-              {filteredCards.map((card) => {
-                const selected = slots.some((slot) => slot.card?.spellId === card.spellId)
-                return <button key={card.cardId} className={selected ? 'collection-card selected' : 'collection-card'} onClick={() => selectCard(card)} disabled={selected}>
-                  <CardIcon card={card} />
-                  <span className="list-name">{card.name}</span>
-                  <span className={`quality-dot ${qualityClass[card.quality] ?? 'common'}`} />
-                  <span className="rank">{card.requiredLevel ?? '?'}</span>
-                </button>
-              })}
-            </div>
+            {([false, true] as const).map((golden) => (
+              <section key={String(golden)} className={golden ? 'collection-pane golden-pane' : 'collection-pane'}>
+                <h3>{golden ? 'Golden Cards' : 'Normal Cards'}</h3>
+                <div className="card-list">
+                  {filteredCards.map((card) => {
+                    const selected = slots.some((slot) => slot.golden === golden && slot.card?.spellId === card.spellId)
+                    return <button key={card.cardId} className={selected ? 'collection-card selected' : 'collection-card'} onClick={() => selectCard(card, golden)} disabled={selected}>
+                      <CardIcon card={card} />
+                      <span className="list-name">{card.name}</span>
+                      <span className={`quality-dot ${qualityClass[card.quality] ?? 'common'}`} />
+                      <span className="rank">{card.requiredLevel ?? '?'}</span>
+                    </button>
+                  })}
+                </div>
+              </section>
+            ))}
           </aside>
         </div>
 
-        <footer className="footer-nav">
-          <span>Character Advancement</span><span>Archetypes</span><strong>Skill Cards</strong><span>Vanity</span><span>Wardrobe</span>
-          <button onClick={reset}>Reset build</button>
-        </footer>
       </section>
     </main>
   )
