@@ -94,6 +94,15 @@ function makeSlots(): Slot[] {
   })
 }
 
+function encodeBuild(slots: Slot[]) {
+  return slots.map((slot) => slot.card?.cardId.toString(36) ?? '').join('.')
+}
+
+function decodeBuild(value: string | null) {
+  if (!value) return []
+  return value.split('.').map((id) => id ? Number.parseInt(id, 36) : null)
+}
+
 function CardIcon({ card }: { card: Card }) {
   const initials = card.name.replace(/[^a-zA-Z]/g, '').slice(0, 2).toUpperCase()
   const iconUrl = card.iconUrl ? `${import.meta.env.BASE_URL}${card.iconUrl}` : undefined
@@ -176,6 +185,8 @@ function App() {
   const [cardsByCategory, setCardsByCategory] = useState<Partial<Record<Category, Card[]>>>({})
   const [tooltip, setTooltip] = useState<Tooltip | null>(null)
   const [showSuggestions, setShowSuggestions] = useState(false)
+  const [shareStatus, setShareStatus] = useState('Share build')
+  const [buildRestored, setBuildRestored] = useState(() => !new URLSearchParams(window.location.search).has('build'))
 
   useEffect(() => {
     if (cardsByCategory[activeTab]) return
@@ -187,6 +198,35 @@ function App() {
     })
     return () => { cancelled = true }
   }, [activeTab, cardsByCategory])
+
+  useEffect(() => {
+    const cardIds = decodeBuild(new URLSearchParams(window.location.search).get('build'))
+    if (!cardIds.length) {
+      setBuildRestored(true)
+      return
+    }
+    let cancelled = false
+    void Promise.all(tabs.map(({ category }) => cardLoaders[category]())).then((pools) => {
+      if (cancelled) return
+      const cardsById = new Map(pools.flatMap(({ default: pool }) => pool.records).map((card) => [card.cardId, card]))
+      setCardsByCategory((current) => ({
+        ...current,
+        ...Object.fromEntries(tabs.map((tab, index) => [tab.category, pools[index].default.records])),
+      }))
+      setSlots((current) => current.map((slot, index) => ({ ...slot, card: cardIds[index] ? cardsById.get(cardIds[index]!) ?? null : null })))
+      setBuildRestored(true)
+    })
+    return () => { cancelled = true }
+  }, [])
+
+  useEffect(() => {
+    if (!buildRestored) return
+    const url = new URL(window.location.href)
+    const build = encodeBuild(slots)
+    if (build.replace(/\./g, '')) url.searchParams.set('build', build)
+    else url.searchParams.delete('build')
+    window.history.replaceState(null, '', url)
+  }, [buildRestored, slots])
 
   useEffect(() => {
     if (!showSuggestions) return
@@ -247,6 +287,15 @@ function App() {
     setSlots(makeSlots())
   }
 
+  async function shareBuild() {
+    try {
+      await navigator.clipboard.writeText(window.location.href)
+      setShareStatus('Link copied')
+    } catch {
+      setShareStatus('Copy the URL')
+    }
+  }
+
   function showTooltip(card: Card, event: PointerEvent, suggestedBy?: string[]) {
     setTooltip({ card, x: event.clientX, y: event.clientY, suggestedBy })
   }
@@ -272,6 +321,7 @@ function App() {
           ))}
           <span className="tabs-spacer" />
             <button className="reset-button" onClick={reset}>Reset build</button>
+            <button className="share-button" onClick={() => void shareBuild()}>{shareStatus}</button>
             <button className={showSuggestions ? 'suggestions-toggle active' : 'suggestions-toggle'} onClick={() => setShowSuggestions((show) => !show)}>
               {showSuggestions ? 'Suggested cards' : 'Show suggestions'}
             </button>
