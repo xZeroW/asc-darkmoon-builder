@@ -89,10 +89,29 @@ local function cleanTooltipLines(lines)
     return #result > 0 and result or nil
 end
 
+local function getTooltipLevel(lines)
+    if type(lines) ~= "table" then
+        return nil
+    end
+    for _, line in ipairs(lines) do
+        for _, value in ipairs({ line.left, line.right }) do
+            if type(value) == "string" then
+                local level = value:match("^[Ll]evel:%s*(%d+)$")
+                    or value:match("^[Ll]evel%s+(%d+)$")
+                if level then
+                    return tonumber(level)
+                end
+            end
+        end
+    end
+    return nil
+end
+
 local rows = {}
 for _, pool in ipairs(export.pools or {}) do
     for _, item in ipairs(pool.items or {}) do
         local iconUrl
+        local tooltipLines = cleanTooltipLines(item.tooltipLines)
         if type(item.icon) == "string" then
             iconUrl = "icons/" .. string.lower(item.icon):gsub("\\", "-") .. ".webp"
         end
@@ -103,7 +122,7 @@ for _, pool in ipairs(export.pools or {}) do
             spellId = item.SpellID,
             name = item.name,
             description = cleanDescription(item.description),
-            tooltipLines = cleanTooltipLines(item.tooltipLines),
+            tooltipLines = tooltipLines,
             rank = item.Rank,
             maxRank = item.MaxRank,
             quality = item.Quality,
@@ -116,7 +135,7 @@ for _, pool in ipairs(export.pools or {}) do
             isDraftMode = item.IsDraftMode,
             icon = item.icon,
             iconUrl = iconUrl,
-            requiredLevel = item.requiredLevel,
+            requiredLevel = getTooltipLevel(tooltipLines) or item.requiredLevel,
         }
     end
 end
