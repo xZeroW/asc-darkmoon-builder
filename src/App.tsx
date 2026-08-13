@@ -130,7 +130,12 @@ function App() {
             </button>
           ))}
           <span className="tabs-spacer" />
-          <button className="generate" onClick={generate}>Generate Build</button>
+          <div className="top-search">
+            <span aria-hidden="true">⌕</span>
+            <input placeholder="Search" value={search} onChange={(event) => setSearch(event.target.value)} />
+            <button onClick={() => setSearch('')} aria-label="Clear search">×</button>
+          </div>
+          <button className="filter-button">Filter <span>▶</span></button>
         </div>
 
         <div className="content">
@@ -138,7 +143,7 @@ function App() {
             <div className="build-heading">
               <div>
                 <span className="eyebrow">Darkmoon Wildcard</span>
-                <h2>{tabs.find((tab) => tab.category === activeTab)?.shortLabel}</h2>
+                <h2>Selected {tabs.find((tab) => tab.category === activeTab)?.shortLabel}</h2>
               </div>
               <div className="seed-control">
                 <label htmlFor="seed">Seed</label>
@@ -146,7 +151,7 @@ function App() {
                 <button onClick={generate}>Roll</button>
               </div>
             </div>
-            <p className="instruction">Select a card from the collection to lock it. Generate fills every unlocked slot. Gold borders mark Golden Card slots.</p>
+            <p className="instruction">Select from the collection to lock a card. Roll fills unlocked slots. Gold frames indicate Golden Card slots.</p>
             <div className="slot-grid">
               {visibleSlots.map((slot, index) => (
                 <article key={`${slot.category}-${index}`} className={`slot ${slot.golden ? 'golden-slot' : ''} ${slot.card ? 'filled' : 'empty'}`}>
@@ -171,10 +176,6 @@ function App() {
 
           <aside className="collection">
             <div className="collection-title">{tabs.find((tab) => tab.category === activeTab)?.label} Collection</div>
-            <div className="search-row">
-              <input placeholder="Search cards" value={search} onChange={(event) => setSearch(event.target.value)} />
-              <button onClick={() => setSearch('')} aria-label="Clear search">×</button>
-            </div>
             <p className="collection-count">{filteredCards.length.toLocaleString()} cards available</p>
             <div className="card-list">
               {filteredCards.map((card) => {
