@@ -7,7 +7,6 @@ type Slot = {
   category: Category
   golden: boolean
   card: Card | null
-  locked: boolean
 }
 
 const allCards: Card[] = pool.records
@@ -33,7 +32,6 @@ function makeSlots(): Slot[] {
       category,
       golden: index >= total / 2,
       card: null,
-      locked: false,
     }))
   })
 }
@@ -51,9 +49,8 @@ function seededRandom(seed: number) {
 
 function randomize(slots: Slot[], seed: number) {
   const random = seededRandom(seed)
-  const used = new Set(slots.flatMap((slot) => (slot.locked && slot.card ? [slot.card.spellId] : [])))
+  const used = new Set<number>()
   return slots.map((slot) => {
-    if (slot.locked && slot.card) return slot
     const candidates = allCards.filter(
       (card) => card.category === slot.category && !used.has(card.spellId),
     )
@@ -76,48 +73,31 @@ function App() {
   const [activeTab, setActiveTab] = useState<Category>('starter_skill')
   const [slots, setSlots] = useState<Slot[]>(() => randomize(makeSlots(), Date.now()))
   const [search, setSearch] = useState('')
-  const [seed, setSeed] = useState(() => String(Math.floor(Math.random() * 1_000_000_000)))
 
   const visibleSlots = slots.filter((slot) => slot.category === activeTab)
   const filteredCards = allCards.filter(
     (card) => card.category === activeTab && card.name.toLowerCase().includes(search.toLowerCase()),
   )
 
-  function generate() {
-    const parsedSeed = Number(seed)
-    const nextSeed = Number.isFinite(parsedSeed) ? parsedSeed : Date.now()
-    setSeed(String(nextSeed))
-    setSlots((current) => randomize(current, nextSeed))
-  }
-
-  function toggleLock(slotIndex: number) {
-    const matchingIndexes = slots
-      .map((slot, index) => ({ slot, index }))
-      .filter(({ slot }) => slot.category === activeTab)
-    const index = matchingIndexes[slotIndex]?.index
-    if (index === undefined || !slots[index].card) return
-    setSlots((current) => current.map((slot, itemIndex) => itemIndex === index ? { ...slot, locked: !slot.locked } : slot))
-  }
-
   function removeCard(slotIndex: number) {
     const indexes = slots.map((slot, index) => ({ slot, index })).filter(({ slot }) => slot.category === activeTab)
     const index = indexes[slotIndex]?.index
     if (index === undefined) return
-    setSlots((current) => current.map((slot, itemIndex) => itemIndex === index ? { ...slot, card: null, locked: false } : slot))
+    setSlots((current) => current.map((slot, itemIndex) => itemIndex === index ? { ...slot, card: null } : slot))
   }
 
   function selectCard(card: Card) {
     const existing = slots.some((slot) => slot.card?.spellId === card.spellId)
     if (existing) return
-    const targetIndex = slots.findIndex((slot) => slot.category === activeTab && !slot.locked && !slot.card)
-    const fallbackIndex = slots.findIndex((slot) => slot.category === activeTab && !slot.locked)
+    const targetIndex = slots.findIndex((slot) => slot.category === activeTab && !slot.card)
+    const fallbackIndex = slots.findIndex((slot) => slot.category === activeTab)
     const index = targetIndex === -1 ? fallbackIndex : targetIndex
     if (index === -1) return
-    setSlots((current) => current.map((slot, itemIndex) => itemIndex === index ? { ...slot, card, locked: true } : slot))
+    setSlots((current) => current.map((slot, itemIndex) => itemIndex === index ? { ...slot, card } : slot))
   }
 
   function reset() {
-    setSlots(randomize(makeSlots(), Number(seed) || Date.now()))
+    setSlots(randomize(makeSlots(), Date.now()))
   }
 
   return (
@@ -141,7 +121,6 @@ function App() {
             <input placeholder="Search" value={search} onChange={(event) => setSearch(event.target.value)} />
             <button onClick={() => setSearch('')} aria-label="Clear search">×</button>
           </div>
-          <button className="filter-button">Filter <span>▶</span></button>
         </div>
 
         <div className="content">
@@ -151,13 +130,8 @@ function App() {
                 <span className="eyebrow">Darkmoon Wildcard</span>
                 <h2>Selected {tabs.find((tab) => tab.category === activeTab)?.shortLabel}</h2>
               </div>
-              <div className="seed-control">
-                <label htmlFor="seed">Seed</label>
-                <input id="seed" value={seed} onChange={(event) => setSeed(event.target.value)} />
-                <button onClick={generate}>Roll</button>
-              </div>
             </div>
-            <p className="instruction">Select from the collection to lock a card. Roll fills unlocked slots. Gold frames indicate Golden Card slots.</p>
+            <p className="instruction">Select from the collection to add a card. Gold frames indicate Golden Card slots.</p>
             <div className="slot-grid">
               {visibleSlots.map((slot, index) => (
                 <article key={`${slot.category}-${index}`} className={`slot ${slot.golden ? 'golden-slot' : ''} ${slot.card ? 'filled' : 'empty'}`}>
@@ -169,8 +143,6 @@ function App() {
                     </div>
                     <CardIcon card={slot.card} />
                     <h3>{slot.card.name}</h3>
-                    <p>Spell ID: {slot.card.spellId}</p>
-                    <button className={slot.locked ? 'lock locked' : 'lock'} onClick={() => toggleLock(index)}>{slot.locked ? 'Locked' : 'Lock card'}</button>
                   </> : <>
                     <span className="empty-mark">✧</span>
                     <p>{slot.golden ? 'Golden Card slot' : 'Card slot'}</p>
