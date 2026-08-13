@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import type { PointerEvent, UIEvent } from 'react'
-import { discoverRelationships } from './relationships'
+import { discoverRelationships, discoverSuggestions } from './relationships'
 
 type Category = 'starter_skill' | 'ability' | 'talent'
 type Card = {
@@ -172,6 +172,7 @@ function App() {
   const [search, setSearch] = useState('')
   const [cardsByCategory, setCardsByCategory] = useState<Partial<Record<Category, Card[]>>>({})
   const [tooltip, setTooltip] = useState<Tooltip | null>(null)
+  const [showSuggestions, setShowSuggestions] = useState(false)
 
   useEffect(() => {
     if (cardsByCategory[activeTab]) return
@@ -184,9 +185,21 @@ function App() {
     return () => { cancelled = true }
   }, [activeTab, cardsByCategory])
 
+  useEffect(() => {
+    if (!showSuggestions) return
+    for (const category of tabs.map((tab) => tab.category)) {
+      if (cardsByCategory[category]) continue
+      void cardLoaders[category]().then(({ default: pool }) => {
+        setCardsByCategory((current) => current[category] ? current : { ...current, [category]: pool.records })
+      })
+    }
+  }, [showSuggestions, cardsByCategory])
+
   const visibleSlots = slots.filter((slot) => slot.category === activeTab)
   const selectedNames = new Set(slots.flatMap((slot) => slot.card ? [normalizeName(slot.card.name)] : []))
+  const selectedCards = slots.flatMap((slot) => slot.card ? [slot.card] : [])
   const activeRelationships = discoverRelationships(slots.flatMap((slot) => slot.card ? [slot.card] : []))
+  const suggestedCardIds = discoverSuggestions(selectedCards, Object.values(cardsByCategory).flat())
   const missingRequirements = new Map<number, string[]>()
   for (const slot of slots) {
     if (!slot.card) continue
@@ -206,8 +219,9 @@ function App() {
   }
   const normalizedSearch = search.toLowerCase()
   const filteredCards = (cardsByCategory[activeTab] ?? []).filter((card) =>
-    card.name.toLowerCase().includes(normalizedSearch)
-    || card.description?.toLowerCase().includes(normalizedSearch),
+    (card.name.toLowerCase().includes(normalizedSearch)
+      || card.description?.toLowerCase().includes(normalizedSearch))
+    && (!showSuggestions || suggestedCardIds.has(card.cardId)),
   )
 
   function removeCard(slotIndex: number) {
@@ -254,6 +268,9 @@ function App() {
           ))}
           <span className="tabs-spacer" />
             <button className="reset-button" onClick={reset}>Reset build</button>
+            <button className={showSuggestions ? 'suggestions-toggle active' : 'suggestions-toggle'} onClick={() => setShowSuggestions((show) => !show)}>
+              {showSuggestions ? 'Suggested cards' : 'Show suggestions'}
+            </button>
           <div className="top-search">
             <span aria-hidden="true">⌕</span>
             <input placeholder="Search" value={search} onFocus={() => setTooltip(null)} onChange={(event) => { setTooltip(null); setSearch(event.target.value) }} />
@@ -315,7 +332,7 @@ function App() {
 
           <aside className="collection">
             <div className="collection-title">{tabs.find((tab) => tab.category === activeTab)?.label} Collection</div>
-            <p className="collection-count">{filteredCards.length.toLocaleString()} cards available</p>
+            <p className="collection-count">{filteredCards.length.toLocaleString()} {showSuggestions ? 'suggested' : 'cards available'}</p>
             {([false, true] as const).map((golden) => (
               <section key={String(golden)} className={golden ? 'collection-pane golden-pane' : 'collection-pane'}>
                 <h3>{golden ? 'Golden Cards' : 'Normal Cards'}</h3>

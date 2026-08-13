@@ -22,6 +22,11 @@ function getText(card: RelationshipCard) {
   ].filter((value): value is string => Boolean(value)).join('\n')
 }
 
+function hasReference(text: string, name: string) {
+  const pattern = new RegExp(`(^|[^a-z0-9])${escapeRegex(name)}(?=$|[^a-z0-9])`, 'i')
+  return pattern.test(text)
+}
+
 function getEvidence(text: string, name: string) {
   const pattern = new RegExp(`(^|[^a-z0-9])${escapeRegex(name)}(?=$|[^a-z0-9])`, 'i')
   return text.split(/(?<=[.!?])\s+|\n+/).map((line) => line.trim()).find((line) => pattern.test(line))
@@ -45,4 +50,13 @@ export function discoverRelationships(cards: RelationshipCard[]) {
     }
   }
   return relationships
+}
+
+// Suggested cards are named directly in a selected card's game text.
+export function discoverSuggestions(selectedCards: RelationshipCard[], candidates: RelationshipCard[]) {
+  const selectedIds = new Set(selectedCards.map((card) => card.cardId))
+  const text = selectedCards.map(getText).join('\n')
+  return new Set(candidates.filter((card) =>
+    !selectedIds.has(card.cardId) && card.name.length >= 4 && hasReference(text, card.name),
+  ).map((card) => card.cardId))
 }
