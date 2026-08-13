@@ -71,6 +71,16 @@ function getCardRequirements(card: Card) {
   return requirements
 }
 
+function getRequiredPaths(card: Card) {
+  const paths = new Set<string>()
+  for (const line of card.tooltipLines ?? []) {
+    for (const match of line.left?.matchAll(/Requires\s+Path of ([^\n.]+)/gi) ?? []) {
+      paths.add(`Path of ${match[1].trim()}`)
+    }
+  }
+  return [...paths]
+}
+
 function makeSlots(): Slot[] {
   return tabs.flatMap(({ category }) => {
     const total = category === 'starter_skill' ? 4 : 6
@@ -177,9 +187,13 @@ function App() {
     if (missing.length) missingRequirements.set(slot.card.cardId, missing)
   }
   const activeWarnings = visibleSlots.flatMap((slot) => slot.card ? (missingRequirements.get(slot.card.cardId) ?? []).map((requirement) => `${slot.card!.name}: requires ${requirement}`) : [])
-  const selectedPaths = [...new Set(slots.flatMap((slot) => slot.card?.name.startsWith('Path of ') ? [slot.card.name] : []))]
-  if (selectedPaths.length > 1) {
-    activeWarnings.push(`Only one path can be selected: ${selectedPaths.join(', ')}`)
+  const selectedPaths = [...new Set(slots.flatMap((slot) => slot.card ? [
+    ...(slot.card.name.startsWith('Path of ') ? [slot.card.name] : []),
+    ...getRequiredPaths(slot.card),
+  ] : []))]
+  const hasPathConflict = selectedPaths.length > 1
+  if (hasPathConflict) {
+    activeWarnings.push(`Incompatible path requirements: ${selectedPaths.join(', ')}`)
   }
   const normalizedSearch = search.toLowerCase()
   const filteredCards = (cardsByCategory[activeTab] ?? []).filter((card) =>
@@ -251,7 +265,7 @@ function App() {
               {visibleSlots.map((slot, index) => (
                 <article
                   key={`${slot.category}-${index}`}
-                  className={`slot ${slot.golden ? 'golden-slot' : ''} ${slot.card ? 'filled' : 'empty'} ${slot.card && missingRequirements.has(slot.card.cardId) ? 'invalid-slot' : ''}`}
+                  className={`slot ${slot.golden ? 'golden-slot' : ''} ${slot.card ? 'filled' : 'empty'} ${slot.card && (missingRequirements.has(slot.card.cardId) || (hasPathConflict && getRequiredPaths(slot.card).length > 0)) ? 'invalid-slot' : ''}`}
                   onPointerEnter={slot.card ? (event) => showTooltip(slot.card!, event) : undefined}
                   onPointerMove={slot.card ? moveTooltip : undefined}
                   onPointerLeave={slot.card ? () => setTooltip(null) : undefined}
@@ -270,6 +284,7 @@ function App() {
                     <CardIcon card={slot.card} />
                     <h3>{slot.card.name}</h3>
                     {missingRequirements.has(slot.card.cardId) && <span className="requirement-marker">Missing requirement</span>}
+                    {hasPathConflict && getRequiredPaths(slot.card).length > 0 && <span className="requirement-marker">Incompatible path</span>}
                   </> : <>
                     <span className="empty-mark">✧</span>
                     <p>{slot.golden ? 'Golden Card slot' : 'Card slot'}</p>
