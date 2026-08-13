@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import type { PointerEvent } from 'react'
+import type { PointerEvent, UIEvent } from 'react'
 
 type Category = 'starter_skill' | 'ability' | 'talent'
 type Card = {
@@ -45,7 +45,8 @@ const qualityClass: Record<string, string> = {
   SKILL_CARD_EPIC: 'epic',
   SKILL_CARD_LEGENDARY: 'legendary',
 }
-const cardsPerPage = 100
+const cardRowHeight = 54
+const overscanRows = 8
 
 function makeSlots(): Slot[] {
   return tabs.flatMap(({ category }) => {
@@ -87,13 +88,49 @@ function SpellTooltip({ tooltip }: { tooltip: Tooltip }) {
   </aside>
 }
 
+function CardList({ cards, golden, slots, onSelect, onShowTooltip, onMoveTooltip, onHideTooltip }: {
+  cards: Card[]
+  golden: boolean
+  slots: Slot[]
+  onSelect: (card: Card, golden: boolean) => void
+  onShowTooltip: (card: Card, event: PointerEvent) => void
+  onMoveTooltip: (event: PointerEvent) => void
+  onHideTooltip: () => void
+}) {
+  const [scrollTop, setScrollTop] = useState(0)
+  const [height, setHeight] = useState(0)
+  const firstRow = Math.max(0, Math.floor(scrollTop / cardRowHeight) - overscanRows)
+  const visibleRows = Math.ceil(height / cardRowHeight) + overscanRows * 2
+  const cardsToRender = cards.slice(firstRow, firstRow + visibleRows)
+
+  function updateViewport(event: UIEvent<HTMLDivElement>) {
+    setScrollTop(event.currentTarget.scrollTop)
+    setHeight(event.currentTarget.clientHeight)
+  }
+
+  return <div className="card-list" onScroll={updateViewport} onPointerEnter={updateViewport}>
+    <div className="card-list-spacer" style={{ height: cards.length * cardRowHeight }}>
+      <div className="card-list-window" style={{ transform: `translateY(${firstRow * cardRowHeight}px)` }}>
+        {cardsToRender.map((card) => {
+          const selected = slots.some((slot) => slot.golden === golden && slot.card?.spellId === card.spellId)
+          return <button key={card.cardId} className={selected ? 'collection-card selected' : 'collection-card'} onClick={() => onSelect(card, golden)} disabled={selected} onPointerEnter={(event) => onShowTooltip(card, event)} onPointerMove={onMoveTooltip} onPointerLeave={onHideTooltip}>
+            <CardIcon card={card} />
+            <span className="list-name">{card.name}</span>
+            <span className={`quality-dot ${qualityClass[card.quality] ?? 'common'}`} />
+            <span className="rank">{card.requiredLevel ?? '?'}</span>
+          </button>
+        })}
+      </div>
+    </div>
+  </div>
+}
+
 function App() {
   const [activeTab, setActiveTab] = useState<Category>('starter_skill')
   const [slots, setSlots] = useState<Slot[]>(makeSlots)
   const [search, setSearch] = useState('')
   const [cardsByCategory, setCardsByCategory] = useState<Partial<Record<Category, Card[]>>>({})
   const [tooltip, setTooltip] = useState<Tooltip | null>(null)
-  const [visibleCardCount, setVisibleCardCount] = useState(cardsPerPage)
 
   useEffect(() => {
     if (cardsByCategory[activeTab]) return
@@ -112,7 +149,6 @@ function App() {
     card.name.toLowerCase().includes(normalizedSearch)
     || card.description?.toLowerCase().includes(normalizedSearch),
   )
-  const renderedCards = filteredCards.slice(0, visibleCardCount)
 
   function removeCard(slotIndex: number) {
     const indexes = slots.map((slot, index) => ({ slot, index })).filter(({ slot }) => slot.category === activeTab)
@@ -152,7 +188,7 @@ function App() {
 
         <div className="tabs" role="tablist" aria-label="Skill card categories">
           {tabs.map((tab) => (
-            <button key={tab.category} className={activeTab === tab.category ? 'tab active' : 'tab'} onClick={() => { setTooltip(null); setVisibleCardCount(cardsPerPage); setActiveTab(tab.category) }}>
+            <button key={tab.category} className={activeTab === tab.category ? 'tab active' : 'tab'} onClick={() => { setTooltip(null); setActiveTab(tab.category) }}>
               {tab.label}
             </button>
           ))}
@@ -160,7 +196,7 @@ function App() {
           <button className="reset-button" onClick={reset}>Reset build</button>
           <div className="top-search">
             <span aria-hidden="true">⌕</span>
-            <input placeholder="Search" value={search} onFocus={() => setTooltip(null)} onChange={(event) => { setTooltip(null); setVisibleCardCount(cardsPerPage); setSearch(event.target.value) }} />
+            <input placeholder="Search" value={search} onFocus={() => setTooltip(null)} onChange={(event) => { setTooltip(null); setSearch(event.target.value) }} />
             <button onClick={() => setSearch('')} aria-label="Clear search">×</button>
           </div>
         </div>
@@ -211,20 +247,7 @@ function App() {
             {([false, true] as const).map((golden) => (
               <section key={String(golden)} className={golden ? 'collection-pane golden-pane' : 'collection-pane'}>
                 <h3>{golden ? 'Golden Cards' : 'Normal Cards'}</h3>
-                <div className="card-list">
-                  {renderedCards.map((card) => {
-                    const selected = slots.some((slot) => slot.golden === golden && slot.card?.spellId === card.spellId)
-                    return <button key={card.cardId} className={selected ? 'collection-card selected' : 'collection-card'} onClick={() => selectCard(card, golden)} disabled={selected} onPointerEnter={(event) => showTooltip(card, event)} onPointerMove={moveTooltip} onPointerLeave={() => setTooltip(null)}>
-                      <CardIcon card={card} />
-                      <span className="list-name">{card.name}</span>
-                      <span className={`quality-dot ${qualityClass[card.quality] ?? 'common'}`} />
-                      <span className="rank">{card.requiredLevel ?? '?'}</span>
-                    </button>
-                  })}
-                  {visibleCardCount < filteredCards.length && <button className="show-more" onClick={() => setVisibleCardCount((count) => count + cardsPerPage)}>
-                    Show more cards
-                  </button>}
-                </div>
+                <CardList key={`${activeTab}-${golden}-${search}`} cards={filteredCards} golden={golden} slots={slots} onSelect={selectCard} onShowTooltip={showTooltip} onMoveTooltip={moveTooltip} onHideTooltip={() => setTooltip(null)} />
               </section>
             ))}
           </aside>
