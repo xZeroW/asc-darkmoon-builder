@@ -105,8 +105,10 @@ function App() {
   }, [activeTab, cardsByCategory])
 
   const visibleSlots = slots.filter((slot) => slot.category === activeTab)
-  const filteredCards = (cardsByCategory[activeTab] ?? []).filter(
-    (card) => card.name.toLowerCase().includes(search.toLowerCase()),
+  const normalizedSearch = search.toLowerCase()
+  const filteredCards = (cardsByCategory[activeTab] ?? []).filter((card) =>
+    card.name.toLowerCase().includes(normalizedSearch)
+    || card.description?.toLowerCase().includes(normalizedSearch),
   )
 
   function removeCard(slotIndex: number) {
