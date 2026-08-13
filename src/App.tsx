@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import type { PointerEvent, RefObject, UIEvent } from 'react'
 import { discoverRelationships, discoverSuggestions } from './relationships'
 
@@ -240,12 +240,12 @@ function App() {
   }, [showSuggestions, cardsByCategory])
 
   const visibleSlots = slots.filter((slot) => slot.category === activeTab)
-  const selectedNames = new Set(slots.flatMap((slot) => slot.card ? [normalizeName(slot.card.name)] : []))
-  const selectedCards = slots.flatMap((slot) => slot.card ? [slot.card] : [])
+  const selectedCards = useMemo(() => slots.flatMap((slot) => slot.card ? [slot.card] : []), [slots])
+  const selectedNames = new Set(selectedCards.map((card) => normalizeName(card.name)))
   const activeRelationships = discoverRelationships(slots.flatMap((slot) => slot.card ? [slot.card] : []))
-  const suggestedByCardId = showSuggestions
+  const suggestedByCardId = useMemo(() => showSuggestions
     ? discoverSuggestions(selectedCards, Object.values(cardsByCategory).flat())
-    : new Map<number, string[]>()
+    : new Map<number, string[]>(), [cardsByCategory, selectedCards, showSuggestions])
   const missingRequirements = new Map<number, string[]>()
   for (const slot of slots) {
     if (!slot.card) continue
