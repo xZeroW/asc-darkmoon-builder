@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import type { PointerEvent } from 'react'
 import type starterSkillPool from '../data/cards/starter_skill.json'
 
 type Category = 'starter_skill' | 'ability' | 'talent'
@@ -10,6 +11,11 @@ type Slot = {
   category: Category
   golden: boolean
   card: Card | null
+}
+type Tooltip = {
+  card: Card
+  x: number
+  y: number
 }
 
 const tabs: { category: Category; label: string; shortLabel: string }[] = [
@@ -52,11 +58,29 @@ function CardIcon({ card }: { card: Card }) {
   </span>
 }
 
+function SpellTooltip({ tooltip }: { tooltip: Tooltip }) {
+  const { card, x, y } = tooltip
+  return <aside className="spell-tooltip" style={{ left: x + 16, top: y + 16 }} role="tooltip">
+    <h3>{card.name}</h3>
+    <div className="tooltip-details">
+      <span>{card.qualityCost ?? '?'} Essence</span>
+      <span>{card.requiredLevel ?? '?'} level</span>
+    </div>
+    <p className="tooltip-rank">{card.rank === card.maxRank ? 'Rank ' + card.rank : `Rank ${card.rank}/${card.maxRank}`}</p>
+    {card.description && <p className="tooltip-description">{card.description}</p>}
+    <div className="tooltip-footer">
+      <span>Skill Card</span>
+      <span>Spell ID {card.spellId}</span>
+    </div>
+  </aside>
+}
+
 function App() {
   const [activeTab, setActiveTab] = useState<Category>('starter_skill')
   const [slots, setSlots] = useState<Slot[]>(makeSlots)
   const [search, setSearch] = useState('')
   const [cardsByCategory, setCardsByCategory] = useState<Partial<Record<Category, Card[]>>>({})
+  const [tooltip, setTooltip] = useState<Tooltip | null>(null)
 
   useEffect(() => {
     if (cardsByCategory[activeTab]) return
@@ -91,6 +115,14 @@ function App() {
 
   function reset() {
     setSlots(makeSlots())
+  }
+
+  function showTooltip(card: Card, event: PointerEvent) {
+    setTooltip({ card, x: event.clientX, y: event.clientY })
+  }
+
+  function moveTooltip(event: PointerEvent) {
+    setTooltip((current) => current && { ...current, x: event.clientX, y: event.clientY })
   }
 
   return (
@@ -131,6 +163,9 @@ function App() {
                 <article
                   key={`${slot.category}-${index}`}
                   className={`slot ${slot.golden ? 'golden-slot' : ''} ${slot.card ? 'filled' : 'empty'}`}
+                  onPointerEnter={slot.card ? (event) => showTooltip(slot.card!, event) : undefined}
+                  onPointerMove={slot.card ? moveTooltip : undefined}
+                  onPointerLeave={slot.card ? () => setTooltip(null) : undefined}
                   onContextMenu={(event) => {
                     if (!slot.card) return
                     event.preventDefault()
@@ -144,8 +179,7 @@ function App() {
                       <button className="remove" aria-label={`Remove ${slot.card.name}`} onClick={() => removeCard(index)}>×</button>
                     </div>
                     <CardIcon card={slot.card} />
-                    <h3 title={slot.card.description ?? undefined}>{slot.card.name}</h3>
-                    {slot.card.description && <p className="card-description">{slot.card.description}</p>}
+                    <h3>{slot.card.name}</h3>
                   </> : <>
                     <span className="empty-mark">✧</span>
                     <p>{slot.golden ? 'Golden Card slot' : 'Card slot'}</p>
@@ -164,7 +198,7 @@ function App() {
                 <div className="card-list">
                   {filteredCards.map((card) => {
                     const selected = slots.some((slot) => slot.golden === golden && slot.card?.spellId === card.spellId)
-                    return <button key={card.cardId} className={selected ? 'collection-card selected' : 'collection-card'} onClick={() => selectCard(card, golden)} disabled={selected} title={card.description ?? undefined}>
+                    return <button key={card.cardId} className={selected ? 'collection-card selected' : 'collection-card'} onClick={() => selectCard(card, golden)} disabled={selected} onPointerEnter={(event) => showTooltip(card, event)} onPointerMove={moveTooltip} onPointerLeave={() => setTooltip(null)}>
                       <CardIcon card={card} />
                       <span className="list-name">{card.name}</span>
                       <span className={`quality-dot ${qualityClass[card.quality] ?? 'common'}`} />
@@ -178,6 +212,7 @@ function App() {
         </div>
 
       </section>
+      {tooltip && <SpellTooltip tooltip={tooltip} />}
     </main>
   )
 }

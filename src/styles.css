@@ -77,7 +77,6 @@ button { cursor: pointer; }
 .slot .card-icon { margin: 13px 0 10px; }
 .slot h3 { margin: 0; color: #f5d87b; font-size: 18px; line-height: 1.1; }
 .slot p { margin: 8px 0; color: #c9c0a5; font-size: 12px; }
-.slot .card-description { max-height: 56px; margin: 8px 0 0; overflow: auto; color: #c9c0a5; font: 12px/1.25 Arial, sans-serif; text-align: left; }
 .empty { color: #6e6958; background: linear-gradient(135deg, #151613, #080908); }
 .empty-mark { font-size: 45px; color: #514f42; }
 
@@ -100,6 +99,13 @@ button { cursor: pointer; }
 .quality-dot { width: 7px; height: 7px; border-radius: 50%; }
 .common { color: #ece8dc; background-color: #777873; } .uncommon { color: #1eff00; background-color: #1eff00; } .rare { color: #209eff; background-color: #209eff; } .epic { color: #c65af5; background-color: #c65af5; } .legendary { color: #ff8a19; background-color: #ff8a19; }
 .slot-topline .common, .slot-topline .uncommon, .slot-topline .rare, .slot-topline .epic, .slot-topline .legendary { background: none; }
+
+.spell-tooltip { position: fixed; z-index: 10; width: min(360px, calc(100vw - 28px)); max-height: min(520px, calc(100vh - 28px)); overflow: auto; border: 1px solid #3f4039; background: linear-gradient(135deg, #161916f8, #080909fa); box-shadow: 0 0 0 1px #050505, 0 8px 25px #000c, inset 0 0 32px #0008; padding: 13px 15px; color: #fff; pointer-events: none; font-family: Arial, sans-serif; }
+.spell-tooltip h3 { margin: 0 0 5px; color: #fff; font: 700 20px/1.1 Georgia, "Times New Roman", serif; letter-spacing: .02em; }
+.tooltip-details { display: flex; justify-content: space-between; gap: 12px; color: #fff; font-size: 16px; }
+.tooltip-rank { margin: 2px 0 8px; color: #fff; font-size: 15px; }
+.tooltip-description { margin: 0; color: #ffd900; white-space: pre-line; font: 700 17px/1.15 Georgia, "Times New Roman", serif; }
+.tooltip-footer { display: flex; justify-content: space-between; gap: 12px; margin-top: 14px; border-top: 1px solid #575642; padding-top: 8px; color: #ff7200; font-size: 14px; }
 
 @media (max-width: 900px) { .content { grid-template-columns: 1fr; } .build-area { margin-right: 0; } .collection { min-height: 470px; margin-top: 5px; border-top: 2px solid #413f31; } }
 @media (max-width: 620px) { .world { padding: 0; } .game-frame { height: 100vh; border-radius: 0; border-width: 0; } .title-bar { grid-template-columns: 48px 1fr 48px; } .tabs { overflow: auto; padding-inline: 8px; } .tab { flex: 0 0 auto; font-size: 12px; } .reset-button { flex: 0 0 auto; font-size: 12px; } .build-area { padding: 18px 12px; overflow: auto; } .build-heading { align-items: start; flex-direction: column; } .slot-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } .starter-slot-grid { max-width: 100%; } .slot { min-height: 225px; } }
