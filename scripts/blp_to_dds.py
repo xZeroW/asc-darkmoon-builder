@@ -21,17 +21,29 @@ def main() -> None:
     payload = data[offset : offset + length]
     encoding, alpha_depth, alpha_encoding = data[8:11]
 
-    if encoding == 1 and alpha_depth == 0:
+    if encoding == 1:
         palette = data[148 : 148 + 1024]
         indexes = payload[: width * height]
+        alpha_data = payload[width * height :]
         pixels = bytearray()
-        for palette_index in indexes:
+        for index, palette_index in enumerate(indexes):
             blue, green, red, _ = palette[palette_index * 4 : palette_index * 4 + 4]
-            pixels.extend((red, green, blue))
-        destination.write_bytes(f"P6\n{width} {height}\n255\n".encode() + pixels)
+            alpha = 255
+            if alpha_depth == 1:
+                alpha = 255 if alpha_data[index // 8] & (1 << (index % 8)) else 0
+            elif alpha_depth == 4:
+                value = alpha_data[index // 2]
+                alpha = ((value >> (4 * (index % 2))) & 0x0F) * 17
+            elif alpha_depth == 8:
+                alpha = alpha_data[index]
+            elif alpha_depth != 0:
+                raise SystemExit(f"Unsupported BLP alpha depth: {source}")
+            pixels.extend((red, green, blue, alpha))
+        header = f"P7\nWIDTH {width}\nHEIGHT {height}\nDEPTH 4\nMAXVAL 255\nTUPLTYPE RGB_ALPHA\nENDHDR\n"
+        destination.write_bytes(header.encode() + pixels)
         return
 
-    if encoding != 2 or alpha_encoding not in (0, 1):
+    if encoding != 2 or alpha_encoding not in (0, 1, 7):
         raise SystemExit(f"Unsupported BLP format: {source}")
 
     fourcc = b"DXT5" if alpha_depth == 8 else b"DXT1"
