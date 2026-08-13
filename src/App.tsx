@@ -1,21 +1,25 @@
-import { useState } from 'react'
-import pool from '../data/darkmoon-card-pool.json'
+import { useEffect, useState } from 'react'
+import type starterSkillPool from '../data/cards/starter_skill.json'
 
 type Category = 'starter_skill' | 'ability' | 'talent'
-type Card = (typeof pool.records)[number] & { requiredLevel?: number | null }
+type Card = (typeof starterSkillPool.records)[number] & { requiredLevel?: number | null }
 type Slot = {
   category: Category
   golden: boolean
   card: Card | null
 }
 
-const allCards: Card[] = pool.records
-
 const tabs: { category: Category; label: string; shortLabel: string }[] = [
   { category: 'starter_skill', label: 'Starter Skill Cards', shortLabel: 'Starter Skills' },
   { category: 'ability', label: 'Ability Cards', shortLabel: 'Abilities' },
   { category: 'talent', label: 'Talent Cards', shortLabel: 'Talents' },
 ]
+
+const cardLoaders: Record<Category, () => Promise<{ default: { records: Card[] } }>> = {
+  starter_skill: () => import('../data/cards/starter_skill.json'),
+  ability: () => import('../data/cards/ability.json'),
+  talent: () => import('../data/cards/talent.json'),
+}
 
 const qualityClass: Record<string, string> = {
   SKILL_CARD_COMMON: 'common',
@@ -40,7 +44,7 @@ function CardIcon({ card }: { card: Card }) {
   const initials = card.name.replace(/[^a-zA-Z]/g, '').slice(0, 2).toUpperCase()
   const iconUrl = card.iconUrl ? `${import.meta.env.BASE_URL}${card.iconUrl}` : undefined
   return <span className={`card-icon ${qualityClass[card.quality] ?? 'common'}`}>
-    {iconUrl && <img src={iconUrl} alt="" onError={(event) => { event.currentTarget.style.display = 'none' }} />}
+    {iconUrl && <img src={iconUrl} alt="" loading="lazy" decoding="async" onError={(event) => { event.currentTarget.style.display = 'none' }} />}
     <span>{initials}</span>
   </span>
 }
@@ -49,10 +53,22 @@ function App() {
   const [activeTab, setActiveTab] = useState<Category>('starter_skill')
   const [slots, setSlots] = useState<Slot[]>(makeSlots)
   const [search, setSearch] = useState('')
+  const [cardsByCategory, setCardsByCategory] = useState<Partial<Record<Category, Card[]>>>({})
+
+  useEffect(() => {
+    if (cardsByCategory[activeTab]) return
+    let cancelled = false
+    void cardLoaders[activeTab]().then(({ default: pool }) => {
+      if (!cancelled) {
+        setCardsByCategory((current) => ({ ...current, [activeTab]: pool.records }))
+      }
+    })
+    return () => { cancelled = true }
+  }, [activeTab, cardsByCategory])
 
   const visibleSlots = slots.filter((slot) => slot.category === activeTab)
-  const filteredCards = allCards.filter(
-    (card) => card.category === activeTab && card.name.toLowerCase().includes(search.toLowerCase()),
+  const filteredCards = (cardsByCategory[activeTab] ?? []).filter(
+    (card) => card.name.toLowerCase().includes(search.toLowerCase()),
   )
 
   function removeCard(slotIndex: number) {

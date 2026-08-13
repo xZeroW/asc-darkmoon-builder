@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "npm run prepare:data && tsc -b && vite build",
+    "prepare:data": "node scripts/split-runtime-pool.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
