@@ -157,7 +157,7 @@ function App() {
           <button className="reset-button" onClick={reset}>Reset build</button>
           <div className="top-search">
             <span aria-hidden="true">⌕</span>
-            <input placeholder="Search" value={search} onChange={(event) => setSearch(event.target.value)} />
+            <input placeholder="Search" value={search} onFocus={() => setTooltip(null)} onChange={(event) => { setTooltip(null); setSearch(event.target.value) }} />
             <button onClick={() => setSearch('')} aria-label="Clear search">×</button>
           </div>
         </div>
