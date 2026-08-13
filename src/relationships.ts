@@ -32,6 +32,14 @@ function getEvidence(text: string, name: string) {
   return text.split(/(?<=[.!?])\s+|\n+/).map((line) => line.trim()).find((line) => pattern.test(line))
 }
 
+function getModifierMechanics(card: RelationshipCard) {
+  const mechanics = new Set<string>()
+  for (const match of getText(card).matchAll(/This uses ([^\n.]+?) modifiers/gi)) {
+    mechanics.add(match[1].trim())
+  }
+  return [...mechanics]
+}
+
 // Relationships are inferred from exact card-name references in the game tooltip text.
 // Each result includes the source sentence so players can review why it was linked.
 export function discoverRelationships(cards: RelationshipCard[]) {
@@ -56,13 +64,19 @@ export function discoverRelationships(cards: RelationshipCard[]) {
 // cards whose game text explicitly modifies a selected card.
 export function discoverSuggestions(selectedCards: RelationshipCard[], candidates: RelationshipCard[]) {
   const selectedIds = new Set(selectedCards.map((card) => card.cardId))
+  const selectedMechanics = new Map(selectedCards.map((card) => [card.cardId, getModifierMechanics(card)]))
   const suggestions = new Map<number, string[]>()
   for (const candidate of candidates) {
     if (selectedIds.has(candidate.cardId) || candidate.name.length < 4) continue
-    const sources = selectedCards.filter((selected) =>
-      hasReference(getText(selected), candidate.name)
-      || hasReference(getText(candidate), selected.name),
-    ).map((selected) => selected.name)
+    const candidateText = getText(candidate)
+    const sources = selectedCards.flatMap((selected) => {
+      if (hasReference(getText(selected), candidate.name) || hasReference(candidateText, selected.name)) {
+        return [selected.name]
+      }
+      return (selectedMechanics.get(selected.cardId) ?? [])
+        .filter((mechanic) => hasReference(candidateText, mechanic))
+        .map((mechanic) => `${selected.name} (${mechanic} modifiers)`)
+    })
     if (sources.length) suggestions.set(candidate.cardId, sources)
   }
   return suggestions
