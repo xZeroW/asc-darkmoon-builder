@@ -17,7 +17,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907380,
+      "tooltipLines": [
+        {
+          "left": "Aether Smash"
+        },
+        {
+          "left": "20 Rage"
+        },
+        {
+          "left": "Instant",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "Blasts nearby enemies dealing 10 Spellstrike damage and increasing the time between their attacks by 10% for 10 sec. This ability causes additional threat.\n\nThis uses Thunder Clap modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907380"
+        },
+        {
+          "left": "CharacterAdvancement ID 50069"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -37,7 +65,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 903000,
+      "tooltipLines": [
+        {
+          "left": "Aether Strike"
+        },
+        {
+          "left": "45 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "An instant arcane-infused strike that causes 3 Spellstrike damage in addition to 65% of your normal weapon damage (55% if a two-handed weapon is equipped). Awards 1 combo point.\n\nThis uses Sinister Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 903000"
+        },
+        {
+          "left": "CharacterAdvancement ID 43000"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -57,7 +113,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 913402,
+      "tooltipLines": [
+        {
+          "left": "Aetherpierce"
+        },
+        {
+          "left": "50 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Daggers"
+        },
+        {
+          "left": "Pierce the target, causing 100% weapon damage as Spellstrike plus 7 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.\n\nThis uses Backstab modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 913402"
+        },
+        {
+          "left": "CharacterAdvancement ID 138119"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -77,7 +164,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904840,
+      "tooltipLines": [
+        {
+          "left": "Arcane Finish"
+        },
+        {
+          "left": "35 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "Finishing move that causes Spellstrike damage per combo point:\n   1 point  : 6-8 Spellstrike damage\n   2 points: 10-12 Spellstrike damage\n   3 points: 15-17 Spellstrike damage\n   4 points: 21-23 Spellstrike damage\n   5 points: 28-30 Spellstrike damage\n\nThis uses Eviscerate modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904840"
+        },
+        {
+          "left": "CharacterAdvancement ID 50042"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -97,7 +215,35 @@
       "quality": "SKILL_CARD_UNCOMMON",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 1459,
+      "tooltipLines": [
+        {
+          "left": "Arcane Intellect"
+        },
+        {
+          "left": "25 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "Instant cast"
+        },
+        {
+          "left": "Increases the target's Intellect by 2 and spell power by 2 for 30 min.\n\nDoes not stack with other similar effects."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 1459"
+        },
+        {
+          "left": "CharacterAdvancement ID 40094"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -117,7 +263,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 5143,
+      "tooltipLines": [
+        {
+          "left": "Arcane Missiles"
+        },
+        {
+          "left": "25 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "Channeled"
+        },
+        {
+          "left": "Launches Arcane Missiles at the enemy, causing 17 Arcane damage every 0.91 sec for 2.73 sec."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 5143"
+        },
+        {
+          "left": "CharacterAdvancement ID 40164"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -137,7 +311,39 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 3044,
+      "tooltipLines": [
+        {
+          "left": "Arcane Shot"
+        },
+        {
+          "left": "4 Mana",
+          "right": "5-35 yd range"
+        },
+        {
+          "left": "Attack speed",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "Requires Ranged Weapon"
+        },
+        {
+          "left": "An instant shot that causes 12 Arcane damage."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 3044"
+        },
+        {
+          "left": "CharacterAdvancement ID 40158"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -157,7 +363,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 903100,
+      "tooltipLines": [
+        {
+          "left": "Arcane Slam"
+        },
+        {
+          "left": "15 Rage",
+          "right": "Melee Range"
+        },
+        {
+          "left": "1.5 sec cast"
+        },
+        {
+          "left": "Slams the opponent with arcane force, causing 65% weapon damage plus 6 Spellstrike damage.\n\nThis uses Slam modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 903100"
+        },
+        {
+          "left": "CharacterAdvancement ID 43010"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -177,7 +411,37 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907140,
+      "tooltipLines": [
+        {
+          "left": "Arcane Slash"
+        },
+        {
+          "left": "15 Rage"
+        },
+        {
+          "left": "Next melee"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 11 as Spellstrike damage and causes a high amount of threat.\n\nThis uses Heroic Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907140"
+        },
+        {
+          "left": "CharacterAdvancement ID 50057"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -197,7 +461,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 912081,
+      "tooltipLines": [
+        {
+          "left": "Arcane Swipe (Bear)"
+        },
+        {
+          "left": "20 Rage",
+          "right": "8 yd range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Bear Form, Dire Bear Form"
+        },
+        {
+          "left": "Swipe nearby enemies, inflicting 12 Spellstrike damage plus 1 Spellstrike damage.\n\nThis uses Swipe modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 912081"
+        },
+        {
+          "left": "CharacterAdvancement ID 138059"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -217,7 +512,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 912080,
+      "tooltipLines": [
+        {
+          "left": "Arcane Swipe (Cat)"
+        },
+        {
+          "left": "50 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Cat Form"
+        },
+        {
+          "left": "Swipe nearby enemies, inflicting 90% weapon damage as Spellstrike.\n\nThis uses Swipe modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 912080"
+        },
+        {
+          "left": "CharacterAdvancement ID 138058"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -237,7 +563,32 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 13165,
+      "tooltipLines": [
+        {
+          "left": "Aspect of the Hawk"
+        },
+        {
+          "left": "Instant",
+          "right": "1 sec cooldown"
+        },
+        {
+          "left": "The hunter takes on the aspects of a hawk, increasing ranged attack power by 11.  \n\nOnly one Aspect can be active at a time."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 13165"
+        },
+        {
+          "left": "CharacterAdvancement ID 42054"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -257,7 +608,31 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 965202,
+      "tooltipLines": [
+        {
+          "left": "Auto shot"
+        },
+        {
+          "left": "5-35 yd range"
+        },
+        {
+          "left": "Automatically shoots the target until cancelled. Increases your ranged Attack Speed by 33% and scales with Ranged Attack Power."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 965202"
+        },
+        {
+          "left": "CharacterAdvancement ID 40309"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -277,7 +652,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 53,
+      "tooltipLines": [
+        {
+          "left": "Backstab"
+        },
+        {
+          "left": "50 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Daggers"
+        },
+        {
+          "left": "Backstab the target, causing 150% weapon damage plus 10 to the target. Must be behind the target.  Requires a dagger in the main hand. Awards 1 combo point."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 53"
+        },
+        {
+          "left": "CharacterAdvancement ID 40003"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -297,7 +703,34 @@
       "quality": "SKILL_CARD_UNCOMMON",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 6673,
+      "tooltipLines": [
+        {
+          "left": "Battle Shout"
+        },
+        {
+          "left": "10 Rage"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Increases the Strength and Agility of all raid and party members within 30 yards by 2. Lasts 30 min.\n\nDoes not stack with other similar effects.\n\nThis ability is usable while shapeshifted."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 6673"
+        },
+        {
+          "left": "CharacterAdvancement ID 42087"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -317,7 +750,32 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 2457,
+      "tooltipLines": [
+        {
+          "left": "Battle Stance"
+        },
+        {
+          "left": "Instant",
+          "right": "1 sec cooldown"
+        },
+        {
+          "left": "A balanced combat stance that increases the armor penetration of all of physical attacks by 10%."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 2457"
+        },
+        {
+          "left": "CharacterAdvancement ID 42077"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -337,7 +795,34 @@
       "quality": "SKILL_CARD_EPIC",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 5487,
+      "tooltipLines": [
+        {
+          "left": "Bear Form"
+        },
+        {
+          "left": "28 Mana"
+        },
+        {
+          "left": "Instant cast"
+        },
+        {
+          "left": "Shapeshift into Bear Form.\n\nIncreasing melee attack power by 30, armor contribution from cloth and leather items by 65%, and Stamina by 15%. \n\nTeaches you Growl."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 5487"
+        },
+        {
+          "left": "CharacterAdvancement ID 42083"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -357,7 +842,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 913120,
+      "tooltipLines": [
+        {
+          "left": "Blazing Bloodstrike"
+        },
+        {
+          "left": "1 Blood",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "Instantly strike the enemy, causing 25% weapon damage as Firestrike plus 8, total damage increased by 12.5% for each of your diseases on the target.\n\nThis uses Blood Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 913120"
+        },
+        {
+          "left": "CharacterAdvancement ID 138072"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -377,7 +893,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904900,
+      "tooltipLines": [
+        {
+          "left": "Blazing Finish"
+        },
+        {
+          "left": "35 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "Finishing move that causes Firestrike damage per combo point:\n   1 point  : 6-8 Firestrike damage\n   2 points: 10-12 Firestrike damage\n   3 points: 15-17 Firestrike damage\n   4 points: 21-23 Firestrike damage\n   5 points: 28-30 Firestrike damage\n\nThis uses Eviscerate modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904900"
+        },
+        {
+          "left": "CharacterAdvancement ID 50045"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -397,7 +944,35 @@
       "quality": "SKILL_CARD_UNCOMMON",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 19740,
+      "tooltipLines": [
+        {
+          "left": "Blessing of Might"
+        },
+        {
+          "left": "4 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "Instant cast"
+        },
+        {
+          "left": "Places a Blessing on the friendly target, increasing their Strength and Agility by 2 for 30 min.\n\nDoes not stack with other similar effects."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 19740"
+        },
+        {
+          "left": "CharacterAdvancement ID 42098"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -417,7 +992,35 @@
       "quality": "SKILL_CARD_UNCOMMON",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 19742,
+      "tooltipLines": [
+        {
+          "left": "Blessing of Wisdom"
+        },
+        {
+          "left": "4 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "Instant cast"
+        },
+        {
+          "left": "Places a Blessing on the friendly target, restoring 10 mana every 5 seconds for 30 min.\n\nDoes not stack with other similar effects."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 19742"
+        },
+        {
+          "left": "CharacterAdvancement ID 42099"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -437,7 +1040,35 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 48266,
+      "tooltipLines": [
+        {
+          "left": "Blood Presence"
+        },
+        {
+          "left": "1 Blood"
+        },
+        {
+          "left": "Instant",
+          "right": "1 sec cooldown"
+        },
+        {
+          "left": "Strengthens you with the presence of blood, increasing damage by 2% and heals you for 2% of your damage dealt.\n\nOnly one Presence may be active at a time.\n\nHeals up to a maximum of 5% of your health per hit."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 48266"
+        },
+        {
+          "left": "CharacterAdvancement ID 41932"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -457,7 +1088,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 45902,
+      "tooltipLines": [
+        {
+          "left": "Blood Strike"
+        },
+        {
+          "left": "1 Blood",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "Instantly strike the enemy, causing 40% weapon damage plus 12, total damage increased by 12.5% for each of your diseases on the target."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 45902"
+        },
+        {
+          "left": "CharacterAdvancement ID 41924"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -477,7 +1139,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904100,
+      "tooltipLines": [
+        {
+          "left": "Boltripper"
+        },
+        {
+          "left": "30 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Cat Form"
+        },
+        {
+          "left": "Finishing move that causes Stormstrike damage over time.  Damage increases per combo point:\n   1 point  : 17 Stormstrike damage over 12 sec\n   2 points: 27 Stormstrike damage over 12 sec\n   3 points: 38 Stormstrike damage over 12 sec\n   4 points: 48 Stormstrike damage over 12 sec\n   5 points: 59 Stormstrike damage over 12 sec\n\nThis uses Rip modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904100"
+        },
+        {
+          "left": "CharacterAdvancement ID 50005"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -497,7 +1190,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 913168,
+      "tooltipLines": [
+        {
+          "left": "Brilliant Bloodstrike"
+        },
+        {
+          "left": "1 Blood",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "Instantly strike the enemy, causing 25% weapon damage as Holystrike plus 8, total damage increased by 12.5% for each of your diseases on the target.\n\nThis uses Blood Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 913168"
+        },
+        {
+          "left": "CharacterAdvancement ID 138076"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -517,7 +1241,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907906,
+      "tooltipLines": [
+        {
+          "left": "Brilliant Slam"
+        },
+        {
+          "left": "15 Rage",
+          "right": "Melee Range"
+        },
+        {
+          "left": "1.5 sec cast"
+        },
+        {
+          "left": "Slams the opponent with holy force, causing 65% weapon damage plus 6 Holystrike damage.\n\nThis uses Slam modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907906"
+        },
+        {
+          "left": "CharacterAdvancement ID 43033"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -537,7 +1289,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 903120,
+      "tooltipLines": [
+        {
+          "left": "Burning Slam"
+        },
+        {
+          "left": "15 Rage",
+          "right": "Melee Range"
+        },
+        {
+          "left": "1.5 sec cast"
+        },
+        {
+          "left": "Slams the opponent with fire force, causing 65% weapon damage plus 6 Firestrike damage.\n\nThis uses Slam modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 903120"
+        },
+        {
+          "left": "CharacterAdvancement ID 43012"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -557,7 +1337,34 @@
       "quality": "SKILL_CARD_EPIC",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 768,
+      "tooltipLines": [
+        {
+          "left": "Cat Form"
+        },
+        {
+          "left": "28 Mana"
+        },
+        {
+          "left": "Instant cast"
+        },
+        {
+          "left": "Shapeshift into cat form, increasing melee attack power by 1 plus 25% of Agility. Allows the use of various cat abilities."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 768"
+        },
+        {
+          "left": "CharacterAdvancement ID 42073"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -577,7 +1384,35 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 271205,
+      "tooltipLines": [
+        {
+          "left": "Cauterizing Fire"
+        },
+        {
+          "left": "15 Mana",
+          "right": "35 yd range"
+        },
+        {
+          "left": "1.36 sec cast"
+        },
+        {
+          "left": "Requires  Path of Healing\nHurls a fiery ball that deals 14 to 22 Fire damage and an additional 2 Fire damage over 8 sec to enemies or 21 to 27 Radiant healing and an additional 4 Radiant healing over 8 sec to allies.\n\nThis uses Fireball modifiers. Immunity spells prevent this healing, and this effect does not benefit from range-increasing effects."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 271205"
+        },
+        {
+          "left": "CharacterAdvancement ID 36459"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -597,7 +1432,35 @@
       "quality": "SKILL_CARD_EPIC",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 100,
+      "tooltipLines": [
+        {
+          "left": "Charge"
+        },
+        {
+          "left": "8-25 yd range"
+        },
+        {
+          "left": "Instant",
+          "right": "16 sec cooldown"
+        },
+        {
+          "left": "Charge an enemy, generate 12 rage, and root it for 1.50 sec.\n\nThis ability is usable while shapeshifted."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 100"
+        },
+        {
+          "left": "CharacterAdvancement ID 42038"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -617,7 +1480,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 903024,
+      "tooltipLines": [
+        {
+          "left": "Cinder Strike"
+        },
+        {
+          "left": "45 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "An instant fire-infused strike that causes 3 Firestrike damage in addition to 65% of your normal weapon damage (55% if a two-handed weapon is equipped). Awards 1 combo point.\n\nThis uses Sinister Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 903024"
+        },
+        {
+          "left": "CharacterAdvancement ID 43002"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -637,7 +1528,31 @@
       "quality": "SKILL_CARD_UNCOMMON",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 19746,
+      "tooltipLines": [
+        {
+          "left": "Concentration Aura"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "All party or raid members within 40 yards lose 35% less casting or channeling time when damaged.  \nPlayers may only have one Aura on them per Paladin at any one time."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 19746"
+        },
+        {
+          "left": "CharacterAdvancement ID 42055"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -657,7 +1572,34 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 587,
+      "tooltipLines": [
+        {
+          "left": "Conjure Food"
+        },
+        {
+          "left": "32 Mana"
+        },
+        {
+          "left": "2.73 sec cast"
+        },
+        {
+          "left": "Conjures 10 muffins, providing the mage and her allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 587"
+        },
+        {
+          "left": "CharacterAdvancement ID 40040"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -677,7 +1619,34 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 5504,
+      "tooltipLines": [
+        {
+          "left": "Conjure Water"
+        },
+        {
+          "left": "32 Mana"
+        },
+        {
+          "left": "2.73 sec cast"
+        },
+        {
+          "left": "Conjures 10 bottles of water, providing the mage and her allies with something to drink.\n\nConjured items disappear if logged out for more than 15 minutes."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 5504"
+        },
+        {
+          "left": "CharacterAdvancement ID 40178"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -697,7 +1666,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 26573,
+      "tooltipLines": [
+        {
+          "left": "Consecration"
+        },
+        {
+          "left": "17 Mana"
+        },
+        {
+          "left": "Instant cast",
+          "right": "8 sec cooldown"
+        },
+        {
+          "left": "Consecrates the land beneath the Paladin, doing 36 Holy damage over 8 sec to enemies who enter the area."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 26573"
+        },
+        {
+          "left": "CharacterAdvancement ID 40247"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -717,7 +1714,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 172,
+      "tooltipLines": [
+        {
+          "left": "Corruption"
+        },
+        {
+          "left": "11 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "Instant cast"
+        },
+        {
+          "left": "Corrupts the target, causing 28 Shadow damage over 12 sec."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 172"
+        },
+        {
+          "left": "CharacterAdvancement ID 40019"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -737,7 +1762,36 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 35395,
+      "tooltipLines": [
+        {
+          "left": "Crusader Strike"
+        },
+        {
+          "left": "4 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "4 sec cooldown"
+        },
+        {
+          "left": "An instant strike that causes 75% weapon damage."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 35395"
+        },
+        {
+          "left": "CharacterAdvancement ID 40848"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -757,7 +1811,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 980,
+      "tooltipLines": [
+        {
+          "left": "Curse of Agony"
+        },
+        {
+          "left": "8 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "Instant cast"
+        },
+        {
+          "left": "Curses the target with agony, causing 36 Shadow damage over 24 sec.  This damage is dealt slowly at first, and builds up as the Curse reaches its full duration. Only one Curse per Warlock can be active on any one target."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 980"
+        },
+        {
+          "left": "CharacterAdvancement ID 40074"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -777,7 +1859,35 @@
       "quality": "SKILL_CARD_UNCOMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 702,
+      "tooltipLines": [
+        {
+          "left": "Curse of Weakness"
+        },
+        {
+          "left": "8 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "Instant cast"
+        },
+        {
+          "left": "Target's attack power is reduced by 21 and armor is reduced by 5% for 2 min. Only one Curse per Warlock can be active on any one target.\n\nDoes not stack with other similar effects."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 702"
+        },
+        {
+          "left": "CharacterAdvancement ID 40056"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -797,7 +1907,37 @@
       "quality": "SKILL_CARD_EPIC",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 275585,
+      "tooltipLines": [
+        {
+          "left": "Dark Apotheosis"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Your threat generated is significantly increased.\n\nTeaches you Challenging Howl and Demon Claws.\n\nDark Apotheosis cannot cower behind a shield. Shields cannot be equipped while transformed."
+        },
+        {
+          "left": "Demon Claws\n15 Rage\nRequires  Dark Apotheosis\nStrike twice, dealing 9 Physical damage per strike."
+        },
+        {
+          "left": "Challenging Howl\n30 yd range\n8 sec cooldown\nTaunts the target to attack you, but has no effect if the target is already attacking you.\n\nShares a cooldown with other single target taunt abilities and Distracting Shot. Can only be cast while in Dark Apotheosis.\n\nThis spell cannot miss and is automatically learned and unlearned with Dark Apotheosis."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 275585"
+        },
+        {
+          "left": "CharacterAdvancement ID 38634"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -817,7 +1957,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907420,
+      "tooltipLines": [
+        {
+          "left": "Dawn Smash"
+        },
+        {
+          "left": "20 Rage"
+        },
+        {
+          "left": "Instant",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "Blasts nearby enemies dealing 10 Holystrike damage and increasing the time between their attacks by 10% for 10 sec. This ability causes additional threat.\n\nThis uses Thunder Clap modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907420"
+        },
+        {
+          "left": "CharacterAdvancement ID 50071"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -837,7 +2005,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907894,
+      "tooltipLines": [
+        {
+          "left": "Dawn Strike"
+        },
+        {
+          "left": "45 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "An instant holy-infused strike that causes 3 Holystrike damage in addition to 65% of your normal weapon damage (55% if a two-handed weapon is equipped). Awards 1 combo point.\n\nThis uses Sinister Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907894"
+        },
+        {
+          "left": "CharacterAdvancement ID 43032"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -857,7 +2053,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 913390,
+      "tooltipLines": [
+        {
+          "left": "Dawnpierce"
+        },
+        {
+          "left": "50 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Daggers"
+        },
+        {
+          "left": "Pierce the target, causing 100% weapon damage as Holystrike plus 7 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.\n\nThis uses Backstab modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 913390"
+        },
+        {
+          "left": "CharacterAdvancement ID 138118"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -877,7 +2104,36 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 903158,
+      "tooltipLines": [
+        {
+          "left": "Dawnreaver"
+        },
+        {
+          "left": "4 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "4 sec cooldown"
+        },
+        {
+          "left": "An instant holy strike that causes 50% weapon damage as Holystrike damage.\n\nThis uses Crusader Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 903158"
+        },
+        {
+          "left": "CharacterAdvancement ID 43016"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -897,7 +2153,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904040,
+      "tooltipLines": [
+        {
+          "left": "Dawnripper"
+        },
+        {
+          "left": "30 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Cat Form"
+        },
+        {
+          "left": "Finishing move that causes Holystrike damage over time.  Damage increases per combo point:\n   1 point  : 17 Holystrike damage over 12 sec\n   2 points: 27 Holystrike damage over 12 sec\n   3 points: 38 Holystrike damage over 12 sec\n   4 points: 48 Holystrike damage over 12 sec\n   5 points: 59 Holystrike damage over 12 sec\n\nThis uses Rip modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904040"
+        },
+        {
+          "left": "CharacterAdvancement ID 50002"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -917,7 +2204,32 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 71,
+      "tooltipLines": [
+        {
+          "left": "Defensive Stance"
+        },
+        {
+          "left": "Instant",
+          "right": "1 sec cooldown"
+        },
+        {
+          "left": "Significantly Increases your threat generation.\n\nIncreases your armor by 10% and decreases damage taken by 10%.\n\nYour damage and healing done is decreased by 5%. \n\nTeaches you Taunt."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 71"
+        },
+        {
+          "left": "CharacterAdvancement ID 42069"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -937,7 +2249,35 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 687,
+      "tooltipLines": [
+        {
+          "left": "Demon Skin"
+        },
+        {
+          "left": "25 Mana"
+        },
+        {
+          "left": "Instant cast",
+          "right": "1 sec cooldown"
+        },
+        {
+          "left": "Protects the caster, increasing armor by 54, and healing received by 5%.\n\nDoes not stack with other similar effects. \n\nLasts until cancelled."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 687"
+        },
+        {
+          "left": "CharacterAdvancement ID 42042"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -957,7 +2297,31 @@
       "quality": "SKILL_CARD_UNCOMMON",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 465,
+      "tooltipLines": [
+        {
+          "left": "Devotion Aura"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Gives 40 additional armor to party and raid members within 40 yards.  \n\nPlayers may only have one Aura on them per Paladin at any one time."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 465"
+        },
+        {
+          "left": "CharacterAdvancement ID 42040"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -977,7 +2341,35 @@
       "quality": "SKILL_CARD_EPIC",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 891,
+      "tooltipLines": [
+        {
+          "left": "Dominate Undead"
+        },
+        {
+          "left": "38 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "Channeled"
+        },
+        {
+          "left": "Teaches you the necessary abilities to Dominate an Undead companion.\n\nTeaches you Dominate Undead, Raise Undead, Dismiss Undead, Revive Undead and Undead Lore.\n\n\n Dominate Undead\nBegins dominating an undead to be your companion. \n\nYour armor is reduced by 100% while you focus on dominating the undead for 20 sec. \n\nIf you lose the undead's attention for any reason, the domination process will fail. Each type of undead has unique abilities that you will be able to make use of."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 891"
+        },
+        {
+          "left": "CharacterAdvancement ID 41916"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -997,7 +2389,36 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904520,
+      "tooltipLines": [
+        {
+          "left": "Dragonhawk Bite"
+        },
+        {
+          "left": "2 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "5 sec cooldown"
+        },
+        {
+          "left": "Attack the enemy for 13 Holystrike damage.\n\nThis uses Mongoose Bite modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904520"
+        },
+        {
+          "left": "CharacterAdvancement ID 50026"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1017,7 +2438,37 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904380,
+      "tooltipLines": [
+        {
+          "left": "Dusk Maul"
+        },
+        {
+          "left": "15 Rage"
+        },
+        {
+          "left": "Next melee"
+        },
+        {
+          "left": "Requires Bear Form, Dire Bear Form"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 18 as Shadowstrike damage and causes a high amount of threat. Effects which increase bleed effects also increase Maul damage.\n\nThis uses Maul modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904380"
+        },
+        {
+          "left": "CharacterAdvancement ID 50019"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1037,7 +2488,36 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 903166,
+      "tooltipLines": [
+        {
+          "left": "Duskreaver"
+        },
+        {
+          "left": "4 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "4 sec cooldown"
+        },
+        {
+          "left": "An instant shadow strike that causes 50% weapon damage as Shadowstrike damage.\n\nThis uses Crusader Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 903166"
+        },
+        {
+          "left": "CharacterAdvancement ID 43017"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1057,7 +2537,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904020,
+      "tooltipLines": [
+        {
+          "left": "Duskripper"
+        },
+        {
+          "left": "30 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Cat Form"
+        },
+        {
+          "left": "Finishing move that causes Shadowstrike damage over time.  Damage increases per combo point:\n   1 point  : 17 Shadowstrike damage over 12 sec\n   2 points: 27 Shadowstrike damage over 12 sec\n   3 points: 38 Shadowstrike damage over 12 sec\n   4 points: 48 Shadowstrike damage over 12 sec\n   5 points: 59 Shadowstrike damage over 12 sec\n\nThis uses Rip modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904020"
+        },
+        {
+          "left": "CharacterAdvancement ID 50001"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1077,7 +2588,36 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 8042,
+      "tooltipLines": [
+        {
+          "left": "Earth Shock"
+        },
+        {
+          "left": "12 Mana",
+          "right": "25 yd range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "Instantly shocks the target with concussive force, causing 13 to 15 Nature damage and reducing melee attack speed by 10% for 8 sec.\n\nDoes not stack with other similar effects.\n\nThis ability shares a cooldown with Shaman Shock spells."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 8042"
+        },
+        {
+          "left": "CharacterAdvancement ID 40201"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1097,7 +2637,35 @@
       "quality": "SKILL_CARD_EPIC",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 890,
+      "tooltipLines": [
+        {
+          "left": "Enslave Demon"
+        },
+        {
+          "left": "38 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "Channeled"
+        },
+        {
+          "left": "Teaches you the necessary abilities to Enslave a Demon companion.\n\nTeaches you Enslave Demon, Summon Demon, Dismiss Demon, Revive Demon and Demon Lore.\n\n\n Enslave Demon\nBegins enslaving a demon to be your companion. \n\nYour armor is reduced by 100% while you focus on taming the demon for 20 sec. \n\nIf you lose the demon's attention for any reason, the enslaving process will fail. Each type of demon has unique abilities that you will be able to make use of."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 890"
+        },
+        {
+          "left": "CharacterAdvancement ID 41963"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1117,7 +2685,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 2098,
+      "tooltipLines": [
+        {
+          "left": "Eviscerate"
+        },
+        {
+          "left": "35 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "Finishing move that causes damage per combo point:\n   1 point  : 7-11 damage\n   2 points: 14-18 damage\n   3 points: 21-25 damage\n   4 points: 28-32 damage\n   5 points: 37-41 damage"
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 2098"
+        },
+        {
+          "left": "CharacterAdvancement ID 40132"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1137,7 +2736,36 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 2136,
+      "tooltipLines": [
+        {
+          "left": "Fire Blast"
+        },
+        {
+          "left": "13 Mana",
+          "right": "20 yd range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "8 sec cooldown"
+        },
+        {
+          "left": "Blasts the enemy for 19 to 23 Fire damage."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 2136"
+        },
+        {
+          "left": "CharacterAdvancement ID 40134"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1157,7 +2785,37 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907200,
+      "tooltipLines": [
+        {
+          "left": "Fire Slash"
+        },
+        {
+          "left": "15 Rage"
+        },
+        {
+          "left": "Next melee"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 11 as Firestrike damage and causes a high amount of threat.\n\nThis uses Heroic Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907200"
+        },
+        {
+          "left": "CharacterAdvancement ID 50060"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1177,7 +2835,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 911981,
+      "tooltipLines": [
+        {
+          "left": "Fire Swipe (Bear)"
+        },
+        {
+          "left": "20 Rage",
+          "right": "8 yd range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Bear Form, Dire Bear Form"
+        },
+        {
+          "left": "Swipe nearby enemies, inflicting 12 Firestrike damage plus 1 Firestrike damage.\n\nThis uses Swipe modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 911981"
+        },
+        {
+          "left": "CharacterAdvancement ID 138049"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1197,7 +2886,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 911980,
+      "tooltipLines": [
+        {
+          "left": "Fire Swipe (Cat)"
+        },
+        {
+          "left": "50 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Cat Form"
+        },
+        {
+          "left": "Swipe nearby enemies, inflicting 90% weapon damage as Firestrike.\n\nThis uses Swipe modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 911980"
+        },
+        {
+          "left": "CharacterAdvancement ID 138048"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1217,7 +2937,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 133,
+      "tooltipLines": [
+        {
+          "left": "Fireball"
+        },
+        {
+          "left": "15 Mana",
+          "right": "35 yd range"
+        },
+        {
+          "left": "1.36 sec cast"
+        },
+        {
+          "left": "Hurls a fiery ball that causes 14 to 22 Fire damage and an additional 2 Fire damage over 4 sec."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 133"
+        },
+        {
+          "left": "CharacterAdvancement ID 40016"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1237,7 +2985,37 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904420,
+      "tooltipLines": [
+        {
+          "left": "Flame Maul"
+        },
+        {
+          "left": "15 Rage"
+        },
+        {
+          "left": "Next melee"
+        },
+        {
+          "left": "Requires Bear Form, Dire Bear Form"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 18 as Firestrike damage and causes a high amount of threat. Effects which increase bleed effects also increase Maul damage.\n\nThis uses Maul modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904420"
+        },
+        {
+          "left": "CharacterAdvancement ID 50021"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1257,7 +3035,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904660,
+      "tooltipLines": [
+        {
+          "left": "Flame Talon"
+        },
+        {
+          "left": "3 Mana"
+        },
+        {
+          "left": "Next melee",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 5 as Firestrike damage.\n\nThis uses Raptor Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904660"
+        },
+        {
+          "left": "CharacterAdvancement ID 50033"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1277,7 +3083,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 913342,
+      "tooltipLines": [
+        {
+          "left": "Flamepierce"
+        },
+        {
+          "left": "50 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Daggers"
+        },
+        {
+          "left": "Pierce the target, causing 100% weapon damage as Firestrike plus 7 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.\n\nThis uses Backstab modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 913342"
+        },
+        {
+          "left": "CharacterAdvancement ID 138114"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1297,7 +3134,36 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907860,
+      "tooltipLines": [
+        {
+          "left": "Flamereaver"
+        },
+        {
+          "left": "4 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "4 sec cooldown"
+        },
+        {
+          "left": "An instant fire strike that causes 50% weapon damage as Firestrike damage.\n\nThis uses Crusader Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907860"
+        },
+        {
+          "left": "CharacterAdvancement ID 43026"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1317,7 +3183,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904060,
+      "tooltipLines": [
+        {
+          "left": "Flameripper"
+        },
+        {
+          "left": "30 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Cat Form"
+        },
+        {
+          "left": "Finishing move that causes Firestrike damage over time.  Damage increases per combo point:\n   1 point  : 17 Firestrike damage over 12 sec\n   2 points: 27 Firestrike damage over 12 sec\n   3 points: 38 Firestrike damage over 12 sec\n   4 points: 48 Firestrike damage over 12 sec\n   5 points: 59 Firestrike damage over 12 sec\n\nThis uses Rip modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904060"
+        },
+        {
+          "left": "CharacterAdvancement ID 50003"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1337,7 +3234,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 903076,
+      "tooltipLines": [
+        {
+          "left": "Flare Shot"
+        },
+        {
+          "left": "4 Mana",
+          "right": "5-35 yd range"
+        },
+        {
+          "left": "1.82 sec cast"
+        },
+        {
+          "left": "Requires Ranged Weapon"
+        },
+        {
+          "left": "A steady shot wreathed in cinders that causes 50% weapon damage as Firestrike damage and deals 6 additional Firestrike damage. Causes an additional 5 Firestrike damage to slowed targets.\n\nThis uses Steady Shot modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 903076"
+        },
+        {
+          "left": "CharacterAdvancement ID 43007"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1357,7 +3285,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 913132,
+      "tooltipLines": [
+        {
+          "left": "Freezing Bloodstrike"
+        },
+        {
+          "left": "1 Blood",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "Instantly strike the enemy, causing 25% weapon damage as Rimestrike plus 8, total damage increased by 12.5% for each of your diseases on the target.\n\nThis uses Blood Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 913132"
+        },
+        {
+          "left": "CharacterAdvancement ID 138073"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1377,7 +3336,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904920,
+      "tooltipLines": [
+        {
+          "left": "Freezing Finish"
+        },
+        {
+          "left": "35 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "Finishing move that causes Froststrike damage per combo point:\n   1 point  : 6-8 Froststrike damage\n   2 points: 10-12 Froststrike damage\n   3 points: 15-17 Froststrike damage\n   4 points: 21-23 Froststrike damage\n   5 points: 28-30 Froststrike damage\n\nThis uses Eviscerate modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904920"
+        },
+        {
+          "left": "CharacterAdvancement ID 50046"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1397,7 +3387,35 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 168,
+      "tooltipLines": [
+        {
+          "left": "Frost Armor"
+        },
+        {
+          "left": "19 Mana"
+        },
+        {
+          "left": "Instant cast",
+          "right": "1 sec cooldown"
+        },
+        {
+          "left": "Increases Armor by 36.\n\nIf an enemy strikes the caster, they may have their movement slowed by 15% and the time between their attacks increased by 20% for 5 sec. \nLasts until cancelled.\n\nDoes not stack with other similar effects. Only one type of Mage armor spell can be active at any time."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 168"
+        },
+        {
+          "left": "CharacterAdvancement ID 42039"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1417,7 +3435,37 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904440,
+      "tooltipLines": [
+        {
+          "left": "Frost Maul"
+        },
+        {
+          "left": "15 Rage"
+        },
+        {
+          "left": "Next melee"
+        },
+        {
+          "left": "Requires Bear Form, Dire Bear Form"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 18 as Froststrike damage and causes a high amount of threat. Effects which increase bleed effects also increase Maul damage.\n\nThis uses Maul modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904440"
+        },
+        {
+          "left": "CharacterAdvancement ID 50022"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1437,7 +3485,35 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 48263,
+      "tooltipLines": [
+        {
+          "left": "Frost Presence"
+        },
+        {
+          "left": "1 Frost"
+        },
+        {
+          "left": "Instant",
+          "right": "1 sec cooldown"
+        },
+        {
+          "left": "Increases Stamina by 4% and significantly increases threat generated.\n\nIncreases the Armor contribution Cloth, Leather, Mail and Plate items by 30%\n\nReduces damage taken by 2%.\n\nOnly one Presence may be active at a time."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 48263"
+        },
+        {
+          "left": "CharacterAdvancement ID 41930"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1457,7 +3533,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 903060,
+      "tooltipLines": [
+        {
+          "left": "Frost Shot"
+        },
+        {
+          "left": "4 Mana",
+          "right": "5-35 yd range"
+        },
+        {
+          "left": "1.82 sec cast"
+        },
+        {
+          "left": "Requires Ranged Weapon"
+        },
+        {
+          "left": "A steady shot laced with frost that causes 50% weapon damage as Froststrike damage and deals 6 additional Froststrike damage. Causes an additional 5 Froststrike damage to slowed targets.\n\nThis uses Steady Shot modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 903060"
+        },
+        {
+          "left": "CharacterAdvancement ID 43005"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1477,7 +3584,37 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907220,
+      "tooltipLines": [
+        {
+          "left": "Frost Slash"
+        },
+        {
+          "left": "15 Rage"
+        },
+        {
+          "left": "Next melee"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 11 as Froststrike damage and causes a high amount of threat.\n\nThis uses Heroic Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907220"
+        },
+        {
+          "left": "CharacterAdvancement ID 50061"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1497,7 +3634,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 912001,
+      "tooltipLines": [
+        {
+          "left": "Frost Swipe (Bear)"
+        },
+        {
+          "left": "20 Rage",
+          "right": "8 yd range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Bear Form, Dire Bear Form"
+        },
+        {
+          "left": "Swipe nearby enemies, inflicting 12 Froststrike damage plus 1 Froststrike damage.\n\nThis uses Swipe modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 912001"
+        },
+        {
+          "left": "CharacterAdvancement ID 138051"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1517,7 +3685,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 912000,
+      "tooltipLines": [
+        {
+          "left": "Frost Swipe (Cat)"
+        },
+        {
+          "left": "50 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Cat Form"
+        },
+        {
+          "left": "Swipe nearby enemies, inflicting 90% weapon damage as Froststrike.\n\nThis uses Swipe modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 912000"
+        },
+        {
+          "left": "CharacterAdvancement ID 138050"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1537,7 +3736,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904680,
+      "tooltipLines": [
+        {
+          "left": "Frost Talon"
+        },
+        {
+          "left": "3 Mana"
+        },
+        {
+          "left": "Next melee",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 5 as Froststrike damage.\n\nThis uses Raptor Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904680"
+        },
+        {
+          "left": "CharacterAdvancement ID 50034"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1557,7 +3784,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 116,
+      "tooltipLines": [
+        {
+          "left": "Frostbolt"
+        },
+        {
+          "left": "8 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "1.18 sec cast"
+        },
+        {
+          "left": "Launches a bolt of frost at the enemy, causing 12 to 15 Frost damage and slowing movement speed by 40% for 5 sec."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 116"
+        },
+        {
+          "left": "CharacterAdvancement ID 40008"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1577,7 +3832,36 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 903174,
+      "tooltipLines": [
+        {
+          "left": "Frostreaver"
+        },
+        {
+          "left": "4 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "4 sec cooldown"
+        },
+        {
+          "left": "An instant frost strike that causes 50% weapon damage as Froststrike damage.\n\nThis uses Crusader Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 903174"
+        },
+        {
+          "left": "CharacterAdvancement ID 43018"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1597,7 +3881,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904080,
+      "tooltipLines": [
+        {
+          "left": "Frostripper"
+        },
+        {
+          "left": "30 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Cat Form"
+        },
+        {
+          "left": "Finishing move that causes Froststrike damage over time.  Damage increases per combo point:\n   1 point  : 17 Froststrike damage over 12 sec\n   2 points: 27 Froststrike damage over 12 sec\n   3 points: 38 Froststrike damage over 12 sec\n   4 points: 48 Froststrike damage over 12 sec\n   5 points: 59 Froststrike damage over 12 sec\n\nThis uses Rip modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904080"
+        },
+        {
+          "left": "CharacterAdvancement ID 50004"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1617,7 +3932,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 903130,
+      "tooltipLines": [
+        {
+          "left": "Frozen Slam"
+        },
+        {
+          "left": "15 Rage",
+          "right": "Melee Range"
+        },
+        {
+          "left": "1.5 sec cast"
+        },
+        {
+          "left": "Slams the opponent, causing 65% weapon damage plus 6 Froststrike damage.\n\nThis uses Slam modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 903130"
+        },
+        {
+          "left": "CharacterAdvancement ID 43013"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1637,7 +3980,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904860,
+      "tooltipLines": [
+        {
+          "left": "Ghostly Finish"
+        },
+        {
+          "left": "35 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "Finishing move that causes Shadowstrike damage per combo point:\n   1 point  : 6-8 Shadowstrike damage\n   2 points: 10-12 Shadowstrike damage\n   3 points: 15-17 Shadowstrike damage\n   4 points: 21-23 Shadowstrike damage\n   5 points: 28-30 Shadowstrike damage\n\nThis uses Eviscerate modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904860"
+        },
+        {
+          "left": "CharacterAdvancement ID 50043"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1657,7 +4031,36 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904500,
+      "tooltipLines": [
+        {
+          "left": "Ghoul Bite"
+        },
+        {
+          "left": "2 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "5 sec cooldown"
+        },
+        {
+          "left": "Attack the enemy for 13 Shadowstrike damage.\n\nThis uses Mongoose Bite modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904500"
+        },
+        {
+          "left": "CharacterAdvancement ID 50025"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1677,7 +4080,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907460,
+      "tooltipLines": [
+        {
+          "left": "Glacial Smash"
+        },
+        {
+          "left": "20 Rage"
+        },
+        {
+          "left": "Instant",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "Blasts nearby enemies dealing 10 Froststrike damage and increasing the time between their attacks by 10% for 10 sec. This ability causes additional threat.\n\nThis uses Thunder Clap modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907460"
+        },
+        {
+          "left": "CharacterAdvancement ID 50073"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1697,7 +4128,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 2050,
+      "tooltipLines": [
+        {
+          "left": "Greater Heal"
+        },
+        {
+          "left": "25 Mana",
+          "right": "40 yd range"
+        },
+        {
+          "left": "1.36 sec cast"
+        },
+        {
+          "left": "A slow casting spell that heals a single target for 28 to 34."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 2050"
+        },
+        {
+          "left": "CharacterAdvancement ID 40127"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1717,7 +4176,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 5185,
+      "tooltipLines": [
+        {
+          "left": "Healing Touch"
+        },
+        {
+          "left": "26 Mana",
+          "right": "40 yd range"
+        },
+        {
+          "left": "1.36 sec cast"
+        },
+        {
+          "left": "Heals a friendly target for 21 to 29."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 5185"
+        },
+        {
+          "left": "CharacterAdvancement ID 40166"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1737,7 +4224,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 331,
+      "tooltipLines": [
+        {
+          "left": "Healing Wave"
+        },
+        {
+          "left": "20 Mana",
+          "right": "40 yd range"
+        },
+        {
+          "left": "1.36 sec cast"
+        },
+        {
+          "left": "Heals a friendly target for 27 to 33."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 331"
+        },
+        {
+          "left": "CharacterAdvancement ID 40021"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1757,7 +4272,37 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 78,
+      "tooltipLines": [
+        {
+          "left": "Heroic Strike"
+        },
+        {
+          "left": "15 Rage"
+        },
+        {
+          "left": "Next melee"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 11 and causes a high amount of threat."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 78"
+        },
+        {
+          "left": "CharacterAdvancement ID 40006"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1777,7 +4322,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904880,
+      "tooltipLines": [
+        {
+          "left": "Holy Finish"
+        },
+        {
+          "left": "35 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "Finishing move that causes Holystrike damage per combo point:\n   1 point  : 6-8 Holystrike damage\n   2 points: 10-12 Holystrike damage\n   3 points: 15-17 Holystrike damage\n   4 points: 21-23 Holystrike damage\n   5 points: 28-30 Holystrike damage\n\nThis uses Eviscerate modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904880"
+        },
+        {
+          "left": "CharacterAdvancement ID 50044"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1797,7 +4373,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 635,
+      "tooltipLines": [
+        {
+          "left": "Holy Light"
+        },
+        {
+          "left": "23 Mana",
+          "right": "40 yd range"
+        },
+        {
+          "left": "1.36 sec cast"
+        },
+        {
+          "left": "Heals a friendly target for 28 to 35."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 635"
+        },
+        {
+          "left": "CharacterAdvancement ID 40047"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1817,7 +4421,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 903068,
+      "tooltipLines": [
+        {
+          "left": "Holy Shot"
+        },
+        {
+          "left": "4 Mana",
+          "right": "5-35 yd range"
+        },
+        {
+          "left": "1.82 sec cast"
+        },
+        {
+          "left": "Requires Ranged Weapon"
+        },
+        {
+          "left": "A steady shot blessed with light that causes 50% weapon damage as Holystrike damage and deals 6 additional Holystrike damage. Causes an additional 5 Holystrike damage to slowed targets.\n\nThis uses Steady Shot modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 903068"
+        },
+        {
+          "left": "CharacterAdvancement ID 43006"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1837,7 +4472,37 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907180,
+      "tooltipLines": [
+        {
+          "left": "Holy Slash"
+        },
+        {
+          "left": "15 Rage"
+        },
+        {
+          "left": "Next melee"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 11 as Holystrike damage and causes a high amount of threat.\n\nThis uses Heroic Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907180"
+        },
+        {
+          "left": "CharacterAdvancement ID 50059"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1857,7 +4522,32 @@
       "quality": "SKILL_CARD_UNCOMMON",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 57330,
+      "tooltipLines": [
+        {
+          "left": "Horn of Winter"
+        },
+        {
+          "left": "Instant",
+          "right": "20 sec cooldown"
+        },
+        {
+          "left": "Increases the Strength and Agility of all party or raid members within 30 yards by 2 and generates 10 rage. Lasts 30 min."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 57330"
+        },
+        {
+          "left": "CharacterAdvancement ID 41944"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1877,7 +4567,35 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 1130,
+      "tooltipLines": [
+        {
+          "left": "Hunter's Mark"
+        },
+        {
+          "left": "1 Mana",
+          "right": "100 yd range"
+        },
+        {
+          "left": "Instant cast"
+        },
+        {
+          "left": "Places the Hunter's Mark on the target, increasing the ranged attack power of all attackers against that target by 20.\n\nThe marked target can always be seen by the hunter whether it stealths or turns invisible, and appears on the mini-map. Lasts for 5 min."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 1130"
+        },
+        {
+          "left": "CharacterAdvancement ID 40088"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1897,7 +4615,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 913354,
+      "tooltipLines": [
+        {
+          "left": "Icepierce"
+        },
+        {
+          "left": "50 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Daggers"
+        },
+        {
+          "left": "Pierce the target, causing 100% weapon damage as Froststrike plus 7 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.\n\nThis uses Backstab modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 913354"
+        },
+        {
+          "left": "CharacterAdvancement ID 138115"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1917,7 +4666,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 45477,
+      "tooltipLines": [
+        {
+          "left": "Icy Touch"
+        },
+        {
+          "left": "1 Frost",
+          "right": "20 yd range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Chills the target for 12 to 13 Frost damage and infects them with Frost Fever, a disease that deals periodic damage and reduces melee and ranged attack speed by 14% for 15 sec. Generates very high threat while in a Tank Stance."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 45477"
+        },
+        {
+          "left": "CharacterAdvancement ID 41921"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1937,7 +4714,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 348,
+      "tooltipLines": [
+        {
+          "left": "Immolate"
+        },
+        {
+          "left": "13 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "1.36 sec cast"
+        },
+        {
+          "left": "Burns the enemy for 8 Fire damage and then an additional 20 Fire damage over 15 sec."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 348"
+        },
+        {
+          "left": "CharacterAdvancement ID 40023"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1957,7 +4762,36 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 20271,
+      "tooltipLines": [
+        {
+          "left": "Judgement of Light"
+        },
+        {
+          "left": "4 Mana",
+          "right": "10 yd range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "10 sec cooldown"
+        },
+        {
+          "left": "Unleashes the energy of a Seal spell to judge an enemy for 20 sec, granting auto attacks and auto shots made against the judged enemy a chance of healing the attacker for 2% of their base health.  \n\nRefer to individual Seals for additional Judgement effect.\n\nOnly one Judgement per Paladin can be active at any one time."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 20271"
+        },
+        {
+          "left": "CharacterAdvancement ID 42060"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1977,7 +4811,36 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 53408,
+      "tooltipLines": [
+        {
+          "left": "Judgement of Wisdom"
+        },
+        {
+          "left": "4 Mana",
+          "right": "10 yd range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "10 sec cooldown"
+        },
+        {
+          "left": "Unleashes the energy of a Seal spell to judge an enemy for 20 sec, giving each attack a chance to restore 2% of the attacker's base mana. \n\nRefer to individual Seals for additional Judgement effect.\n\nOnly one Judgement per Paladin can be active at any one time."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 53408"
+        },
+        {
+          "left": "CharacterAdvancement ID 42067"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -1997,7 +4860,39 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 60103,
+      "tooltipLines": [
+        {
+          "left": "Lava Lash"
+        },
+        {
+          "left": "3 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "Requires One-Handed Melee Weapon"
+        },
+        {
+          "left": "You charge your off-hand weapon with lava, instantly dealing 100% off-hand Weapon damage as Firestrike damage. \n\nThe damage increased by 25% if your off-hand weapon is enchanted with Flametongue."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 60103"
+        },
+        {
+          "left": "CharacterAdvancement ID 41029"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2017,7 +4912,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907440,
+      "tooltipLines": [
+        {
+          "left": "Lava Smash"
+        },
+        {
+          "left": "20 Rage"
+        },
+        {
+          "left": "Instant",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "Blasts nearby enemies dealing 10 Firestrike damage and increasing the time between their attacks by 10% for 10 sec. This ability causes additional threat.\n\nThis uses Thunder Clap modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907440"
+        },
+        {
+          "left": "CharacterAdvancement ID 50072"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2037,7 +4960,31 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 1454,
+      "tooltipLines": [
+        {
+          "left": "Life Tap"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Converts 15 health into 19 mana.  Spell power increases the amount of mana returned."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 1454"
+        },
+        {
+          "left": "CharacterAdvancement ID 40093"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2057,7 +5004,39 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907120,
+      "tooltipLines": [
+        {
+          "left": "Light Lash"
+        },
+        {
+          "left": "3 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "Requires One-Handed Melee Weapon"
+        },
+        {
+          "left": "You charge your off-hand weapon with elemental force, instantly dealing 100% off-hand Weapon damage as Holystrike damage. \n\nDamage is increased by 25% if your off-hand weapon is enchanted with Windfury.\n\nThis uses Lava Lash modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907120"
+        },
+        {
+          "left": "CharacterAdvancement ID 50056"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2077,7 +5056,37 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904400,
+      "tooltipLines": [
+        {
+          "left": "Light Maul"
+        },
+        {
+          "left": "15 Rage"
+        },
+        {
+          "left": "Next melee"
+        },
+        {
+          "left": "Requires Bear Form, Dire Bear Form"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 18 as Holystrike damage and causes a high amount of threat. Effects which increase bleed effects also increase Maul damage.\n\nThis uses Maul modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904400"
+        },
+        {
+          "left": "CharacterAdvancement ID 50020"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2097,7 +5106,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 912061,
+      "tooltipLines": [
+        {
+          "left": "Light Swipe (Bear)"
+        },
+        {
+          "left": "20 Rage",
+          "right": "8 yd range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Bear Form, Dire Bear Form"
+        },
+        {
+          "left": "Swipe nearby enemies, inflicting 12 Holystrike damage plus 1 Holystrike damage.\n\nThis uses Swipe modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 912061"
+        },
+        {
+          "left": "CharacterAdvancement ID 138057"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2117,7 +5157,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 912060,
+      "tooltipLines": [
+        {
+          "left": "Light Swipe (Cat)"
+        },
+        {
+          "left": "50 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Cat Form"
+        },
+        {
+          "left": "Swipe nearby enemies, inflicting 90% weapon damage as Holystrike.\n\nThis uses Swipe modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 912060"
+        },
+        {
+          "left": "CharacterAdvancement ID 138056"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2137,7 +5208,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904640,
+      "tooltipLines": [
+        {
+          "left": "Light Talon"
+        },
+        {
+          "left": "3 Mana"
+        },
+        {
+          "left": "Next melee",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 5 as Holystrike damage.\n\nThis uses Raptor Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904640"
+        },
+        {
+          "left": "CharacterAdvancement ID 50032"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2157,7 +5256,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 403,
+      "tooltipLines": [
+        {
+          "left": "Lightning Bolt"
+        },
+        {
+          "left": "7 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "1.36 sec cast"
+        },
+        {
+          "left": "Casts a bolt of lightning at the target for 13 to 15 Nature damage."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 403"
+        },
+        {
+          "left": "CharacterAdvancement ID 40025"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2177,7 +5304,39 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907870,
+      "tooltipLines": [
+        {
+          "left": "Lightning Lash"
+        },
+        {
+          "left": "3 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "Requires One-Handed Melee Weapon"
+        },
+        {
+          "left": "You charge your off-hand weapon with elemental force, instantly dealing 100% off-hand Weapon damage as Stormstrike damage. \n\nDamage is increased by 25% if your off-hand weapon is enchanted with Windfury.\n\nThis uses Lava Lash modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907870"
+        },
+        {
+          "left": "CharacterAdvancement ID 43029"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2197,7 +5356,31 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 324,
+      "tooltipLines": [
+        {
+          "left": "Lightning Shield"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "The caster is surrounded by 3 balls of lightning.  When a spell, melee or ranged attack hits the caster, the attacker will be struck for 13 Nature damage. This expends one lightning ball. Only one ball will fire every 3 seconds. Lasts 10 min. \n\nOnly one Elemental Shield can be active on the Hero at any one time."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 324"
+        },
+        {
+          "left": "CharacterAdvancement ID 40020"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2217,7 +5400,37 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907240,
+      "tooltipLines": [
+        {
+          "left": "Lightning Slash"
+        },
+        {
+          "left": "15 Rage"
+        },
+        {
+          "left": "Next melee"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 11 as Stormstrike damage and causes a high amount of threat.\n\nThis uses Heroic Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907240"
+        },
+        {
+          "left": "CharacterAdvancement ID 50062"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2237,7 +5450,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 903092,
+      "tooltipLines": [
+        {
+          "left": "Locust Shot"
+        },
+        {
+          "left": "4 Mana",
+          "right": "5-35 yd range"
+        },
+        {
+          "left": "1.82 sec cast"
+        },
+        {
+          "left": "Requires Ranged Weapon"
+        },
+        {
+          "left": "A steady shot charged with storm energy that causes 50% weapon damage as Stormstrike damage and deals 6 additional Stormstrike damage. Causes an additional 5 Stormstrike damage to slowed targets.\n\nThis uses Steady Shot modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 903092"
+        },
+        {
+          "left": "CharacterAdvancement ID 43009"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2257,7 +5501,39 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907080,
+      "tooltipLines": [
+        {
+          "left": "Mana Lash"
+        },
+        {
+          "left": "3 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "Requires One-Handed Melee Weapon"
+        },
+        {
+          "left": "You charge your off-hand weapon with elemental force, instantly dealing 100% off-hand Weapon damage as Spellstrike damage. \n\nDamage is increased by 25% if your off-hand weapon is enchanted with Windfury.\n\nThis uses Lava Lash modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907080"
+        },
+        {
+          "left": "CharacterAdvancement ID 50054"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2277,7 +5553,34 @@
       "quality": "SKILL_CARD_EPIC",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 701463,
+      "tooltipLines": [
+        {
+          "left": "Mana-forged Barrier"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Your threat generated is significantly increased.\n\nTeaches you Channeled Mana."
+        },
+        {
+          "left": "Channeled Mana\n2 Mana\nTaunts the target to attack you, but has no effect if the target is already attacking you.\n\nThis spell is learned when you have a Tank Stance and cannot be unlearned."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 701463"
+        },
+        {
+          "left": "CharacterAdvancement ID 41990"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2297,7 +5600,36 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 903150,
+      "tooltipLines": [
+        {
+          "left": "Manareaver"
+        },
+        {
+          "left": "4 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "4 sec cooldown"
+        },
+        {
+          "left": "An instant arcane strike that causes 50% weapon damage as Spellstrike damage.\n\nThis uses Crusader Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 903150"
+        },
+        {
+          "left": "CharacterAdvancement ID 43015"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2317,7 +5649,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904000,
+      "tooltipLines": [
+        {
+          "left": "Manaripper"
+        },
+        {
+          "left": "30 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Cat Form"
+        },
+        {
+          "left": "Finishing move that causes Spellstrike damage over time.  Damage increases per combo point:\n   1 point  : 17 Spellstrike damage over 12 sec\n   2 points: 27 Spellstrike damage over 12 sec\n   3 points: 38 Spellstrike damage over 12 sec\n   4 points: 48 Spellstrike damage over 12 sec\n   5 points: 59 Spellstrike damage over 12 sec\n\nThis uses Rip modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904000"
+        },
+        {
+          "left": "CharacterAdvancement ID 50000"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2337,7 +5700,35 @@
       "quality": "SKILL_CARD_UNCOMMON",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 1126,
+      "tooltipLines": [
+        {
+          "left": "Mark of the Wild"
+        },
+        {
+          "left": "19 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "Instant cast"
+        },
+        {
+          "left": "Increases the friendly target's armor by 25 for 30 min.\n\nDoes not stack with other similar effects."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 1126"
+        },
+        {
+          "left": "CharacterAdvancement ID 40087"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2357,7 +5748,37 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 6807,
+      "tooltipLines": [
+        {
+          "left": "Maul"
+        },
+        {
+          "left": "15 Rage"
+        },
+        {
+          "left": "Next melee"
+        },
+        {
+          "left": "Requires Bear Form, Dire Bear Form"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 18 and causes a high amount of threat. Effects which increase Bleed damage also increase Maul damage."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 6807"
+        },
+        {
+          "left": "CharacterAdvancement ID 40196"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2377,7 +5798,36 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 1495,
+      "tooltipLines": [
+        {
+          "left": "Mongoose Bite"
+        },
+        {
+          "left": "2 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "5 sec cooldown"
+        },
+        {
+          "left": "Attack the enemy for 20 damage."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 1495"
+        },
+        {
+          "left": "CharacterAdvancement ID 40098"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2397,7 +5847,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 8921,
+      "tooltipLines": [
+        {
+          "left": "Moonfire"
+        },
+        {
+          "left": "17 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "Instant cast"
+        },
+        {
+          "left": "Burns the enemy for 5 to 7 Arcane damage and then an additional 9 Arcane damage over 9 sec."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 8921"
+        },
+        {
+          "left": "CharacterAdvancement ID 40211"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2417,7 +5895,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 913180,
+      "tooltipLines": [
+        {
+          "left": "Mystic Bloodstrike"
+        },
+        {
+          "left": "1 Blood",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "Instantly strike the enemy, causing 25% weapon damage as Spellstrike plus 8, total damage increased by 12.5% for each of your diseases on the target.\n\nThis uses Blood Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 913180"
+        },
+        {
+          "left": "CharacterAdvancement ID 138077"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2437,7 +5946,37 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904360,
+      "tooltipLines": [
+        {
+          "left": "Mystic Maul"
+        },
+        {
+          "left": "15 Rage"
+        },
+        {
+          "left": "Next melee"
+        },
+        {
+          "left": "Requires Bear Form, Dire Bear Form"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 18 as Spellstrike damage and causes a high amount of threat. Effects which increase bleed effects also increase Maul damage.\nThis uses Maul modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904360"
+        },
+        {
+          "left": "CharacterAdvancement ID 50018"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2457,7 +5996,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907916,
+      "tooltipLines": [
+        {
+          "left": "Mystic Shot"
+        },
+        {
+          "left": "4 Mana",
+          "right": "5-35 yd range"
+        },
+        {
+          "left": "1.82 sec cast"
+        },
+        {
+          "left": "Requires Ranged Weapon"
+        },
+        {
+          "left": "A steady shot charged with arcane force that causes 50% weapon damage as Spellstrike damage and deals 6 additional Spellstrike damage. Causes an additional 5 Spellstrike damage to slowed targets.\n\nThis uses Steady Shot modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907916"
+        },
+        {
+          "left": "CharacterAdvancement ID 43034"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2477,7 +6047,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904600,
+      "tooltipLines": [
+        {
+          "left": "Mystic Talon"
+        },
+        {
+          "left": "3 Mana"
+        },
+        {
+          "left": "Next melee",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 5 as Spellstrike damage.\n\nThis uses Raptor Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904600"
+        },
+        {
+          "left": "CharacterAdvancement ID 50030"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2497,7 +6095,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 45462,
+      "tooltipLines": [
+        {
+          "left": "Plague Strike"
+        },
+        {
+          "left": "1 Unholy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "A vicious strike that deals 50% weapon damage plus 8 and infects the target with Blood Plague, a disease dealing 3 Shadow damage over time."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 45462"
+        },
+        {
+          "left": "CharacterAdvancement ID 41920"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2517,7 +6146,35 @@
       "quality": "SKILL_CARD_UNCOMMON",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 1243,
+      "tooltipLines": [
+        {
+          "left": "Power Word: Fortitude"
+        },
+        {
+          "left": "21 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "Instant cast"
+        },
+        {
+          "left": "Power infuses the target, increasing their Stamina by 3 for 30 min.\n\nDoes not stack with other similar effects."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 1243"
+        },
+        {
+          "left": "CharacterAdvancement ID 40091"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2537,7 +6194,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 2973,
+      "tooltipLines": [
+        {
+          "left": "Raptor Strike"
+        },
+        {
+          "left": "3 Mana"
+        },
+        {
+          "left": "Next melee",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 5."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 2973"
+        },
+        {
+          "left": "CharacterAdvancement ID 40153"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2557,7 +6242,34 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 965425,
+      "tooltipLines": [
+        {
+          "left": "Recuperate"
+        },
+        {
+          "left": "25 Energy"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Finishing move that consumes combo points on your target to restore 3% of your maximum health every 3 sec. Lasts longer per combo point:\n   1 point : 3 seconds\n   2 points: 6 seconds\n   3 points: 9 seconds\n   4 points: 12 seconds\n   5 points: 15 seconds"
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 965425"
+        },
+        {
+          "left": "CharacterAdvancement ID 42107"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2577,7 +6289,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 774,
+      "tooltipLines": [
+        {
+          "left": "Rejuvenation"
+        },
+        {
+          "left": "14 Mana",
+          "right": "40 yd range"
+        },
+        {
+          "left": "Instant cast"
+        },
+        {
+          "left": "Heals the target for 25 over 15 sec."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 774"
+        },
+        {
+          "left": "CharacterAdvancement ID 40064"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2597,7 +6337,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 772,
+      "tooltipLines": [
+        {
+          "left": "Rend"
+        },
+        {
+          "left": "10 Rage",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Wounds the target causing them to bleed for 25 damage plus an additional 9 (based on weapon damage) over 15 sec."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 772"
+        },
+        {
+          "left": "CharacterAdvancement ID 40063"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2617,7 +6385,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 139,
+      "tooltipLines": [
+        {
+          "left": "Renew"
+        },
+        {
+          "left": "13 Mana",
+          "right": "40 yd range"
+        },
+        {
+          "left": "Instant cast"
+        },
+        {
+          "left": "Heals the target for 35 over 15 sec."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 139"
+        },
+        {
+          "left": "CharacterAdvancement ID 40018"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2637,7 +6433,31 @@
       "quality": "SKILL_CARD_UNCOMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 25780,
+      "tooltipLines": [
+        {
+          "left": "Righteous Fury"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Your threat generated is significantly increased.\n\nTeaches you Hand of Reckoning.\n\nAlso increases your chance to block Fierce Blows."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 25780"
+        },
+        {
+          "left": "CharacterAdvancement ID 40246"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2657,7 +6477,39 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907862,
+      "tooltipLines": [
+        {
+          "left": "Rime Lash"
+        },
+        {
+          "left": "3 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "Requires One-Handed Melee Weapon"
+        },
+        {
+          "left": "You charge your off-hand weapon with elemental force, instantly dealing 100% off-hand Weapon damage as Froststrike damage. \n\nDamage is increased by 25% if your off-hand weapon is enchanted with Windfury.\n\nThis uses Lava Lash modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907862"
+        },
+        {
+          "left": "CharacterAdvancement ID 43028"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2677,7 +6529,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 903036,
+      "tooltipLines": [
+        {
+          "left": "Rime Strike"
+        },
+        {
+          "left": "45 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "An instant frost-infused strike that causes 3 Froststrike damage in addition to 65% of your normal weapon damage (55% if a two-handed weapon is equipped). Awards 1 combo point.\n\nThis uses Sinister Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 903036"
+        },
+        {
+          "left": "CharacterAdvancement ID 43003"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2697,7 +6577,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 1079,
+      "tooltipLines": [
+        {
+          "left": "Rip"
+        },
+        {
+          "left": "30 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Cat Form"
+        },
+        {
+          "left": "Finishing move that causes damage over time.  Damage increases per combo point:\n   1 point  : 17 damage over 12 sec\n   2 points: 27 damage over 12 sec\n   3 points: 38 damage over 12 sec\n   4 points: 48 damage over 12 sec\n   5 points: 59 damage over 12 sec"
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 1079"
+        },
+        {
+          "left": "CharacterAdvancement ID 40082"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2717,7 +6628,36 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904540,
+      "tooltipLines": [
+        {
+          "left": "Salamander Bite"
+        },
+        {
+          "left": "2 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "5 sec cooldown"
+        },
+        {
+          "left": "Attack the enemy for 13 Firestrike damage.\n\nThis uses Mongoose Bite modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904540"
+        },
+        {
+          "left": "CharacterAdvancement ID 50027"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2737,7 +6677,34 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 21084,
+      "tooltipLines": [
+        {
+          "left": "Seal of Righteousness"
+        },
+        {
+          "left": "11 Mana"
+        },
+        {
+          "left": "Instant cast"
+        },
+        {
+          "left": "Fills you with holy spirit for until cancelled, granting each main hand auto attack and Paladin melee ability 3 additional Holy damage. Only one Seal can be active at any one time.\n\nUnleashing this Seal's energy will cause 6 Holy damage to an enemy."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 21084"
+        },
+        {
+          "left": "CharacterAdvancement ID 42104"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2757,7 +6724,37 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 3599,
+      "tooltipLines": [
+        {
+          "left": "Searing Totem"
+        },
+        {
+          "left": "5 Mana"
+        },
+        {
+          "left": "Instant cast"
+        },
+        {
+          "left": "Tools: Fire Totem"
+        },
+        {
+          "left": "Summons a Searing Totem with 5 health at your feet for 45 sec that repeatedly attacks an enemy within 20 yards for 11 to 14 Fire damage.\n\nThis ability is usable while shapeshifted."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 3599"
+        },
+        {
+          "left": "CharacterAdvancement ID 42079"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2777,7 +6774,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 1978,
+      "tooltipLines": [
+        {
+          "left": "Serpent Sting"
+        },
+        {
+          "left": "7 Mana",
+          "right": "5-35 yd range"
+        },
+        {
+          "left": "Attack speed"
+        },
+        {
+          "left": "Requires Ranged Weapon"
+        },
+        {
+          "left": "Stings the target, causing 20 Nature damage over 15 sec."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 1978"
+        },
+        {
+          "left": "CharacterAdvancement ID 40124"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2797,7 +6825,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 686,
+      "tooltipLines": [
+        {
+          "left": "Shadow Bolt"
+        },
+        {
+          "left": "12 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "1.14 sec cast"
+        },
+        {
+          "left": "Sends a shadowy bolt at the enemy, causing 16 to 21 Shadow damage."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 686"
+        },
+        {
+          "left": "CharacterAdvancement ID 40050"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2817,7 +6873,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 903110,
+      "tooltipLines": [
+        {
+          "left": "Shadow Slam"
+        },
+        {
+          "left": "15 Rage",
+          "right": "Melee Range"
+        },
+        {
+          "left": "1.5 sec cast"
+        },
+        {
+          "left": "Slams the opponent with shadow force, causing 65% weapon damage plus 6 Shadowstrike damage.\n\nThis uses Slam modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 903110"
+        },
+        {
+          "left": "CharacterAdvancement ID 43011"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2837,7 +6921,37 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907160,
+      "tooltipLines": [
+        {
+          "left": "Shadow Slash"
+        },
+        {
+          "left": "15 Rage"
+        },
+        {
+          "left": "Next melee"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 11 as Shadowstrike damage and causes a high amount of threat.\n\nThis uses Heroic Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907160"
+        },
+        {
+          "left": "CharacterAdvancement ID 50058"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2857,7 +6971,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 912041,
+      "tooltipLines": [
+        {
+          "left": "Shadow Swipe (Bear)"
+        },
+        {
+          "left": "20 Rage",
+          "right": "8 yd range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Bear Form, Dire Bear Form"
+        },
+        {
+          "left": "Swipe nearby enemies, inflicting 12 Shadowstrike damage plus 1 Shadowstrike damage.\n\nThis uses Swipe modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 912041"
+        },
+        {
+          "left": "CharacterAdvancement ID 138055"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2877,7 +7022,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 912040,
+      "tooltipLines": [
+        {
+          "left": "Shadow Swipe (Cat)"
+        },
+        {
+          "left": "50 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Cat Form"
+        },
+        {
+          "left": "Swipe nearby enemies, inflicting 90% weapon damage as Shadowstrike.\n\nThis uses Swipe modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 912040"
+        },
+        {
+          "left": "CharacterAdvancement ID 138054"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2897,7 +7073,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904620,
+      "tooltipLines": [
+        {
+          "left": "Shadow Talon"
+        },
+        {
+          "left": "3 Mana"
+        },
+        {
+          "left": "Next melee",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 5 as Shadowstrike damage.\n\nThis uses Raptor Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904620"
+        },
+        {
+          "left": "CharacterAdvancement ID 50031"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2917,7 +7121,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 589,
+      "tooltipLines": [
+        {
+          "left": "Shadow Word: Pain"
+        },
+        {
+          "left": "17 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "Instant cast"
+        },
+        {
+          "left": "A word of darkness that causes 30 Shadow damage over 18 sec."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 589"
+        },
+        {
+          "left": "CharacterAdvancement ID 40042"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2937,7 +7169,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 913378,
+      "tooltipLines": [
+        {
+          "left": "Shadowpierce"
+        },
+        {
+          "left": "50 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Daggers"
+        },
+        {
+          "left": "Pierce the target, causing 100% weapon damage as Shadowstrike plus 7 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.\n\nThis uses Backstab modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 913378"
+        },
+        {
+          "left": "CharacterAdvancement ID 138117"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2957,7 +7220,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 913156,
+      "tooltipLines": [
+        {
+          "left": "Shadowy Bloodstrike"
+        },
+        {
+          "left": "1 Blood",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "Instantly strike the enemy, causing 25% weapon damage as Shadowstrike plus 8, total damage increased by 12.5% for each of your diseases on the target.\n\nThis uses Blood Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 913156"
+        },
+        {
+          "left": "CharacterAdvancement ID 138075"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2977,7 +7271,35 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 2565,
+      "tooltipLines": [
+        {
+          "left": "Shield Block"
+        },
+        {
+          "left": "Instant",
+          "right": "1 min cooldown"
+        },
+        {
+          "left": "Requires Shields"
+        },
+        {
+          "left": "Increases your chance to block and block value by 100% for 10 sec."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 2565"
+        },
+        {
+          "left": "CharacterAdvancement ID 40137"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -2997,7 +7319,42 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 53600,
+      "tooltipLines": [
+        {
+          "left": "Shield of Righteousness"
+        },
+        {
+          "left": "4 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "Requires Shields"
+        },
+        {
+          "left": "Requires Righteous Fury"
+        },
+        {
+          "left": "Slam the target with your shield, causing Holy damage based on your block value plus an additional 5. This ability will also heal you based on your spell damage."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 53600"
+        },
+        {
+          "left": "CharacterAdvancement ID 40288"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3017,7 +7374,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904940,
+      "tooltipLines": [
+        {
+          "left": "Shocking Finish"
+        },
+        {
+          "left": "35 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "Finishing move that causes Stormstrike damage per combo point:\n   1 point  : 6-8 Stormstrike damage\n   2 points: 10-12 Stormstrike damage\n   3 points: 15-17 Stormstrike damage\n   4 points: 21-23 Stormstrike damage\n   5 points: 28-30 Stormstrike damage\n\nThis uses Eviscerate modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904940"
+        },
+        {
+          "left": "CharacterAdvancement ID 50047"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3037,7 +7425,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 1752,
+      "tooltipLines": [
+        {
+          "left": "Sinister Strike"
+        },
+        {
+          "left": "45 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "An instant strike that causes 3 damage in addition to 100% of your normal weapon damage (85% if a Two-Handed weapon is equipped). Awards 1 combo point."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 1752"
+        },
+        {
+          "left": "CharacterAdvancement ID 40109"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3057,7 +7473,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 1464,
+      "tooltipLines": [
+        {
+          "left": "Slam"
+        },
+        {
+          "left": "15 Rage",
+          "right": "Melee Range"
+        },
+        {
+          "left": "1.5 sec cast"
+        },
+        {
+          "left": "Slams the opponent, causing 100% weapon damage plus 9."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 1464"
+        },
+        {
+          "left": "CharacterAdvancement ID 40096"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3077,7 +7521,34 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 5171,
+      "tooltipLines": [
+        {
+          "left": "Slice and Dice"
+        },
+        {
+          "left": "25 Energy"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Finishing move that increases melee attack speed by 20%. Lasts longer per combo point:\n   1 point  : 9 seconds\n   2 points: 12 seconds\n   3 points: 15 seconds\n   4 points: 18 seconds\n   5 points: 21 seconds\n\nThis ability is usable while shapeshifted."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 5171"
+        },
+        {
+          "left": "CharacterAdvancement ID 42081"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3097,7 +7568,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 585,
+      "tooltipLines": [
+        {
+          "left": "Smite"
+        },
+        {
+          "left": "12 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "1.36 sec cast"
+        },
+        {
+          "left": "Smite an enemy for 13 to 17 Holy damage."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 585"
+        },
+        {
+          "left": "CharacterAdvancement ID 40038"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3117,7 +7616,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 56641,
+      "tooltipLines": [
+        {
+          "left": "Steady Shot"
+        },
+        {
+          "left": "4 Mana",
+          "right": "5-35 yd range"
+        },
+        {
+          "left": "1.82 sec cast"
+        },
+        {
+          "left": "Requires Ranged Weapon"
+        },
+        {
+          "left": "A steady shot that causes 75% weapon damage plus 9. Causes an additional 10 to slowed targets."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 56641"
+        },
+        {
+          "left": "CharacterAdvancement ID 40293"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3137,7 +7667,32 @@
       "quality": "SKILL_CARD_EPIC",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 1784,
+      "tooltipLines": [
+        {
+          "left": "Stealth"
+        },
+        {
+          "left": "Instant",
+          "right": "10 sec cooldown"
+        },
+        {
+          "left": "Allows you to sneak around, but reduces your speed by 30%. Removes invulnerabilities when used. Lasts until cancelled."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 1784"
+        },
+        {
+          "left": "CharacterAdvancement ID 40112"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3157,7 +7712,38 @@
       "quality": "SKILL_CARD_UNCOMMON",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 5730,
+      "tooltipLines": [
+        {
+          "left": "Stoneclaw Totem"
+        },
+        {
+          "left": "4 Mana"
+        },
+        {
+          "left": "Instant cast",
+          "right": "30 sec cooldown"
+        },
+        {
+          "left": "Tools: Earth Totem"
+        },
+        {
+          "left": "Summons a Stoneclaw Totem with 50 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.  Enemies attacking the Stoneclaw Totem have a 50% chance to be stunned for 3 sec. Stoneclaw totem also protects all your totems, causing them to absorb 21 damage.\n\nThis ability is usable while shapeshifted."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 5730"
+        },
+        {
+          "left": "CharacterAdvancement ID 42085"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3177,7 +7763,37 @@
       "quality": "SKILL_CARD_UNCOMMON",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 8071,
+      "tooltipLines": [
+        {
+          "left": "Stoneskin Totem"
+        },
+        {
+          "left": "8 Mana"
+        },
+        {
+          "left": "Instant cast"
+        },
+        {
+          "left": "Tools: Earth Totem"
+        },
+        {
+          "left": "Summons a Stoneskin Totem with 5 health at the feet of the caster. The totem protects party and raid members within 50 yards, increasing armor by 95. Lasts 5 min.\n\nThis ability is usable while shapeshifted."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 8071"
+        },
+        {
+          "left": "CharacterAdvancement ID 42088"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3197,7 +7813,37 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904460,
+      "tooltipLines": [
+        {
+          "left": "Storm Maul"
+        },
+        {
+          "left": "15 Rage"
+        },
+        {
+          "left": "Next melee"
+        },
+        {
+          "left": "Requires Bear Form, Dire Bear Form"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 18 as Stormstrike damage and causes a high amount of threat. Effects which increase bleed effects also increase Maul damage.\n\nThis uses Maul modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904460"
+        },
+        {
+          "left": "CharacterAdvancement ID 50023"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3217,7 +7863,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 903140,
+      "tooltipLines": [
+        {
+          "left": "Storm Slam"
+        },
+        {
+          "left": "15 Rage",
+          "right": "Melee Range"
+        },
+        {
+          "left": "1.5 sec cast"
+        },
+        {
+          "left": "Slams the opponent, causing 65% weapon damage plus 6 Stormstrike damage.\n\nThis uses Slam modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 903140"
+        },
+        {
+          "left": "CharacterAdvancement ID 43014"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3237,7 +7911,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 912021,
+      "tooltipLines": [
+        {
+          "left": "Storm Swipe (Bear)"
+        },
+        {
+          "left": "20 Rage",
+          "right": "8 yd range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Bear Form, Dire Bear Form"
+        },
+        {
+          "left": "Swipe nearby enemies, inflicting 12 Stormstrike damage plus 1 Stormstrike damage.\n\nThis uses Swipe modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 912021"
+        },
+        {
+          "left": "CharacterAdvancement ID 138053"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3257,7 +7962,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 912020,
+      "tooltipLines": [
+        {
+          "left": "Storm Swipe (Cat)"
+        },
+        {
+          "left": "50 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Cat Form"
+        },
+        {
+          "left": "Swipe nearby enemies, inflicting 90% weapon damage as Stormstrike.\n\nThis uses Swipe modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 912020"
+        },
+        {
+          "left": "CharacterAdvancement ID 138052"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3277,7 +8013,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904700,
+      "tooltipLines": [
+        {
+          "left": "Storm Talon"
+        },
+        {
+          "left": "3 Mana"
+        },
+        {
+          "left": "Next melee",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "A strong attack that increases melee damage by 5 as Stormstrike damage.\n\nThis uses Raptor Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904700"
+        },
+        {
+          "left": "CharacterAdvancement ID 50035"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3297,7 +8061,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 913366,
+      "tooltipLines": [
+        {
+          "left": "Stormpierce"
+        },
+        {
+          "left": "50 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Daggers"
+        },
+        {
+          "left": "Pierce the target, causing 100% weapon damage as Stormstrike plus 7 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.\n\nThis uses Backstab modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 913366"
+        },
+        {
+          "left": "CharacterAdvancement ID 138116"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3317,7 +8112,36 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907861,
+      "tooltipLines": [
+        {
+          "left": "Stormreaver"
+        },
+        {
+          "left": "4 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "4 sec cooldown"
+        },
+        {
+          "left": "An instant storm strike that causes 50% weapon damage as Stormstrike damage.\n\nThis uses Crusader Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907861"
+        },
+        {
+          "left": "CharacterAdvancement ID 43027"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3337,7 +8161,34 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 688,
+      "tooltipLines": [
+        {
+          "left": "Summon Imp"
+        },
+        {
+          "left": "51 Mana"
+        },
+        {
+          "left": "9.09 sec cast"
+        },
+        {
+          "left": "Summons an Imp under the command of the Warlock."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 688"
+        },
+        {
+          "left": "CharacterAdvancement ID 40051"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3357,7 +8208,35 @@
       "quality": "SKILL_CARD_RARE",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 701521,
+      "tooltipLines": [
+        {
+          "left": "Summoner's Armor"
+        },
+        {
+          "left": "25 Mana"
+        },
+        {
+          "left": "Instant cast",
+          "right": "1 sec cooldown"
+        },
+        {
+          "left": "Empowers your tamed beast, tamed dragonkin, dominated undead, enslaved demon, summoned demon, wild imp or tethered elemental, increasing their critical strike chance with spells and abilities by 2% and their spell damage done by 3%.\n\nOnly one type of Warlock Armor spell can be active at any time."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 701521"
+        },
+        {
+          "left": "CharacterAdvancement ID 42115"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3377,7 +8256,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 62078,
+      "tooltipLines": [
+        {
+          "left": "Swipe (Cat)"
+        },
+        {
+          "left": "50 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Cat Form"
+        },
+        {
+          "left": "Swipe nearby enemies, inflicting 140% weapon damage."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 62078"
+        },
+        {
+          "left": "CharacterAdvancement ID 40298"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3397,7 +8307,28 @@
       "quality": "SKILL_CARD_EPIC",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 965200,
+      "tooltipLines": [
+        {
+          "left": "Tame Beast Abilities"
+        },
+        {
+          "left": "Teaches you the necessary abilities to tame a pet companion.\n\nTeaches you Tame Beast, Call Pet, Dismiss Pet, Feed Pet, Revive Pet and Beast Lore."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 965200"
+        },
+        {
+          "left": "CharacterAdvancement ID 40308"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3417,7 +8348,35 @@
       "quality": "SKILL_CARD_EPIC",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 91634,
+      "tooltipLines": [
+        {
+          "left": "Tame Dragonkin"
+        },
+        {
+          "left": "38 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "Channeled"
+        },
+        {
+          "left": "Teaches you the necessary abilities to tame a Dragonkin companion.\n\nTeaches you Tame Dragonkin, Call Dragonkin, Dismiss Dragonkin, Revive Dragonkin and Dragonkin Lore.\n\n\n Tame Dragonkin\nBegins taming a dragonkin to be your companion.\n\nYour armor is reduced by 10% while you focus for 20 sec.\n\nIf you lose the dragonkin's attention, the taming process will fail."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 91634"
+        },
+        {
+          "left": "CharacterAdvancement ID 41953"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3437,7 +8396,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907480,
+      "tooltipLines": [
+        {
+          "left": "Tempest Smash"
+        },
+        {
+          "left": "20 Rage"
+        },
+        {
+          "left": "Instant",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "Blasts nearby enemies dealing 10 Stormstrike damage and increasing the time between their attacks by 10% for 10 sec. This ability causes additional threat.\n\nThis uses Thunder Clap modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907480"
+        },
+        {
+          "left": "CharacterAdvancement ID 50074"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3457,7 +8444,35 @@
       "quality": "SKILL_CARD_EPIC",
       "qualityCost": 2,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 91606,
+      "tooltipLines": [
+        {
+          "left": "Tether Elemental"
+        },
+        {
+          "left": "38 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "Channeled"
+        },
+        {
+          "left": "Teaches you the necessary abilities to tether an Elemental companion.\n\nTeaches you Tether Elemental, Raise Elemental, Dismiss Elemental, Revive Elemental and Elemental Lore.\n\n\n Tether Elemental\nBegins tethering an elemental to be your companion. \n\nYour armor is reduced by 100% while you focus on dominating the elemental for 20 sec. \n\nIf you lose the elemental's attention for any reason, the domination process will fail. \n\nEach type of elemental has unique abilities that you will be able to make use of."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 91606"
+        },
+        {
+          "left": "CharacterAdvancement ID 42032"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3477,7 +8492,35 @@
       "quality": "SKILL_CARD_UNCOMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 467,
+      "tooltipLines": [
+        {
+          "left": "Thorns"
+        },
+        {
+          "left": "13 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "Instant cast"
+        },
+        {
+          "left": "Thorns sprout from the friendly target causing 3 Nature damage to attackers when hit.  Lasts 30 min."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 467"
+        },
+        {
+          "left": "CharacterAdvancement ID 40029"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3497,7 +8540,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 6343,
+      "tooltipLines": [
+        {
+          "left": "Thunder Clap"
+        },
+        {
+          "left": "20 Rage"
+        },
+        {
+          "left": "Instant",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "Blasts nearby enemies dealing 15 damage and increasing the time between their attacks by 10% for 10 sec. This ability causes additional threat."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 6343"
+        },
+        {
+          "left": "CharacterAdvancement ID 40187"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3517,7 +8588,38 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 913144,
+      "tooltipLines": [
+        {
+          "left": "Thundering Bloodstrike"
+        },
+        {
+          "left": "1 Blood",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Requires Melee Weapon"
+        },
+        {
+          "left": "Instantly strike the enemy, causing 25% weapon damage as Stormstrike plus 8, total damage increased by 12.5% for each of your diseases on the target.\n\nThis uses Blood Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 913144"
+        },
+        {
+          "left": "CharacterAdvancement ID 138074"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3537,7 +8639,36 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904580,
+      "tooltipLines": [
+        {
+          "left": "Thunderlizard Bite"
+        },
+        {
+          "left": "2 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "5 sec cooldown"
+        },
+        {
+          "left": "Attack the enemy for 13 Stormstrike damage.\n\nThis uses Mongoose Bite modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904580"
+        },
+        {
+          "left": "CharacterAdvancement ID 50029"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3557,7 +8688,32 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 1494,
+      "tooltipLines": [
+        {
+          "left": "Track Beasts"
+        },
+        {
+          "left": "Instant",
+          "right": "1.5 sec cooldown"
+        },
+        {
+          "left": "Shows the location of all nearby beasts on the minimap and increases damage dealt to beasts by 1%.\n\nOnly one form of tracking can be active at a time."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 1494"
+        },
+        {
+          "left": "CharacterAdvancement ID 41124"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3577,7 +8733,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907400,
+      "tooltipLines": [
+        {
+          "left": "Umbral Smash"
+        },
+        {
+          "left": "20 Rage"
+        },
+        {
+          "left": "Instant",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "Blasts nearby enemies dealing 10 Shadowstrike damage and increasing the time between their attacks by 10% for 10 sec. This ability causes additional threat.\n\nThis uses Thunder Clap modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907400"
+        },
+        {
+          "left": "CharacterAdvancement ID 50070"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3597,7 +8781,34 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 34428,
+      "tooltipLines": [
+        {
+          "left": "Victory Rush"
+        },
+        {
+          "left": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "Instantly attack the target causing 9 damage.  Can only be used within 20 sec after you kill an enemy that yields experience or honor. Damage is based on your attack power."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 34428"
+        },
+        {
+          "left": "CharacterAdvancement ID 40270"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3617,7 +8828,39 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 907100,
+      "tooltipLines": [
+        {
+          "left": "Void Lash"
+        },
+        {
+          "left": "3 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "6 sec cooldown"
+        },
+        {
+          "left": "Requires One-Handed Melee Weapon"
+        },
+        {
+          "left": "You charge your off-hand weapon with elemental force, instantly dealing 100% off-hand Weapon damage as Shadowstrike damage. \n\nDamage is increased by 25% if your off-hand weapon is enchanted with Windfury.\n\nThis uses Lava Lash modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 907100"
+        },
+        {
+          "left": "CharacterAdvancement ID 50055"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3637,7 +8880,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 903012,
+      "tooltipLines": [
+        {
+          "left": "Void Strike"
+        },
+        {
+          "left": "45 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "An instant shadow-infused strike that causes 3 Shadowstrike damage in addition to 65% of your normal weapon damage (55% if a two-handed weapon is equipped). Awards 1 combo point.\n\nThis uses Sinister Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 903012"
+        },
+        {
+          "left": "CharacterAdvancement ID 43001"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3657,7 +8928,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 903048,
+      "tooltipLines": [
+        {
+          "left": "Volt Strike"
+        },
+        {
+          "left": "45 Energy",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant"
+        },
+        {
+          "left": "An instant storm-infused strike that causes 3 Stormstrike damage in addition to 65% of your normal weapon damage (55% if a two-handed weapon is equipped). Awards 1 combo point.\n\nThis uses Sinister Strike modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 903048"
+        },
+        {
+          "left": "CharacterAdvancement ID 43004"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3677,7 +8976,36 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904560,
+      "tooltipLines": [
+        {
+          "left": "Wendigo Bite"
+        },
+        {
+          "left": "2 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "5 sec cooldown"
+        },
+        {
+          "left": "Attack the enemy for 13 Froststrike damage.\n\nThis uses Mongoose Bite modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904560"
+        },
+        {
+          "left": "CharacterAdvancement ID 50028"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3697,7 +9025,35 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 5176,
+      "tooltipLines": [
+        {
+          "left": "Wrath"
+        },
+        {
+          "left": "8 Mana",
+          "right": "30 yd range"
+        },
+        {
+          "left": "1.14 sec cast"
+        },
+        {
+          "left": "Causes 17 to 19 Nature damage to the target."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 5176"
+        },
+        {
+          "left": "CharacterAdvancement ID 40165"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
@@ -3717,7 +9073,36 @@
       "quality": "SKILL_CARD_COMMON",
       "qualityCost": 1,
       "rank": 1,
+      "requiredLevel": 1,
       "spellId": 904480,
+      "tooltipLines": [
+        {
+          "left": "Wyrm Bite"
+        },
+        {
+          "left": "2 Mana",
+          "right": "Melee Range"
+        },
+        {
+          "left": "Instant cast",
+          "right": "5 sec cooldown"
+        },
+        {
+          "left": "Attack the enemy for 13 Spellstrike damage.\n\nThis uses Mongoose Bite modifiers."
+        },
+        {
+          "left": "Cost: 2"
+        },
+        {
+          "left": "Level: 1"
+        },
+        {
+          "left": "ID 904480"
+        },
+        {
+          "left": "CharacterAdvancement ID 50024"
+        }
+      ],
       "type": "SKILL_CARD_DEFAULT_NORMAL"
     }
   ]

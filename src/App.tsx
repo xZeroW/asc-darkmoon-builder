@@ -1,12 +1,19 @@
 import { useEffect, useState } from 'react'
 import type { PointerEvent } from 'react'
-import type starterSkillPool from '../data/cards/starter_skill.json'
 
 type Category = 'starter_skill' | 'ability' | 'talent'
-type Card = (typeof starterSkillPool.records)[number] & {
+type Card = {
+  cardId: number
+  name: string
+  quality: string
+  spellId: number
+  iconUrl?: string | null
   description?: string | null
   tooltipLines?: { left?: string | null; right?: string | null }[] | null
   requiredLevel?: number | null
+  qualityCost?: number | null
+  rank?: number | null
+  maxRank?: number | null
 }
 type Slot = {
   category: Category
