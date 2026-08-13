@@ -106,9 +106,16 @@ function SpellTooltip({ tooltip }: { tooltip: Tooltip }) {
   return <aside className="spell-tooltip" style={{ left: x + 16, top: y + 16 }} role="tooltip">
     <h3>{card.name}</h3>
     {card.tooltipLines ? <div className="tooltip-lines">
-      {card.tooltipLines.slice(1).map((line, index) => <p key={index} className={line.left?.startsWith('Requires') ? 'tooltip-requirement' : 'tooltip-line'}>
-        <span>{line.left}</span><span>{line.right}</span>
-      </p>)}
+      {card.tooltipLines.slice(1).map((line, index) => {
+        const [requirement, ...descriptionLines] = line.left?.split('\n') ?? []
+        const hasRequirement = requirement?.startsWith('Requires ')
+        return <div key={index}>
+          {hasRequirement && <p className="tooltip-requirement"><span>{requirement}</span></p>}
+          {(descriptionLines.length > 0 || !hasRequirement) && <p className="tooltip-line">
+            <span>{hasRequirement ? descriptionLines.join('\n').trim() : line.left}</span><span>{line.right}</span>
+          </p>}
+        </div>
+      })}
     </div> : <>
       <div className="tooltip-details"><span>{card.qualityCost ?? '?'} Essence</span><span>{card.requiredLevel ?? '?'} level</span></div>
       <p className="tooltip-rank">{card.rank === card.maxRank ? 'Rank ' + card.rank : `Rank ${card.rank}/${card.maxRank}`}</p>
