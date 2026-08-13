@@ -14,6 +14,7 @@ type Card = {
   qualityCost?: number | null
   rank?: number | null
   maxRank?: number | null
+  pvpScore?: number
 }
 type Slot = {
   category: Category
@@ -157,7 +158,8 @@ function App() {
     let cancelled = false
     void cardLoaders[activeTab]().then(({ default: pool }) => {
       if (!cancelled) {
-        setCardsByCategory((current) => ({ ...current, [activeTab]: pool.records }))
+        const cards = pool.records.map((card) => ({ ...card, pvpScore: getPvpScore(card) }))
+        setCardsByCategory((current) => ({ ...current, [activeTab]: cards }))
       }
     })
     return () => { cancelled = true }
@@ -170,7 +172,7 @@ function App() {
     || card.description?.toLowerCase().includes(normalizedSearch),
   )
   const sortedCards = sortMode === 'pvp'
-    ? [...filteredCards].sort((left, right) => getPvpScore(right) - getPvpScore(left) || left.name.localeCompare(right.name))
+    ? [...filteredCards].sort((left, right) => (right.pvpScore ?? 0) - (left.pvpScore ?? 0) || left.name.localeCompare(right.name))
     : filteredCards
 
   function removeCard(slotIndex: number) {
