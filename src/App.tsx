@@ -112,7 +112,7 @@ function CardList({ cards, golden, slots, onSelect, onShowTooltip, onMoveTooltip
     <div className="card-list-spacer" style={{ height: cards.length * cardRowHeight }}>
       <div className="card-list-window" style={{ transform: `translateY(${firstRow * cardRowHeight}px)` }}>
         {cardsToRender.map((card) => {
-          const selected = slots.some((slot) => slot.golden === golden && slot.card?.spellId === card.spellId)
+          const selected = slots.some((slot) => slot.card?.cardId === card.cardId)
           return <button key={card.cardId} className={selected ? 'collection-card selected' : 'collection-card'} onClick={() => onSelect(card, golden)} disabled={selected} onPointerEnter={(event) => onShowTooltip(card, event)} onPointerMove={onMoveTooltip} onPointerLeave={onHideTooltip}>
             <CardIcon card={card} />
             <span className="list-name">{card.name}</span>
@@ -158,7 +158,7 @@ function App() {
   }
 
   function selectCard(card: Card, golden: boolean) {
-    const existing = slots.some((slot) => slot.golden === golden && slot.card?.spellId === card.spellId)
+    const existing = slots.some((slot) => slot.card?.cardId === card.cardId)
     if (existing) return
     const targetIndex = slots.findIndex((slot) => slot.category === activeTab && slot.golden === golden && !slot.card)
     if (targetIndex === -1) return
