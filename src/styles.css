@@ -45,13 +45,12 @@ button { cursor: pointer; }
 .close { justify-self: center; width: 28px; height: 28px; border: 2px solid #9c901c; border-radius: 5px; color: #ffdf00; background: #4a0c0a; font-size: 28px; line-height: 22px; }
 
 .tabs { display: flex; gap: 7px; align-items: end; padding: 8px 14px 0; border-bottom: 1px solid #494739; background: #11120e; }
-.tab, .reset-button, .pvp-sort {
+.tab, .reset-button {
   border: 1px solid #625e42; border-radius: 3px 3px 0 0; background: linear-gradient(#39392f, #10110f 57%, #050605); color: #f3ce0b; padding: 7px 13px; text-shadow: 0 1px #000;
 }
-.tab:hover, .tab.active, .pvp-sort:hover, .pvp-sort.active { background: linear-gradient(#795e15, #211a09 72%); border-color: #d3a620; color: #fff4c0; box-shadow: inset 0 1px #fff2a344; }
+.tab:hover, .tab.active { background: linear-gradient(#795e15, #211a09 72%); border-color: #d3a620; color: #fff4c0; box-shadow: inset 0 1px #fff2a344; }
 .tabs-spacer { flex: 1; }
 .reset-button { margin-bottom: 0; border-radius: 3px; color: #dce8f1; white-space: nowrap; }
-.pvp-sort { margin-bottom: 0; border-radius: 3px; color: #ecb6c9; white-space: nowrap; }
 .top-search { display: flex; align-items: center; width: min(330px, 27vw); height: 25px; border: 1px solid #777463; border-radius: 5px; background: #060706; color: #a8a595; padding-left: 7px; }
 .top-search input { width: 100%; min-width: 0; border: 0; outline: 0; background: transparent; color: #eee8d0; padding: 3px 5px; }
 .top-search button { width: 18px; height: 18px; margin-right: -9px; border: 1px solid #8b201c; border-radius: 50%; background: #610f0b; color: #ffe21d; font-weight: 700; line-height: 12px; }

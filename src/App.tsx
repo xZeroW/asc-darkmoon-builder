@@ -14,7 +14,6 @@ type Card = {
   qualityCost?: number | null
   rank?: number | null
   maxRank?: number | null
-  pvpScore?: number
 }
 type Slot = {
   category: Category
@@ -26,8 +25,6 @@ type Tooltip = {
   x: number
   y: number
 }
-
-type SortMode = 'name' | 'pvp'
 
 const tabs: { category: Category; label: string; shortLabel: string }[] = [
   { category: 'starter_skill', label: 'Starter Skill Cards', shortLabel: 'Starter Skills' },
@@ -50,23 +47,6 @@ const qualityClass: Record<string, string> = {
 }
 const cardRowHeight = 54
 const overscanRows = 8
-
-const pvpSignals: [RegExp, number][] = [
-  [/interrupt|silenc|counterspell|lockout/i, 12],
-  [/stun|incapacitat|disorient|fear|cyclone|polymorph|hex|banish|sleep|sap|blind/i, 10],
-  [/root|immobiliz|snare|slow|daze|knockback|grip/i, 6],
-  [/dispel|purge|cleanse|remove.*(magic|curse|poison|disease)/i, 8],
-  [/immune|invulnerab|damage taken.*reduc|absorb|shield|reflect|evasion|dodge/i, 7],
-  [/heal|restor|regenerat|leech/i, 5],
-  [/teleport|dash|charge|leap|movement speed|break.*(stun|root|snare|bond)/i, 6],
-  [/stealth|invisible|vanish|detect.*stealth/i, 6],
-  [/cooldown|charge|recharge/i, 2],
-]
-
-function getPvpScore(card: Card) {
-  const text = `${card.name}\n${card.description ?? ''}\n${card.tooltipLines?.map((line) => `${line.left ?? ''} ${line.right ?? ''}`).join('\n') ?? ''}`
-  return pvpSignals.reduce((score, [pattern, value]) => score + (pattern.test(text) ? value : 0), 0)
-}
 
 function makeSlots(): Slot[] {
   return tabs.flatMap(({ category }) => {
@@ -151,15 +131,13 @@ function App() {
   const [search, setSearch] = useState('')
   const [cardsByCategory, setCardsByCategory] = useState<Partial<Record<Category, Card[]>>>({})
   const [tooltip, setTooltip] = useState<Tooltip | null>(null)
-  const [sortMode, setSortMode] = useState<SortMode>('name')
 
   useEffect(() => {
     if (cardsByCategory[activeTab]) return
     let cancelled = false
     void cardLoaders[activeTab]().then(({ default: pool }) => {
       if (!cancelled) {
-        const cards = pool.records.map((card) => ({ ...card, pvpScore: getPvpScore(card) }))
-        setCardsByCategory((current) => ({ ...current, [activeTab]: cards }))
+        setCardsByCategory((current) => ({ ...current, [activeTab]: pool.records }))
       }
     })
     return () => { cancelled = true }
@@ -171,9 +149,6 @@ function App() {
     card.name.toLowerCase().includes(normalizedSearch)
     || card.description?.toLowerCase().includes(normalizedSearch),
   )
-  const sortedCards = sortMode === 'pvp'
-    ? [...filteredCards].sort((left, right) => (right.pvpScore ?? 0) - (left.pvpScore ?? 0) || left.name.localeCompare(right.name))
-    : filteredCards
 
   function removeCard(slotIndex: number) {
     const indexes = slots.map((slot, index) => ({ slot, index })).filter(({ slot }) => slot.category === activeTab)
@@ -219,9 +194,6 @@ function App() {
           ))}
           <span className="tabs-spacer" />
             <button className="reset-button" onClick={reset}>Reset build</button>
-            <button className={sortMode === 'pvp' ? 'pvp-sort active' : 'pvp-sort'} onClick={() => setSortMode((mode) => mode === 'pvp' ? 'name' : 'pvp')}>
-              {sortMode === 'pvp' ? 'PvP ranked' : 'Rank PvP'}
-            </button>
           <div className="top-search">
             <span aria-hidden="true">⌕</span>
             <input placeholder="Search" value={search} onFocus={() => setTooltip(null)} onChange={(event) => { setTooltip(null); setSearch(event.target.value) }} />
@@ -271,11 +243,11 @@ function App() {
 
           <aside className="collection">
             <div className="collection-title">{tabs.find((tab) => tab.category === activeTab)?.label} Collection</div>
-            <p className="collection-count">{sortedCards.length.toLocaleString()} cards available{sortMode === 'pvp' && ' · ranked for PvP impact'}</p>
+            <p className="collection-count">{filteredCards.length.toLocaleString()} cards available</p>
             {([false, true] as const).map((golden) => (
               <section key={String(golden)} className={golden ? 'collection-pane golden-pane' : 'collection-pane'}>
                 <h3>{golden ? 'Golden Cards' : 'Normal Cards'}</h3>
-                <CardList key={`${activeTab}-${golden}-${search}-${sortMode}`} cards={sortedCards} golden={golden} slots={slots} onSelect={selectCard} onShowTooltip={showTooltip} onMoveTooltip={moveTooltip} onHideTooltip={() => setTooltip(null)} />
+                <CardList key={`${activeTab}-${golden}-${search}`} cards={filteredCards} golden={golden} slots={slots} onSelect={selectCard} onShowTooltip={showTooltip} onMoveTooltip={moveTooltip} onHideTooltip={() => setTooltip(null)} />
               </section>
             ))}
           </aside>
