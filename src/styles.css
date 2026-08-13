@@ -1,0 +1,105 @@
+:root {
+  color: #e9e2c1;
+  background: #11150f;
+  font-family: Georgia, "Times New Roman", serif;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; min-width: 320px; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+
+.world {
+  min-height: 100vh;
+  padding: clamp(14px, 3vw, 44px);
+  background:
+    radial-gradient(circle at 16% 13%, #53603b55, transparent 23%),
+    radial-gradient(circle at 80% 88%, #805b2529, transparent 27%),
+    linear-gradient(120deg, #1c2519, #131611 48%, #242014);
+}
+
+.game-frame {
+  width: min(1440px, 100%);
+  min-height: calc(100vh - clamp(28px, 6vw, 88px));
+  margin: auto;
+  border: 2px solid #5b5845;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #151714f5, #090a09f5);
+  box-shadow: 0 0 0 5px #050605, 0 25px 70px #000b, inset 0 0 70px #000b;
+  overflow: hidden;
+}
+
+.title-bar {
+  height: 48px;
+  display: grid;
+  grid-template-columns: 72px 1fr 72px;
+  align-items: center;
+  background: linear-gradient(#32342d, #080908 57%, #2a2b25);
+  border-bottom: 1px solid #77735d;
+  text-align: center;
+}
+
+.title-bar h1 { color: #ffe717; font-size: 18px; margin: 0; text-shadow: 0 2px #000; }
+.sigil { justify-self: center; color: #5df2eb; font-size: 29px; text-shadow: 0 0 9px #00f7ff; }
+.close { justify-self: center; width: 28px; height: 28px; border: 2px solid #9c901c; border-radius: 5px; color: #ffdf00; background: #4a0c0a; font-size: 28px; line-height: 22px; }
+
+.tabs { display: flex; gap: 8px; padding: 10px 18px 0; border-bottom: 1px solid #494739; background: #11120e; }
+.tab, .generate, .seed-control button, .footer-nav button {
+  border: 1px solid #625e42; border-radius: 4px 4px 0 0; background: linear-gradient(#292a22, #090a09); color: #f3ce0b; padding: 8px 13px; text-shadow: 0 1px #000;
+}
+.tab:hover, .tab.active { background: linear-gradient(#795e15, #211a09 72%); border-color: #d3a620; color: #fff4c0; box-shadow: inset 0 1px #fff2a344; }
+.tabs-spacer { flex: 1; }
+.generate { border-radius: 4px; margin-bottom: 7px; background: linear-gradient(#77601a, #251c07); font-weight: 700; }
+
+.content { display: grid; grid-template-columns: minmax(0, 1fr) minmax(310px, 365px); min-height: 720px; }
+.build-area { padding: clamp(18px, 3vw, 38px); background: radial-gradient(ellipse at center, #29251b80, transparent 70%), repeating-linear-gradient(135deg, #0d0e0c, #0d0e0c 5px, #10120f 6px, #10120f 9px); border-right: 2px solid #413f31; }
+.build-heading { display: flex; justify-content: space-between; align-items: end; gap: 20px; border-bottom: 1px solid #4c4937; padding-bottom: 15px; }
+.eyebrow { color: #a8914b; font-family: Arial, sans-serif; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; }
+.build-heading h2 { margin: 3px 0 0; color: #ffdf22; font-size: 25px; }
+.instruction { color: #aea88e; font-size: 14px; margin: 14px 0 25px; }
+.seed-control { display: flex; align-items: center; gap: 7px; color: #c9bb83; font-size: 13px; }
+.seed-control input { width: 115px; background: #070806; border: 1px solid #5e5a40; border-radius: 3px; color: #eee4bd; padding: 7px; }
+.seed-control button { border-radius: 3px; padding: 7px 10px; }
+
+.slot-grid { display: grid; grid-template-columns: repeat(3, minmax(145px, 1fr)); gap: clamp(16px, 2vw, 30px); max-width: 760px; margin: 10px auto; }
+.slot { min-height: 254px; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 17px 12px; border: 3px solid #3d4037; border-radius: 13px; background: linear-gradient(135deg, #232420, #080908 58%, #1d1e1b); box-shadow: inset 0 0 0 2px #0009, inset 0 0 28px #000; text-align: center; }
+.slot.filled { border-color: #72604a; }
+.slot.golden-slot { border-color: #a67f25; box-shadow: inset 0 0 0 2px #39260c, inset 0 0 28px #000, 0 0 11px #9f74122f; }
+.slot-corners { position: absolute; inset: 7px; border: 1px solid #c0952d77; clip-path: polygon(0 13%, 13% 0, 87% 0, 100% 13%, 100% 87%, 87% 100%, 13% 100%, 0 87%); pointer-events: none; }
+.slot-topline { position: absolute; inset: 9px 10px auto; display: flex; justify-content: space-between; font: 700 10px Arial, sans-serif; }
+.remove { border: 0; color: #f7cf20; background: #6a120d; border-radius: 3px; font-size: 19px; line-height: 17px; }
+.card-icon { display: grid; place-items: center; flex: 0 0 auto; width: 62px; height: 62px; border: 2px solid #171717; border-radius: 7px; color: #fff; font: bold 17px Arial, sans-serif; text-shadow: 1px 1px #000; box-shadow: inset 0 0 18px #0008, 0 0 0 2px currentColor; }
+.slot .card-icon { margin: 13px 0 10px; }
+.slot h3 { margin: 0; color: #f5d87b; font-size: 18px; line-height: 1.1; }
+.slot p { margin: 8px 0; color: #c9c0a5; font-size: 12px; }
+.lock { margin-top: auto; border: 1px solid #706747; background: #24241d; border-radius: 3px; color: #d5ca9c; padding: 5px 11px; }
+.lock.locked { color: #ffdc2c; border-color: #bc9421; background: #55400c; }
+.empty { color: #6e6958; background: linear-gradient(135deg, #151613, #080908); }
+.empty-mark { font-size: 45px; color: #514f42; }
+
+.collection { display: flex; min-height: 0; flex-direction: column; background: linear-gradient(100deg, #10110e, #080907); }
+.collection-title { padding: 13px 15px 9px; border-bottom: 1px solid #6f6845; color: #ffdb1b; text-align: center; font-weight: 700; text-shadow: 0 1px #000; }
+.search-row { display: flex; gap: 6px; padding: 11px 12px 4px; }
+.search-row input { min-width: 0; flex: 1; border: 1px solid #66634e; border-radius: 4px; background: #040504; color: #e8e1bf; padding: 8px 10px; }
+.search-row button { border: 1px solid #8e2420; border-radius: 50%; width: 24px; height: 24px; background: #56100d; color: #ffd91e; font-weight: 700; }
+.collection-count { margin: 3px 14px 8px; color: #8a886f; font: 12px Arial, sans-serif; }
+.card-list { overflow: auto; padding: 0 10px 12px; scrollbar-color: #877a3c #080907; }
+.collection-card { width: 100%; min-height: 59px; display: grid; grid-template-columns: 40px 1fr 9px 26px; align-items: center; gap: 9px; border: 1px solid #34362f; border-bottom-color: #0a0a09; background: linear-gradient(90deg, #111411, #050605); color: #d6d2b9; padding: 6px; text-align: left; }
+.collection-card:hover:not(:disabled) { background: linear-gradient(90deg, #2a2b1d, #12140d); border-color: #918049; }
+.collection-card.selected { opacity: .45; }
+.collection-card .card-icon { width: 34px; height: 34px; font-size: 10px; }
+.list-name { overflow: hidden; color: #1d9fff; font: 700 15px Arial, sans-serif; text-overflow: ellipsis; white-space: nowrap; }
+.rank { display: grid; place-items: center; width: 24px; height: 24px; border: 2px solid #a99d61; border-radius: 50%; background: #050505; color: #fff6c5; font: 700 13px Arial, sans-serif; }
+.quality-dot { width: 7px; height: 7px; border-radius: 50%; }
+.common { color: #ece8dc; background-color: #777873; } .uncommon { color: #1eff00; background-color: #1eff00; } .rare { color: #209eff; background-color: #209eff; } .epic { color: #c65af5; background-color: #c65af5; } .legendary { color: #ff8a19; background-color: #ff8a19; }
+.slot-topline .common, .slot-topline .uncommon, .slot-topline .rare, .slot-topline .epic, .slot-topline .legendary { background: none; }
+
+.footer-nav { display: flex; align-items: center; gap: 8px; min-height: 48px; overflow: auto; padding: 8px 15px; border-top: 2px solid #4a4738; background: #0b0c09; color: #f0ce11; white-space: nowrap; }
+.footer-nav span, .footer-nav strong { padding: 6px 10px; border: 1px solid #474633; border-radius: 3px; background: #171811; }
+.footer-nav strong { color: #fff4b1; border-color: #ac8527; background: #463311; }
+.footer-nav button { margin-left: auto; border-radius: 3px; padding: 6px 10px; }
+
+@media (max-width: 900px) { .content { grid-template-columns: 1fr; } .build-area { border-right: 0; } .collection { min-height: 470px; border-top: 2px solid #413f31; } }
+@media (max-width: 620px) { .world { padding: 0; } .game-frame { min-height: 100vh; border-radius: 0; border-width: 0; } .title-bar { grid-template-columns: 48px 1fr 48px; } .tabs { overflow: auto; padding-inline: 8px; } .tab { flex: 0 0 auto; font-size: 12px; } .generate { display: none; } .build-area { padding: 18px 12px; } .build-heading { align-items: start; flex-direction: column; } .slot-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } .slot { min-height: 225px; } }
