@@ -95,7 +95,7 @@ function App() {
   }
 
   function reset() {
-    setSlots(randomize(makeSlots(), Date.now()))
+    setSlots(makeSlots())
   }
 
   return (
