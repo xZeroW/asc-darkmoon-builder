@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react'
-import type { PointerEvent, UIEvent } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import type { PointerEvent, RefObject, UIEvent } from 'react'
 import { discoverRelationships, discoverSuggestions } from './relationships'
 
 type Category = 'starter_skill' | 'ability' | 'talent'
@@ -112,9 +112,9 @@ function CardIcon({ card }: { card: Card }) {
   </span>
 }
 
-function SpellTooltip({ tooltip }: { tooltip: Tooltip }) {
+function SpellTooltip({ tooltip, tooltipRef }: { tooltip: Tooltip; tooltipRef: RefObject<HTMLElement | null> }) {
   const { card, x, y, suggestedBy } = tooltip
-  return <aside className="spell-tooltip" style={{ left: x + 16, top: y + 16 }} role="tooltip">
+  return <aside ref={tooltipRef} className="spell-tooltip" style={{ left: x + 16, top: y + 16 }} role="tooltip">
     <h3>{card.name}</h3>
     {card.tooltipLines ? <div className="tooltip-lines">
       {card.tooltipLines.slice(1).map((line, index) => {
@@ -187,6 +187,7 @@ function App() {
   const [showSuggestions, setShowSuggestions] = useState(false)
   const [shareStatus, setShareStatus] = useState('Share build')
   const [buildRestored, setBuildRestored] = useState(() => !new URLSearchParams(window.location.search).has('build'))
+  const tooltipElement = useRef<HTMLElement | null>(null)
 
   useEffect(() => {
     if (cardsByCategory[activeTab]) return
@@ -242,7 +243,9 @@ function App() {
   const selectedNames = new Set(slots.flatMap((slot) => slot.card ? [normalizeName(slot.card.name)] : []))
   const selectedCards = slots.flatMap((slot) => slot.card ? [slot.card] : [])
   const activeRelationships = discoverRelationships(slots.flatMap((slot) => slot.card ? [slot.card] : []))
-  const suggestedByCardId = discoverSuggestions(selectedCards, Object.values(cardsByCategory).flat())
+  const suggestedByCardId = showSuggestions
+    ? discoverSuggestions(selectedCards, Object.values(cardsByCategory).flat())
+    : new Map<number, string[]>()
   const missingRequirements = new Map<number, string[]>()
   for (const slot of slots) {
     if (!slot.card) continue
@@ -301,7 +304,9 @@ function App() {
   }
 
   function moveTooltip(event: PointerEvent) {
-    setTooltip((current) => current && { ...current, x: event.clientX, y: event.clientY })
+    if (!tooltipElement.current) return
+    tooltipElement.current.style.left = `${event.clientX + 16}px`
+    tooltipElement.current.style.top = `${event.clientY + 16}px`
   }
 
   return (
@@ -397,7 +402,7 @@ function App() {
         </div>
 
       </section>
-      {tooltip && <SpellTooltip tooltip={tooltip} />}
+      {tooltip && <SpellTooltip tooltip={tooltip} tooltipRef={tooltipElement} />}
     </main>
   )
 }
