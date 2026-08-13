@@ -39,6 +39,25 @@ local function encode(value)
     if type(value) == "string" then
         return "\"" .. escapeString(value) .. "\""
     end
+    if type(value) == "table" then
+        local isArray = #value > 0
+        local parts = {}
+        if isArray then
+            for index, item in ipairs(value) do
+                parts[#parts + 1] = encode(item)
+            end
+            return "[" .. table.concat(parts, ", ") .. "]"
+        end
+        local keys = {}
+        for key in pairs(value) do
+            keys[#keys + 1] = key
+        end
+        table.sort(keys)
+        for _, key in ipairs(keys) do
+            parts[#parts + 1] = encode(tostring(key)) .. ": " .. encode(value[key])
+        end
+        return "{" .. table.concat(parts, ", ") .. "}"
+    end
     error("Unsupported JSON value: " .. type(value))
 end
 
@@ -55,6 +74,21 @@ local function cleanDescription(value)
     return value ~= "" and value or nil
 end
 
+local function cleanTooltipLines(lines)
+    if type(lines) ~= "table" then
+        return nil
+    end
+    local result = {}
+    for _, line in ipairs(lines) do
+        local left = cleanDescription(line.left)
+        local right = cleanDescription(line.right)
+        if left or right then
+            result[#result + 1] = { left = left, right = right }
+        end
+    end
+    return #result > 0 and result or nil
+end
+
 local rows = {}
 for _, pool in ipairs(export.pools or {}) do
     for _, item in ipairs(pool.items or {}) do
@@ -69,6 +103,7 @@ for _, pool in ipairs(export.pools or {}) do
             spellId = item.SpellID,
             name = item.name,
             description = cleanDescription(item.description),
+            tooltipLines = cleanTooltipLines(item.tooltipLines),
             rank = item.Rank,
             maxRank = item.MaxRank,
             quality = item.Quality,

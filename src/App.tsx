@@ -5,6 +5,7 @@ import type starterSkillPool from '../data/cards/starter_skill.json'
 type Category = 'starter_skill' | 'ability' | 'talent'
 type Card = (typeof starterSkillPool.records)[number] & {
   description?: string | null
+  tooltipLines?: { left?: string | null; right?: string | null }[] | null
   requiredLevel?: number | null
 }
 type Slot = {
@@ -62,12 +63,15 @@ function SpellTooltip({ tooltip }: { tooltip: Tooltip }) {
   const { card, x, y } = tooltip
   return <aside className="spell-tooltip" style={{ left: x + 16, top: y + 16 }} role="tooltip">
     <h3>{card.name}</h3>
-    <div className="tooltip-details">
-      <span>{card.qualityCost ?? '?'} Essence</span>
-      <span>{card.requiredLevel ?? '?'} level</span>
-    </div>
-    <p className="tooltip-rank">{card.rank === card.maxRank ? 'Rank ' + card.rank : `Rank ${card.rank}/${card.maxRank}`}</p>
-    {card.description && <p className="tooltip-description">{card.description}</p>}
+    {card.tooltipLines ? <div className="tooltip-lines">
+      {card.tooltipLines.slice(1).map((line, index) => <p key={index} className={line.left?.startsWith('Requires') ? 'tooltip-requirement' : 'tooltip-line'}>
+        <span>{line.left}</span><span>{line.right}</span>
+      </p>)}
+    </div> : <>
+      <div className="tooltip-details"><span>{card.qualityCost ?? '?'} Essence</span><span>{card.requiredLevel ?? '?'} level</span></div>
+      <p className="tooltip-rank">{card.rank === card.maxRank ? 'Rank ' + card.rank : `Rank ${card.rank}/${card.maxRank}`}</p>
+      {card.description && <p className="tooltip-description">{card.description}</p>}
+    </>}
     <div className="tooltip-footer">
       <span>Skill Card</span>
       <span>Spell ID {card.spellId}</span>

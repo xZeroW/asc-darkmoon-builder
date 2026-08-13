@@ -105,6 +105,10 @@ button { cursor: pointer; }
 .tooltip-details { display: flex; justify-content: space-between; gap: 12px; color: #fff; font-size: 16px; }
 .tooltip-rank { margin: 2px 0 8px; color: #fff; font-size: 15px; }
 .tooltip-description { margin: 0; color: #ffd900; white-space: pre-line; font: 700 17px/1.15 Georgia, "Times New Roman", serif; }
+.tooltip-lines { margin-top: 2px; }
+.tooltip-line, .tooltip-requirement { display: flex; justify-content: space-between; gap: 12px; margin: 0 0 3px; color: #fff; white-space: pre-line; font: 16px/1.16 Georgia, "Times New Roman", serif; }
+.tooltip-line:has(span:only-child) { color: #ffd900; }
+.tooltip-requirement { color: #ff3030; }
 .tooltip-footer { display: flex; justify-content: space-between; gap: 12px; margin-top: 14px; border-top: 1px solid #575642; padding-top: 8px; color: #ff7200; font-size: 14px; }
 
 @media (max-width: 900px) { .content { grid-template-columns: 1fr; } .build-area { margin-right: 0; } .collection { min-height: 470px; margin-top: 5px; border-top: 2px solid #413f31; } }
