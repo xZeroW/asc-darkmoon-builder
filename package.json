@@ -13,6 +13,7 @@
     "@vitejs/plugin-react": "latest",
     "vite": "latest",
     "typescript": "latest",
+    "preact": "latest",
     "react": "latest",
     "react-dom": "latest"
   },
