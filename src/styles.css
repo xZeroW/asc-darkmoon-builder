@@ -63,6 +63,11 @@ button { cursor: pointer; }
 .instruction { color: #aea88e; font-size: 14px; margin: 14px 0 25px; }
 .requirement-warnings { max-width: 720px; margin: 18px auto 0; border: 1px solid #8e2922; background: #2d100ddd; color: #ff9388; padding: 7px 10px; font: 12px/1.3 Arial, sans-serif; }
 .requirement-warnings p { margin: 2px 0; }
+.relationships { max-width: 720px; margin: 18px auto 0; border: 1px solid #516d7f; background: #0c1d26dd; padding: 9px 11px; font-family: Arial, sans-serif; }
+.relationships h3 { margin: 0 0 7px; color: #69dfff; font-size: 13px; text-transform: uppercase; }
+.relationships article { border-top: 1px solid #385061; padding: 7px 0 1px; }
+.relationships h4 { margin: 0 0 4px; color: #d8f5ff; font-size: 13px; }
+.relationships p { margin: 2px 0; color: #b6cbd2; font-size: 12px; line-height: 1.3; }
 
 .slot-grid { display: grid; grid-template-columns: repeat(3, minmax(150px, 1fr)); gap: 28px 42px; max-width: 720px; margin: 44px auto 0; }
 .starter-slot-grid { grid-template-columns: repeat(2, minmax(150px, 220px)); max-width: 482px; }

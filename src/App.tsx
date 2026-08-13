@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import type { PointerEvent, UIEvent } from 'react'
+import { relationships } from './relationships'
 
 type Category = 'starter_skill' | 'ability' | 'talent'
 type Card = {
@@ -185,6 +186,9 @@ function App() {
 
   const visibleSlots = slots.filter((slot) => slot.category === activeTab)
   const selectedNames = new Set(slots.flatMap((slot) => slot.card ? [normalizeName(slot.card.name)] : []))
+  const activeRelationships = relationships.filter((relationship) =>
+    relationship.cards.every((cardName) => selectedNames.has(normalizeName(cardName))),
+  )
   const missingRequirements = new Map<number, string[]>()
   for (const slot of slots) {
     if (!slot.card) continue
@@ -302,6 +306,13 @@ function App() {
             {activeWarnings.length > 0 && <div className="requirement-warnings" role="alert">
               {activeWarnings.map((warning) => <p key={warning}>{warning}</p>)}
             </div>}
+            {activeRelationships.length > 0 && <section className="relationships" aria-label="Active card synergies">
+              <h3>Active Synergies</h3>
+              {activeRelationships.map((relationship) => <article key={relationship.title}>
+                <h4>{relationship.title}</h4>
+                {relationship.steps.map((step) => <p key={step}>{step}</p>)}
+              </article>)}
+            </section>}
           </section>
 
           <aside className="collection">
