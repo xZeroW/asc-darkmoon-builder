@@ -77,6 +77,7 @@ button { cursor: pointer; }
 .slot .card-icon { margin: 13px 0 10px; }
 .slot h3 { margin: 0; color: #f5d87b; font-size: 18px; line-height: 1.1; }
 .slot p { margin: 8px 0; color: #c9c0a5; font-size: 12px; }
+.slot .card-description { max-height: 56px; margin: 8px 0 0; overflow: auto; color: #c9c0a5; font: 12px/1.25 Arial, sans-serif; text-align: left; }
 .empty { color: #6e6958; background: linear-gradient(135deg, #151613, #080908); }
 .empty-mark { font-size: 45px; color: #514f42; }
 

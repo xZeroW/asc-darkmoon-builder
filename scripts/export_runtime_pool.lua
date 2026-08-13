@@ -45,12 +45,17 @@ end
 local rows = {}
 for _, pool in ipairs(export.pools or {}) do
     for _, item in ipairs(pool.items or {}) do
+        local iconUrl
+        if type(item.icon) == "string" then
+            iconUrl = "icons/" .. string.lower(item.icon):gsub("\\", "-") .. ".webp"
+        end
         rows[#rows + 1] = {
             category = categoryByTab[pool.tab] or "unknown",
             cardId = item.CardID,
             itemId = item.ItemID,
             spellId = item.SpellID,
             name = item.name,
+            description = item.description,
             rank = item.Rank,
             maxRank = item.MaxRank,
             quality = item.Quality,
@@ -62,6 +67,7 @@ for _, pool in ipairs(export.pools or {}) do
             isWildcard = item.IsWildcard,
             isDraftMode = item.IsDraftMode,
             icon = item.icon,
+            iconUrl = iconUrl,
             requiredLevel = item.requiredLevel,
         }
     end

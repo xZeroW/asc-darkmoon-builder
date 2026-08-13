@@ -2,7 +2,10 @@ import { useEffect, useState } from 'react'
 import type starterSkillPool from '../data/cards/starter_skill.json'
 
 type Category = 'starter_skill' | 'ability' | 'talent'
-type Card = (typeof starterSkillPool.records)[number] & { requiredLevel?: number | null }
+type Card = (typeof starterSkillPool.records)[number] & {
+  description?: string | null
+  requiredLevel?: number | null
+}
 type Slot = {
   category: Category
   golden: boolean
@@ -141,7 +144,8 @@ function App() {
                       <button className="remove" aria-label={`Remove ${slot.card.name}`} onClick={() => removeCard(index)}>×</button>
                     </div>
                     <CardIcon card={slot.card} />
-                    <h3>{slot.card.name}</h3>
+                    <h3 title={slot.card.description ?? undefined}>{slot.card.name}</h3>
+                    {slot.card.description && <p className="card-description">{slot.card.description}</p>}
                   </> : <>
                     <span className="empty-mark">✧</span>
                     <p>{slot.golden ? 'Golden Card slot' : 'Card slot'}</p>
@@ -160,7 +164,7 @@ function App() {
                 <div className="card-list">
                   {filteredCards.map((card) => {
                     const selected = slots.some((slot) => slot.golden === golden && slot.card?.spellId === card.spellId)
-                    return <button key={card.cardId} className={selected ? 'collection-card selected' : 'collection-card'} onClick={() => selectCard(card, golden)} disabled={selected}>
+                    return <button key={card.cardId} className={selected ? 'collection-card selected' : 'collection-card'} onClick={() => selectCard(card, golden)} disabled={selected} title={card.description ?? undefined}>
                       <CardIcon card={card} />
                       <span className="list-name">{card.name}</span>
                       <span className={`quality-dot ${qualityClass[card.quality] ?? 'common'}`} />

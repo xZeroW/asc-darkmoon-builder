@@ -4,8 +4,10 @@
       "cardId": 12354,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Blasts nearby enemies dealing 10 Spellstrike damage and increasing the time between their attacks by 10% for 10 sec. This ability causes additional threat.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Thunderclap_Arcane",
+      "iconUrl": "icons/interface-icons-thunderclap_arcane.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -16,15 +18,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907380,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-thunderclap_arcane.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26113,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "An instant arcane-infused strike that causes 3 Spellstrike damage in addition to 65% of your normal weapon damage (55% if a two-handed weapon is equipped). Awards 1 combo point.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Sinisterstrike_Arcane",
+      "iconUrl": "icons/interface-icons-sinisterstrike_arcane.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -35,15 +38,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 903000,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-sinisterstrike_arcane.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27099,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Pierce the target, causing 100% weapon damage as Spellstrike plus 7 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Backstab_Arcane",
+      "iconUrl": "icons/interface-icons-backstab_arcane.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -54,15 +58,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 913402,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-backstab_arcane.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26279,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Finishing move that causes Spellstrike damage per combo point:\r\n   1 point  : 6-8 Spellstrike damage\r\n   2 points: 10-12 Spellstrike damage\r\n   3 points: 15-17 Spellstrike damage\r\n   4 points: 21-23 Spellstrike damage\r\n   5 points: 28-30 Spellstrike damage\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Eviscerate_Arcane",
+      "iconUrl": "icons/interface-icons-eviscerate_arcane.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -73,15 +78,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904840,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-eviscerate_arcane.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12294,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Increases the target's Intellect by 2 and spell power by 2 for 30 min.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Holy_MagicalSentry",
+      "iconUrl": "icons/interface-icons-spell_holy_magicalsentry.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -92,15 +98,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 1459,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_holy_magicalsentry.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12311,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Launches Arcane Missiles at the enemy, causing 17 Arcane damage every 0.91 sec for 2.73 sec.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Nature_StarFall",
+      "iconUrl": "icons/interface-icons-spell_nature_starfall.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -111,15 +118,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 5143,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_nature_starfall.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12310,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "An instant shot that causes 12 Arcane damage.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_ImpalingBolt",
+      "iconUrl": "icons/interface-icons-ability_impalingbolt.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -130,15 +138,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 3044,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_impalingbolt.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26129,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Slams the opponent with arcane force, causing 65% weapon damage plus 6 Spellstrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Slam_Arcane",
+      "iconUrl": "icons/interface-icons-slam_arcane.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -149,15 +158,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 903100,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-slam_arcane.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26309,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 11 as Spellstrike damage and causes a high amount of threat.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\HeroicStrike_Arcane",
+      "iconUrl": "icons/interface-icons-heroicstrike_arcane.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -168,15 +178,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907140,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-heroicstrike_arcane.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26991,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Swipe nearby enemies, inflicting 12 Spellstrike damage plus 1 Spellstrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Swipe_Arcane",
+      "iconUrl": "icons/interface-icons-swipe_arcane.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -187,15 +198,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 912081,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-swipe_arcane.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26987,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Swipe nearby enemies, inflicting 90% weapon damage as Spellstrike.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Swipe_Arcane",
+      "iconUrl": "icons/interface-icons-swipe_arcane.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -206,15 +218,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 912080,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-swipe_arcane.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27063,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "The hunter takes on the aspects of a hawk, increasing ranged attack power by 11.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Nature_RavenForm",
+      "iconUrl": "icons/interface-icons-spell_nature_ravenform.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -225,15 +238,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 13165,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_nature_ravenform.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12350,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Automatically shoots the target until cancelled. Increases your ranged Attack Speed by 33% and scales with Ranged Attack Power.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\INV_Weapon_Bow_02",
+      "iconUrl": "icons/interface-icons-inv_weapon_bow_02.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -244,15 +258,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 965202,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-inv_weapon_bow_02.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24329,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Backstab the target, causing 150% weapon damage plus 10 to the target. Must be behind the target.  Requires a dagger in the main hand. Awards 1 combo point.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_BackStab",
+      "iconUrl": "icons/interface-icons-ability_backstab.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -263,15 +278,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 53,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_backstab.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26605,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Increases the Strength and Agility of all raid and party members within 30 yards by 2. Lasts 30 min.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Warrior_BattleShout",
+      "iconUrl": "icons/interface-icons-ability_warrior_battleshout.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -282,15 +298,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 6673,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_warrior_battleshout.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 25300,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A balanced combat stance that increases the armor penetration of all of physical attacks by 10%.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Warrior_OffensiveStance",
+      "iconUrl": "icons/interface-icons-ability_warrior_offensivestance.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -301,15 +318,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 2457,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_warrior_offensivestance.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26545,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Shapeshift into Bear Form.\r\n\r\nIncreasing melee attack power by 30, armor contribution from cloth and leather items by 65%, and Stamina by 15%. \r\n\r\nTeaches you |cFFFFFFFFGrowl|r.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Racial_BearForm",
+      "iconUrl": "icons/interface-icons-ability_racial_bearform.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -320,15 +338,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 5487,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_racial_bearform.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27019,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Instantly strike the enemy, causing 25% weapon damage as Firestrike plus 8, total damage increased by 12.5% for each of your diseases on the target.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Blood_Strike_Fire",
+      "iconUrl": "icons/interface-icons-blood_strike_fire.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -339,15 +358,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 913120,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-blood_strike_fire.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26285,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Finishing move that causes Firestrike damage per combo point:\r\n   1 point  : 6-8 Firestrike damage\r\n   2 points: 10-12 Firestrike damage\r\n   3 points: 15-17 Firestrike damage\r\n   4 points: 21-23 Firestrike damage\r\n   5 points: 28-30 Firestrike damage\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Eviscerate_Fire",
+      "iconUrl": "icons/interface-icons-eviscerate_fire.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -358,15 +378,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904900,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-eviscerate_fire.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27115,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Places a Blessing on the friendly target, increasing their Strength and Agility by 2 for 30 min.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Holy_FistOfJustice",
+      "iconUrl": "icons/interface-icons-spell_holy_fistofjustice.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -377,15 +398,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 19740,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_holy_fistofjustice.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27119,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Places a Blessing on the friendly target, restoring 10 mana every 5 seconds for 30 min.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Holy_SealOfWisdom",
+      "iconUrl": "icons/interface-icons-spell_holy_sealofwisdom.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -396,15 +418,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 19742,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_holy_sealofwisdom.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27507,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Strengthens you with the presence of blood, increasing damage by 2% and heals you for 2% of your damage dealt.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Deathknight_BloodPresence",
+      "iconUrl": "icons/interface-icons-spell_deathknight_bloodpresence.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -415,15 +438,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 48266,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_deathknight_bloodpresence.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24211,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Instantly strike the enemy, causing 40% weapon damage plus 12, total damage increased by 12.5% for each of your diseases on the target.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Deathknight_DeathStrike",
+      "iconUrl": "icons/interface-icons-spell_deathknight_deathstrike.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -434,15 +458,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 45902,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_deathknight_deathstrike.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24443,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Finishing move that causes Stormstrike damage over time.  Damage increases per combo point:\r\n   1 point  : 17 Stormstrike damage over 12 sec\r\n   2 points: 27 Stormstrike damage over 12 sec\r\n   3 points: 38 Stormstrike damage over 12 sec\r\n   4 points: 48 Stormstrike damage over 12 sec\r\n   5 points: 59 Stormstrike damage over 12 sec\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Rip_Storm",
+      "iconUrl": "icons/interface-icons-rip_storm.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -453,15 +478,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904100,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-rip_storm.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27035,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Instantly strike the enemy, causing 25% weapon damage as Holystrike plus 8, total damage increased by 12.5% for each of your diseases on the target.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Blood_Strike_Holy",
+      "iconUrl": "icons/interface-icons-blood_strike_holy.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -472,15 +498,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 913168,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-blood_strike_holy.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26468,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Slams the opponent with holy force, causing 65% weapon damage plus 6 Holystrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Slam_Holy",
+      "iconUrl": "icons/interface-icons-slam_holy.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -491,15 +518,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907906,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-slam_holy.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26133,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Slams the opponent with fire force, causing 65% weapon damage plus 6 Firestrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Slam_Fire",
+      "iconUrl": "icons/interface-icons-slam_fire.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -510,15 +538,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 903120,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-slam_fire.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24574,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Shapeshift into cat form, increasing melee attack power by 1 plus 25% of Agility. Allows the use of various cat abilities.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Druid_CatForm",
+      "iconUrl": "icons/interface-icons-ability_druid_catform.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -529,15 +558,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 768,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_druid_catform.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 49664,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "|cffFF1A1ARequires |TInterface\\Icons\\Spell_Holy_SealOfWisdom:20:20:0:0|t Path of Healing|r\r\nHurls a fiery ball that deals 14 to 22 Fire damage and an additional 2 Fire damage over 8 sec to enemies or 21 to 27 Radiant healing and an additional 4 Radiant healing over 8 sec to allies.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Fire_FlameBolt",
+      "iconUrl": "icons/interface-icons-spell_fire_flamebolt.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -548,15 +578,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 271205,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_fire_flamebolt.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12386,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Charge an enemy, generate 12 rage, and root it for 1.50 sec.\n\nThis ability is usable while shapeshifted.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Warrior_Charge",
+      "iconUrl": "icons/interface-icons-ability_warrior_charge.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -567,15 +598,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 100,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_warrior_charge.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26117,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "An instant fire-infused strike that causes 3 Firestrike damage in addition to 65% of your normal weapon damage (55% if a two-handed weapon is equipped). Awards 1 combo point.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Sinisterstrike_Fire",
+      "iconUrl": "icons/interface-icons-sinisterstrike_fire.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -586,15 +618,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 903024,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-sinisterstrike_fire.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27123,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "All party or raid members within 40 yards lose 35% less casting or channeling time when damaged.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Holy_MindSooth",
+      "iconUrl": "icons/interface-icons-spell_holy_mindsooth.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -605,15 +638,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 19746,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_holy_mindsooth.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24426,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Conjures 10 muffins, providing the mage and her allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\INV_Misc_Food_10",
+      "iconUrl": "icons/interface-icons-inv_misc_food_10.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -624,15 +658,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 587,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-inv_misc_food_10.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26549,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Conjures 10 bottles of water, providing the mage and her allies with something to drink.\n\nConjured items disappear if logged out for more than 15 minutes.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\INV_Drink_06",
+      "iconUrl": "icons/interface-icons-inv_drink_06.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -643,15 +678,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 5504,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-inv_drink_06.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12324,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Consecrates the land beneath the Paladin, doing 36 Holy damage over 8 sec to enemies who enter the area.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Holy_InnerFire",
+      "iconUrl": "icons/interface-icons-spell_holy_innerfire.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -662,15 +698,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 26573,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_holy_innerfire.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12261,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Corrupts the target, causing 28 Shadow damage over 12 sec.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Shadow_AbominationExplosion",
+      "iconUrl": "icons/interface-icons-spell_shadow_abominationexplosion.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -681,15 +718,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 172,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_shadow_abominationexplosion.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12195,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "An instant strike that causes 75% weapon damage.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Holy_CrusaderStrike",
+      "iconUrl": "icons/interface-icons-spell_holy_crusaderstrike.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -700,15 +738,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 35395,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_holy_crusaderstrike.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24606,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Curses the target with agony, causing 36 Shadow damage over 24 sec.  This damage is dealt slowly at first, and builds up as the Curse reaches its full duration. Only one Curse per Warlock can be active on any one target.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Shadow_CurseOfSargeras",
+      "iconUrl": "icons/interface-icons-spell_shadow_curseofsargeras.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -719,15 +758,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 980,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_shadow_curseofsargeras.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24551,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Target's attack power is reduced by 21 and armor is reduced by 5% for 2 min. Only one Curse per Warlock can be active on any one target.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Shadow_CurseOfMannoroth",
+      "iconUrl": "icons/interface-icons-spell_shadow_curseofmannoroth.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -738,15 +778,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 702,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_shadow_curseofmannoroth.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 51095,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Your threat generated is significantly increased.\r\n\r\nTeaches you |cFFFFFFFFChallenging Howl|r and |cFFFFFFFFDemon Claws|r.\r\n\r\nDark Apotheosis cannot cower behind a shield. Shields cannot be equipped while transformed.\r\n\r\n|TInterface\\Common\\ui-tooltipdivider:12:180:0:0|t\n|TInterface\\icons\\5_shadowswords_Border:20:20:0:0|t |cffFFFFFFDemon Claws|r\n|cffFFFFFF15 Rage|r\n|cffFF1A1ARequires |TInterface\\Icons\\Spell_Shadow_DemonForm:20:20:0:0|t Dark Apotheosis|r\nStrike twice, dealing 9 Physical damage per strike.\n|TInterface\\Common\\ui-tooltipdivider:12:180:0:0|t\n|TInterface\\Icons\\Spell_Nature_ShamanRage:20:20:0:0|t |cffFFFFFFChallenging Howl|r\n|cffFFFFFF30 yd range|r\n|cffFFFFFF8 sec cooldown|r\nTaunts the target to attack you, but has no effect if the target is already attacking you.\r\n\r\nShares a cooldown with other single target taunt abilities and Distracting Shot. Can only be cast while in Dark Apotheosis.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Shadow_DemonForm",
+      "iconUrl": "icons/interface-icons-spell_shadow_demonform.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -757,15 +798,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 275585,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_shadow_demonform.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12358,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Blasts nearby enemies dealing 10 Holystrike damage and increasing the time between their attacks by 10% for 10 sec. This ability causes additional threat.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Thunderclap_Holy",
+      "iconUrl": "icons/interface-icons-thunderclap_holy.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -776,15 +818,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907420,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-thunderclap_holy.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26466,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "An instant holy-infused strike that causes 3 Holystrike damage in addition to 65% of your normal weapon damage (55% if a two-handed weapon is equipped). Awards 1 combo point.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Sinisterstrike_Holy",
+      "iconUrl": "icons/interface-icons-sinisterstrike_holy.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -795,15 +838,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907894,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-sinisterstrike_holy.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27095,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Pierce the target, causing 100% weapon damage as Holystrike plus 7 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Backstab_Holy",
+      "iconUrl": "icons/interface-icons-backstab_holy.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -814,15 +858,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 913390,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-backstab_holy.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26139,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "An instant holy strike that causes 50% weapon damage as Holystrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\CrusaderStrike_Holy",
+      "iconUrl": "icons/interface-icons-crusaderstrike_holy.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -833,15 +878,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 903158,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-crusaderstrike_holy.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24437,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Finishing move that causes Holystrike damage over time.  Damage increases per combo point:\r\n   1 point  : 17 Holystrike damage over 12 sec\r\n   2 points: 27 Holystrike damage over 12 sec\r\n   3 points: 38 Holystrike damage over 12 sec\r\n   4 points: 48 Holystrike damage over 12 sec\r\n   5 points: 59 Holystrike damage over 12 sec\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Rip_Holy",
+      "iconUrl": "icons/interface-icons-rip_holy.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -852,15 +898,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904040,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-rip_holy.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24344,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Significantly Increases your threat generation.\r\n\r\nIncreases your armor by 10% and decreases damage taken by 10%.\r\n\r\nYour damage and healing done is decreased by 5%. \r\n\r\nTeaches you |cFFFFFFFFTaunt|r.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Warrior_DefensiveStance",
+      "iconUrl": "icons/interface-icons-ability_warrior_defensivestance.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -871,15 +918,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 71,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_warrior_defensivestance.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24495,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Protects the caster, increasing armor by 54, and healing received by 5%.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Shadow_RagingScream",
+      "iconUrl": "icons/interface-icons-spell_shadow_ragingscream.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -890,15 +938,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 687,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_shadow_ragingscream.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24413,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Gives 40 additional armor to party and raid members within 40 yards.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Holy_DevotionAura",
+      "iconUrl": "icons/interface-icons-spell_holy_devotionaura.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -909,15 +958,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 465,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_holy_devotionaura.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 65035,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Teaches you the necessary abilities to Dominate an Undead companion.\n\nTeaches you Dominate Undead, Raise Undead, Dismiss Undead, Revive Undead and Undead Lore.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\inv_misc_steelweaponchain",
+      "iconUrl": "icons/interface-icons-inv_misc_steelweaponchain.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -928,15 +978,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 891,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-inv_misc_steelweaponchain.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26247,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Attack the enemy for 13 Holystrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\MongooseBite_Holy",
+      "iconUrl": "icons/interface-icons-mongoosebite_holy.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -947,15 +998,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904520,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-mongoosebite_holy.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26233,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 18 as Shadowstrike damage and causes a high amount of threat. Effects which increase bleed effects also increase Maul damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Maul_Shadow",
+      "iconUrl": "icons/interface-icons-maul_shadow.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -966,15 +1018,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904380,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-maul_shadow.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26141,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "An instant shadow strike that causes 50% weapon damage as Shadowstrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\CrusaderStrike_Shadow",
+      "iconUrl": "icons/interface-icons-crusaderstrike_shadow.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -985,15 +1038,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 903166,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-crusaderstrike_shadow.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24435,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Finishing move that causes Shadowstrike damage over time.  Damage increases per combo point:\r\n   1 point  : 17 Shadowstrike damage over 12 sec\r\n   2 points: 27 Shadowstrike damage over 12 sec\r\n   3 points: 38 Shadowstrike damage over 12 sec\r\n   4 points: 48 Shadowstrike damage over 12 sec\r\n   5 points: 59 Shadowstrike damage over 12 sec\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Rip_Shadow",
+      "iconUrl": "icons/interface-icons-rip_shadow.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1004,15 +1058,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904020,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-rip_shadow.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26631,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Instantly shocks the target with concussive force, causing 13 to 15 Nature damage and reducing melee attack speed by 10% for 8 sec.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Nature_EarthShock",
+      "iconUrl": "icons/interface-icons-spell_nature_earthshock.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1023,15 +1078,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 8042,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_nature_earthshock.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 65103,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Teaches you the necessary abilities to Enslave a Demon companion.\n\nTeaches you Enslave Demon, Summon Demon, Dismiss Demon, Revive Demon and Demon Lore.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\spell_warlock_demonbolt",
+      "iconUrl": "icons/interface-icons-spell_warlock_demonbolt.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1042,15 +1098,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 890,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_warlock_demonbolt.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24776,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Finishing move that causes damage per combo point:\r\n   1 point  : 7-11 damage\r\n   2 points: 14-18 damage\r\n   3 points: 21-25 damage\r\n   4 points: 28-32 damage\r\n   5 points: 37-41 damage",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Rogue_Eviscerate",
+      "iconUrl": "icons/interface-icons-ability_rogue_eviscerate.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1061,15 +1118,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 2098,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_rogue_eviscerate.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12304,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Blasts the enemy for 19 to 23 Fire damage.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Fire_Fireball",
+      "iconUrl": "icons/interface-icons-spell_fire_fireball.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1080,15 +1138,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 2136,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_fire_fireball.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26315,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 11 as Firestrike damage and causes a high amount of threat.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\HeroicStrike_Fire",
+      "iconUrl": "icons/interface-icons-heroicstrike_fire.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1099,15 +1158,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907200,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-heroicstrike_fire.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26951,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Swipe nearby enemies, inflicting 12 Firestrike damage plus 1 Firestrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Swipe_Fire",
+      "iconUrl": "icons/interface-icons-swipe_fire.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1118,15 +1178,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 911981,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-swipe_fire.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26947,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Swipe nearby enemies, inflicting 90% weapon damage as Firestrike.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Swipe_Fire",
+      "iconUrl": "icons/interface-icons-swipe_fire.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1137,15 +1198,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 911980,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-swipe_fire.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12259,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Hurls a fiery ball that causes 14 to 22 Fire damage and an additional 2 Fire damage over 4 sec.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Fire_FlameBolt",
+      "iconUrl": "icons/interface-icons-spell_fire_flamebolt.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1156,15 +1218,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 133,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_fire_flamebolt.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26237,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 18 as Firestrike damage and causes a high amount of threat. Effects which increase bleed effects also increase Maul damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Maul_Fire",
+      "iconUrl": "icons/interface-icons-maul_fire.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1175,15 +1238,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904420,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-maul_fire.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26261,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 5 as Firestrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\RaptorStrike_Fire_014",
+      "iconUrl": "icons/interface-icons-raptorstrike_fire_014.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1194,15 +1258,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904660,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-raptorstrike_fire_014.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27079,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Pierce the target, causing 100% weapon damage as Firestrike plus 7 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Backstab_Fire",
+      "iconUrl": "icons/interface-icons-backstab_fire.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1213,15 +1278,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 913342,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-backstab_fire.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26454,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "An instant fire strike that causes 50% weapon damage as Firestrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\CrusaderStrike_Fire",
+      "iconUrl": "icons/interface-icons-crusaderstrike_fire.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1232,15 +1298,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907860,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-crusaderstrike_fire.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24439,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Finishing move that causes Firestrike damage over time.  Damage increases per combo point:\r\n   1 point  : 17 Firestrike damage over 12 sec\r\n   2 points: 27 Firestrike damage over 12 sec\r\n   3 points: 38 Firestrike damage over 12 sec\r\n   4 points: 48 Firestrike damage over 12 sec\r\n   5 points: 59 Firestrike damage over 12 sec\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Rip_Fire",
+      "iconUrl": "icons/interface-icons-rip_fire.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1251,15 +1318,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904060,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-rip_fire.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26125,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A steady shot wreathed in cinders that causes 50% weapon damage as Firestrike damage and deals 6 additional Firestrike damage. Causes an additional 5 Firestrike damage to slowed targets.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Steadyshot_Fire",
+      "iconUrl": "icons/interface-icons-steadyshot_fire.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1270,15 +1338,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 903076,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-steadyshot_fire.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27023,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Instantly strike the enemy, causing 25% weapon damage as Rimestrike plus 8, total damage increased by 12.5% for each of your diseases on the target.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Blood_Strike_Ice",
+      "iconUrl": "icons/interface-icons-blood_strike_ice.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1289,15 +1358,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 913132,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-blood_strike_ice.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26287,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Finishing move that causes Froststrike damage per combo point:\r\n   1 point  : 6-8 Froststrike damage\r\n   2 points: 10-12 Froststrike damage\r\n   3 points: 15-17 Froststrike damage\r\n   4 points: 21-23 Froststrike damage\r\n   5 points: 28-30 Froststrike damage\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Eviscerate_Frost",
+      "iconUrl": "icons/interface-icons-eviscerate_frost.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1308,15 +1378,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904920,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-eviscerate_frost.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24393,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Increases Armor by 36.\r\n\r\nIf an enemy strikes the caster, they may have their movement slowed by 15% and the time between their attacks increased by 20% for 5 sec. \r\nLasts until cancelled.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Frost_FrostArmor02",
+      "iconUrl": "icons/interface-icons-spell_frost_frostarmor02.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1327,15 +1398,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 168,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_frost_frostarmor02.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26239,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 18 as Froststrike damage and causes a high amount of threat. Effects which increase bleed effects also increase Maul damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Maul_Ice",
+      "iconUrl": "icons/interface-icons-maul_ice.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1346,15 +1418,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904440,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-maul_ice.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27501,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Increases Stamina by 4% and significantly increases threat generated.\r\n\nIncreases the Armor contribution Cloth, Leather, Mail and Plate items by 30%\r\n\nReduces damage taken by 2%.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Deathknight_FrostPresence",
+      "iconUrl": "icons/interface-icons-spell_deathknight_frostpresence.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1365,15 +1438,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 48263,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_deathknight_frostpresence.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26121,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A steady shot laced with frost that causes 50% weapon damage as Froststrike damage and deals 6 additional Froststrike damage. Causes an additional 5 Froststrike damage to slowed targets.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Steadyshot_Ice",
+      "iconUrl": "icons/interface-icons-steadyshot_ice.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1384,15 +1458,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 903060,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-steadyshot_ice.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26317,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 11 as Froststrike damage and causes a high amount of threat.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\HeroicStrike_Ice",
+      "iconUrl": "icons/interface-icons-heroicstrike_ice.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1403,15 +1478,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907220,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-heroicstrike_ice.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26959,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Swipe nearby enemies, inflicting 12 Froststrike damage plus 1 Froststrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Swipe_Ice",
+      "iconUrl": "icons/interface-icons-swipe_ice.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1422,15 +1498,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 912001,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-swipe_ice.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26955,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Swipe nearby enemies, inflicting 90% weapon damage as Froststrike.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Swipe_Ice",
+      "iconUrl": "icons/interface-icons-swipe_ice.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1441,15 +1518,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 912000,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-swipe_ice.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26263,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 5 as Froststrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\RaptorStrike_Ice_014",
+      "iconUrl": "icons/interface-icons-raptorstrike_ice_014.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1460,15 +1538,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904680,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-raptorstrike_ice_014.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12254,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Launches a bolt of frost at the enemy, causing 12 to 15 Frost damage and slowing movement speed by 40% for 5 sec.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Frost_FrostBolt02",
+      "iconUrl": "icons/interface-icons-spell_frost_frostbolt02.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1479,15 +1558,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 116,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_frost_frostbolt02.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24430,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "An instant frost strike that causes 50% weapon damage as Froststrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\CrusaderStrike_Ice",
+      "iconUrl": "icons/interface-icons-crusaderstrike_ice.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1498,15 +1578,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 903174,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-crusaderstrike_ice.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24441,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Finishing move that causes Froststrike damage over time.  Damage increases per combo point:\r\n   1 point  : 17 Froststrike damage over 12 sec\r\n   2 points: 27 Froststrike damage over 12 sec\r\n   3 points: 38 Froststrike damage over 12 sec\r\n   4 points: 48 Froststrike damage over 12 sec\r\n   5 points: 59 Froststrike damage over 12 sec\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Rip_Ice",
+      "iconUrl": "icons/interface-icons-rip_ice.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1517,15 +1598,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904080,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-rip_ice.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24388,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Slams the opponent, causing 65% weapon damage plus 6 Froststrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Slam_Ice",
+      "iconUrl": "icons/interface-icons-slam_ice.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1536,15 +1618,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 903130,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-slam_ice.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26281,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Finishing move that causes Shadowstrike damage per combo point:\r\n   1 point  : 6-8 Shadowstrike damage\r\n   2 points: 10-12 Shadowstrike damage\r\n   3 points: 15-17 Shadowstrike damage\r\n   4 points: 21-23 Shadowstrike damage\r\n   5 points: 28-30 Shadowstrike damage\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Eviscerate_Shadow",
+      "iconUrl": "icons/interface-icons-eviscerate_shadow.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1555,15 +1638,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904860,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-eviscerate_shadow.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26245,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Attack the enemy for 13 Shadowstrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\MongooseBite_Shadow",
+      "iconUrl": "icons/interface-icons-mongoosebite_shadow.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1574,15 +1658,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904500,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-mongoosebite_shadow.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12362,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Blasts nearby enemies dealing 10 Froststrike damage and increasing the time between their attacks by 10% for 10 sec. This ability causes additional threat.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Thunderclap_Ice",
+      "iconUrl": "icons/interface-icons-thunderclap_ice.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1593,15 +1678,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907460,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-thunderclap_ice.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24735,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A slow casting spell that heals a single target for 28 to 34.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Holy_GreaterHeal",
+      "iconUrl": "icons/interface-icons-spell_holy_greaterheal.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1612,15 +1698,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 2050,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_holy_greaterheal.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26473,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Heals a friendly target for 21 to 29.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Nature_HealingTouch",
+      "iconUrl": "icons/interface-icons-spell_nature_healingtouch.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1631,15 +1718,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 5185,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_nature_healingtouch.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24405,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Heals a friendly target for 27 to 33.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Nature_MagicImmunity",
+      "iconUrl": "icons/interface-icons-spell_nature_magicimmunity.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1650,15 +1738,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 331,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_nature_magicimmunity.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24358,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 11 and causes a high amount of threat.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Rogue_Ambush",
+      "iconUrl": "icons/interface-icons-ability_rogue_ambush.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1669,15 +1758,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 78,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_rogue_ambush.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26283,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Finishing move that causes Holystrike damage per combo point:\r\n   1 point  : 6-8 Holystrike damage\r\n   2 points: 10-12 Holystrike damage\r\n   3 points: 15-17 Holystrike damage\r\n   4 points: 21-23 Holystrike damage\r\n   5 points: 28-30 Holystrike damage\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Eviscerate_Holy",
+      "iconUrl": "icons/interface-icons-eviscerate_holy.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1688,15 +1778,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904880,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-eviscerate_holy.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24480,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Heals a friendly target for 28 to 35.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Holy_HolyBolt",
+      "iconUrl": "icons/interface-icons-spell_holy_holybolt.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1707,15 +1798,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 635,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_holy_holybolt.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26123,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A steady shot blessed with light that causes 50% weapon damage as Holystrike damage and deals 6 additional Holystrike damage. Causes an additional 5 Holystrike damage to slowed targets.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Steadyshot_Holy",
+      "iconUrl": "icons/interface-icons-steadyshot_holy.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1726,15 +1818,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 903068,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-steadyshot_holy.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26313,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 11 as Holystrike damage and causes a high amount of threat.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\HeroicStrike_Holy",
+      "iconUrl": "icons/interface-icons-heroicstrike_holy.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1745,15 +1838,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907180,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-heroicstrike_holy.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 25433,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Increases the Strength and Agility of all party or raid members within 30 yards by 2 and generates 10 rage. Lasts 30 min.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\INV_Misc_Horn_02",
+      "iconUrl": "icons/interface-icons-inv_misc_horn_02.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1764,15 +1858,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 57330,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-inv_misc_horn_02.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12291,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Places the Hunter's Mark on the target, increasing the ranged attack power of all attackers against that target by 20.\r\n\r\nThe marked target can always be seen by the hunter whether it stealths or turns invisible, and appears on the mini-map. Lasts for 5 min.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Hunter_SniperShot",
+      "iconUrl": "icons/interface-icons-ability_hunter_snipershot.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1783,15 +1878,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 1130,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_hunter_snipershot.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27083,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Pierce the target, causing 100% weapon damage as Froststrike plus 7 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Backstab_Ice",
+      "iconUrl": "icons/interface-icons-backstab_ice.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1802,15 +1898,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 913354,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-backstab_ice.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24205,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Chills the target for 12 to 13 Frost damage and infects them with Frost Fever, a disease that deals periodic damage and reduces melee and ranged attack speed by 14% for 15 sec. Generates very high threat while in a Tank Stance.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_DeathKnight_IceTouch",
+      "iconUrl": "icons/interface-icons-spell_deathknight_icetouch.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1821,15 +1918,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 45477,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_deathknight_icetouch.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12264,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Burns the enemy for 8 Fire damage and then an additional 20 Fire damage over 15 sec.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Fire_Immolation",
+      "iconUrl": "icons/interface-icons-spell_fire_immolation.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1840,15 +1938,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 348,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_fire_immolation.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27171,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Unleashes the energy of a Seal spell to judge an enemy for 20 sec, granting auto attacks and auto shots made against the judged enemy a chance of healing the attacker for 2% of their base health.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Holy_RighteousFury",
+      "iconUrl": "icons/interface-icons-spell_holy_righteousfury.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1859,15 +1958,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 20271,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_holy_righteousfury.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27529,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Unleashes the energy of a Seal spell to judge an enemy for 20 sec, giving each attack a chance to restore 2% of the attacker's base mana.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Paladin_JudgementBlue",
+      "iconUrl": "icons/interface-icons-ability_paladin_judgementblue.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1878,15 +1978,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 53408,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_paladin_judgementblue.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12240,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "You charge your off-hand weapon with lava, instantly dealing 100% off-hand Weapon damage as Firestrike damage. \r\n\r\nThe damage increased by 25% if your off-hand weapon is enchanted with Flametongue.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Shaman_Lavalash",
+      "iconUrl": "icons/interface-icons-ability_shaman_lavalash.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1897,15 +1998,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 60103,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_shaman_lavalash.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12360,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Blasts nearby enemies dealing 10 Firestrike damage and increasing the time between their attacks by 10% for 10 sec. This ability causes additional threat.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Thunderclap_Fire",
+      "iconUrl": "icons/interface-icons-thunderclap_fire.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1916,15 +2018,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907440,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-thunderclap_fire.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12293,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Converts 15 health into 19 mana.  Spell power increases the amount of mana returned.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Shadow_BurningSpirit",
+      "iconUrl": "icons/interface-icons-spell_shadow_burningspirit.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1935,15 +2038,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 1454,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_shadow_burningspirit.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26818,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "You charge your off-hand weapon with elemental force, instantly dealing 100% off-hand Weapon damage as Holystrike damage. \r\n\r\nDamage is increased by 25% if your off-hand weapon is enchanted with Windfury.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\LavaLash_Holy",
+      "iconUrl": "icons/interface-icons-lavalash_holy.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1954,15 +2058,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907120,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-lavalash_holy.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26235,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 18 as Holystrike damage and causes a high amount of threat. Effects which increase bleed effects also increase Maul damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Maul_Holy",
+      "iconUrl": "icons/interface-icons-maul_holy.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1973,15 +2078,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904400,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-maul_holy.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26983,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Swipe nearby enemies, inflicting 12 Holystrike damage plus 1 Holystrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Swipe_Holy",
+      "iconUrl": "icons/interface-icons-swipe_holy.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -1992,15 +2098,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 912061,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-swipe_holy.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26979,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Swipe nearby enemies, inflicting 90% weapon damage as Holystrike.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Swipe_Holy",
+      "iconUrl": "icons/interface-icons-swipe_holy.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2011,15 +2118,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 912060,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-swipe_holy.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26259,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 5 as Holystrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\RaptorStrike_Holy_014",
+      "iconUrl": "icons/interface-icons-raptorstrike_holy_014.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2030,15 +2138,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904640,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-raptorstrike_holy_014.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12266,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Casts a bolt of lightning at the target for 13 to 15 Nature damage.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Nature_Lightning",
+      "iconUrl": "icons/interface-icons-spell_nature_lightning.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2049,15 +2158,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 403,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_nature_lightning.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26838,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "You charge your off-hand weapon with elemental force, instantly dealing 100% off-hand Weapon damage as Stormstrike damage. \r\n\r\nDamage is increased by 25% if your off-hand weapon is enchanted with Windfury.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\LavaLash_Storm",
+      "iconUrl": "icons/interface-icons-lavalash_storm.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2068,15 +2178,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907870,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-lavalash_storm.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24401,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "The caster is surrounded by 3 balls of lightning.  When a spell, melee or ranged attack hits the caster, the attacker will be struck for 13 Nature damage. This expends one lightning ball. Only one ball will fire every 3 seconds. Lasts 10 min. \r\n\r\nOnly one Elemental Shield can be active on the Hero at any one time.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Nature_LightningShield",
+      "iconUrl": "icons/interface-icons-spell_nature_lightningshield.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2087,15 +2198,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 324,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_nature_lightningshield.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26319,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 11 as Stormstrike damage and causes a high amount of threat.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\HeroicStrike_Storm",
+      "iconUrl": "icons/interface-icons-heroicstrike_storm.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2106,15 +2218,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907240,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-heroicstrike_storm.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26127,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A steady shot charged with storm energy that causes 50% weapon damage as Stormstrike damage and deals 6 additional Stormstrike damage. Causes an additional 5 Stormstrike damage to slowed targets.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\ability_hunter_cobrashot",
+      "iconUrl": "icons/interface-icons-ability_hunter_cobrashot.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2125,15 +2238,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 903092,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_hunter_cobrashot.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26814,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "You charge your off-hand weapon with elemental force, instantly dealing 100% off-hand Weapon damage as Spellstrike damage. \r\n\r\nDamage is increased by 25% if your off-hand weapon is enchanted with Windfury.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\LavaLash_Arcane",
+      "iconUrl": "icons/interface-icons-lavalash_arcane.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2144,15 +2258,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907080,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-lavalash_arcane.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12353,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Your threat generated is significantly increased.\r\n\r\nTeaches you |cFFFFFFFFChanneled Mana|r.\r\n\r\n|TInterface\\Common\\ui-tooltipdivider:12:180:0:0|t\n|TInterface\\icons\\custom_T_ArcaneWhirl_Border:20:20:0:0|t |cffFFFFFFChanneled Mana|r\n|cffFFFFFF2 Mana|r\nTaunts the target to attack you, but has no effect if the target is already attacking you.\r\n\r\n|cffFFFFFFThis spell is learned when you have a Tank Stance and cannot be unlearned.|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\_D3energyarmor",
+      "iconUrl": "icons/interface-icons-_d3energyarmor.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2163,15 +2278,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 701463,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-_d3energyarmor.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26137,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "An instant arcane strike that causes 50% weapon damage as Spellstrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\CrusaderStrike_Arcane",
+      "iconUrl": "icons/interface-icons-crusaderstrike_arcane.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2182,15 +2298,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 903150,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-crusaderstrike_arcane.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24433,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Finishing move that causes Spellstrike damage over time.  Damage increases per combo point:\r\n   1 point  : 17 Spellstrike damage over 12 sec\r\n   2 points: 27 Spellstrike damage over 12 sec\r\n   3 points: 38 Spellstrike damage over 12 sec\r\n   4 points: 48 Spellstrike damage over 12 sec\r\n   5 points: 59 Spellstrike damage over 12 sec\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Rip_Arcane",
+      "iconUrl": "icons/interface-icons-rip_arcane.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2201,15 +2318,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904000,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-rip_arcane.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12290,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Increases the friendly target's armor by 25 for 30 min.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Nature_Regeneration",
+      "iconUrl": "icons/interface-icons-spell_nature_regeneration.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2220,15 +2338,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 1126,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_nature_regeneration.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12319,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 18 and causes a high amount of threat. Effects which increase Bleed damage also increase Maul damage.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Druid_Maul",
+      "iconUrl": "icons/interface-icons-ability_druid_maul.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2239,15 +2358,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 6807,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_druid_maul.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12295,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Attack the enemy for 20 damage.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Hunter_SwiftStrike",
+      "iconUrl": "icons/interface-icons-ability_hunter_swiftstrike.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2258,15 +2378,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 1495,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_hunter_swiftstrike.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12321,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Burns the enemy for 5 to 7 Arcane damage and then an additional 9 Arcane damage over 9 sec.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Nature_StarFall",
+      "iconUrl": "icons/interface-icons-spell_nature_starfall.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2277,15 +2398,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 8921,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_nature_starfall.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27039,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Instantly strike the enemy, causing 25% weapon damage as Spellstrike plus 8, total damage increased by 12.5% for each of your diseases on the target.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Blood_Strike_Arcane",
+      "iconUrl": "icons/interface-icons-blood_strike_arcane.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2296,15 +2418,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 913180,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-blood_strike_arcane.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26231,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 18 as Spellstrike damage and causes a high amount of threat. Effects which increase bleed effects also increase Maul damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Maul_Arcane",
+      "iconUrl": "icons/interface-icons-maul_arcane.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2315,15 +2438,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904360,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-maul_arcane.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26470,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A steady shot charged with arcane force that causes 50% weapon damage as Spellstrike damage and deals 6 additional Spellstrike damage. Causes an additional 5 Spellstrike damage to slowed targets.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Steadyshot_Arcane",
+      "iconUrl": "icons/interface-icons-steadyshot_arcane.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2334,15 +2458,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907916,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-steadyshot_arcane.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26255,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 5 as Spellstrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\RaptorStrike_Arcane_014",
+      "iconUrl": "icons/interface-icons-raptorstrike_arcane_014.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2353,15 +2478,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904600,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-raptorstrike_arcane_014.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24203,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A vicious strike that deals 50% weapon damage plus 8 and infects the target with Blood Plague, a disease dealing 3 Shadow damage over time.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_DeathKnight_EmpowerRuneBlade",
+      "iconUrl": "icons/interface-icons-spell_deathknight_empowerruneblade.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2372,15 +2498,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 45462,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_deathknight_empowerruneblade.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12292,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Power infuses the target, increasing their Stamina by 3 for 30 min.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Holy_WordFortitude",
+      "iconUrl": "icons/interface-icons-spell_holy_wordfortitude.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2391,15 +2518,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 1243,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_holy_wordfortitude.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12309,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 5.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_MeleeDamage",
+      "iconUrl": "icons/interface-icons-ability_meleedamage.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2410,15 +2538,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 2973,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_meleedamage.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27573,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Finishing move that consumes combo points on your target to restore 3% of your maximum health every 3 sec. Lasts longer per combo point:\n   1 point : 3 seconds\n   2 points: 6 seconds\n   3 points: 9 seconds\n   4 points: 12 seconds\n   5 points: 15 seconds",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Rogue_HonorAmongstThieves",
+      "iconUrl": "icons/interface-icons-ability_rogue_honoramongstthieves.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2429,15 +2558,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 965425,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_rogue_honoramongstthieves.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12281,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Heals the target for 25 over 15 sec.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Nature_Rejuvenation",
+      "iconUrl": "icons/interface-icons-spell_nature_rejuvenation.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2448,15 +2578,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 774,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_nature_rejuvenation.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12280,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Wounds the target causing them to bleed for 25 damage plus an additional 9 (based on weapon damage) over 15 sec.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Gouge",
+      "iconUrl": "icons/interface-icons-ability_gouge.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2467,15 +2598,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 772,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_gouge.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12260,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Heals the target for 35 over 15 sec.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Holy_Renew",
+      "iconUrl": "icons/interface-icons-spell_holy_renew.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2486,15 +2618,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 139,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_holy_renew.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12323,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Your threat generated is significantly increased.\r\n\r\nTeaches you |cFFFFFFFFHand of Reckoning|r.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Holy_SealOfFury",
+      "iconUrl": "icons/interface-icons-spell_holy_sealoffury.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2505,15 +2638,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 25780,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_holy_sealoffury.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26836,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "You charge your off-hand weapon with elemental force, instantly dealing 100% off-hand Weapon damage as Froststrike damage. \r\n\r\nDamage is increased by 25% if your off-hand weapon is enchanted with Windfury.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\LavaLash_Ice",
+      "iconUrl": "icons/interface-icons-lavalash_ice.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2524,15 +2658,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907862,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-lavalash_ice.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24334,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "An instant frost-infused strike that causes 3 Froststrike damage in addition to 65% of your normal weapon damage (55% if a two-handed weapon is equipped). Awards 1 combo point.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Sinisterstrike_Ice",
+      "iconUrl": "icons/interface-icons-sinisterstrike_ice.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2543,15 +2678,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 903036,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-sinisterstrike_ice.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24615,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Finishing move that causes damage over time.  Damage increases per combo point:\r\n   1 point  : 17 damage over 12 sec\r\n   2 points: 27 damage over 12 sec\r\n   3 points: 38 damage over 12 sec\r\n   4 points: 48 damage over 12 sec\r\n   5 points: 59 damage over 12 sec",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_GhoulFrenzy",
+      "iconUrl": "icons/interface-icons-ability_ghoulfrenzy.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2562,15 +2698,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 1079,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_ghoulfrenzy.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26249,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Attack the enemy for 13 Firestrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\MongooseBite_Fire",
+      "iconUrl": "icons/interface-icons-mongoosebite_fire.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2581,15 +2718,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904540,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-mongoosebite_fire.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27179,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Fills you with holy spirit for until cancelled, granting each main hand auto attack and Paladin melee ability 3 additional Holy damage. Only one Seal can be active at any one time.\n\nUnleashing this Seal's energy will cause 6 Holy damage to an enemy.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_ThunderBolt",
+      "iconUrl": "icons/interface-icons-ability_thunderbolt.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2600,15 +2738,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 21084,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_thunderbolt.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26346,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Summons a Searing Totem with 5 health at your feet for 45 sec that repeatedly attacks an enemy within 20 yards for 11 to 14 Fire damage.\n\nThis ability is usable while shapeshifted.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Fire_SearingTotem",
+      "iconUrl": "icons/interface-icons-spell_fire_searingtotem.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2619,15 +2758,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 3599,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_fire_searingtotem.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24718,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Stings the target, causing 20 Nature damage over 15 sec.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Hunter_Quickshot",
+      "iconUrl": "icons/interface-icons-ability_hunter_quickshot.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2638,15 +2778,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 1978,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_hunter_quickshot.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12277,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Sends a shadowy bolt at the enemy, causing 16 to 21 Shadow damage.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Shadow_ShadowBolt",
+      "iconUrl": "icons/interface-icons-spell_shadow_shadowbolt.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2657,15 +2798,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 686,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_shadow_shadowbolt.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26131,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Slams the opponent with shadow force, causing 65% weapon damage plus 6 Shadowstrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Slam_Shadow",
+      "iconUrl": "icons/interface-icons-slam_shadow.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2676,15 +2818,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 903110,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-slam_shadow.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26311,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 11 as Shadowstrike damage and causes a high amount of threat.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\HeroicStrike_Shadow",
+      "iconUrl": "icons/interface-icons-heroicstrike_shadow.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2695,15 +2838,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907160,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-heroicstrike_shadow.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26975,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Swipe nearby enemies, inflicting 12 Shadowstrike damage plus 1 Shadowstrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Swipe_Shadow",
+      "iconUrl": "icons/interface-icons-swipe_shadow.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2714,15 +2858,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 912041,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-swipe_shadow.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26971,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Swipe nearby enemies, inflicting 90% weapon damage as Shadowstrike.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Swipe_Shadow",
+      "iconUrl": "icons/interface-icons-swipe_shadow.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2733,15 +2878,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 912040,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-swipe_shadow.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26257,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 5 as Shadowstrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\RaptorStrike_Shadow_014",
+      "iconUrl": "icons/interface-icons-raptorstrike_shadow_014.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2752,15 +2898,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904620,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-raptorstrike_shadow_014.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12273,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A word of darkness that causes 30 Shadow damage over 18 sec.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Shadow_ShadowWordPain",
+      "iconUrl": "icons/interface-icons-spell_shadow_shadowwordpain.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2771,15 +2918,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 589,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_shadow_shadowwordpain.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27091,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Pierce the target, causing 100% weapon damage as Shadowstrike plus 7 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Backstab_Shadow",
+      "iconUrl": "icons/interface-icons-backstab_shadow.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2790,15 +2938,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 913378,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-backstab_shadow.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27031,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Instantly strike the enemy, causing 25% weapon damage as Shadowstrike plus 8, total damage increased by 12.5% for each of your diseases on the target.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Blood_Strike_Shadow",
+      "iconUrl": "icons/interface-icons-blood_strike_shadow.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2809,15 +2958,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 913156,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-blood_strike_shadow.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12305,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Increases your chance to block and block value by 100% for 10 sec.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Defend",
+      "iconUrl": "icons/interface-icons-ability_defend.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2828,15 +2978,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 2565,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_defend.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12334,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Slam the target with your shield, causing Holy damage based on your block value plus an additional 5. This ability will also heal you based on your spell damage.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Paladin_ShieldofVengeance",
+      "iconUrl": "icons/interface-icons-ability_paladin_shieldofvengeance.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2847,15 +2998,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 53600,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_paladin_shieldofvengeance.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26289,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Finishing move that causes Stormstrike damage per combo point:\r\n   1 point  : 6-8 Stormstrike damage\r\n   2 points: 10-12 Stormstrike damage\r\n   3 points: 15-17 Stormstrike damage\r\n   4 points: 21-23 Stormstrike damage\r\n   5 points: 28-30 Stormstrike damage\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Eviscerate_Lightning",
+      "iconUrl": "icons/interface-icons-eviscerate_lightning.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2866,15 +3018,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904940,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-eviscerate_lightning.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24659,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "An instant strike that causes 3 damage in addition to 100% of your normal weapon damage (85% if a Two-Handed weapon is equipped). Awards 1 combo point.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Shadow_RitualOfSacrifice",
+      "iconUrl": "icons/interface-icons-spell_shadow_ritualofsacrifice.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2885,15 +3038,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 1752,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_shadow_ritualofsacrifice.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 11936,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Slams the opponent, causing 100% weapon damage plus 9.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Warrior_DecisiveStrike",
+      "iconUrl": "icons/interface-icons-ability_warrior_decisivestrike.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2904,15 +3058,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 1464,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_warrior_decisivestrike.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26421,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Finishing move that increases melee attack speed by 20%. Lasts longer per combo point:\r\n   1 point  : 9 seconds\r\n   2 points: 12 seconds\r\n   3 points: 15 seconds\r\n   4 points: 18 seconds\r\n   5 points: 21 seconds\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Rogue_SliceDice",
+      "iconUrl": "icons/interface-icons-ability_rogue_slicedice.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2923,15 +3078,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 5171,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_rogue_slicedice.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12271,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Smite an enemy for 13 to 17 Holy damage.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Holy_HolySmite",
+      "iconUrl": "icons/interface-icons-spell_holy_holysmite.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2942,15 +3098,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 585,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_holy_holysmite.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12237,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A steady shot that causes 75% weapon damage plus 9. Causes an additional 10 to slowed targets.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Hunter_SteadyShot",
+      "iconUrl": "icons/interface-icons-ability_hunter_steadyshot.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2961,15 +3118,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 56641,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_hunter_steadyshot.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12298,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Allows you to sneak around, but reduces your speed by 30%. Removes invulnerabilities when used. Lasts until cancelled.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Stealth",
+      "iconUrl": "icons/interface-icons-ability_stealth.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2980,15 +3138,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 1784,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_stealth.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26563,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Summons a Stoneclaw Totem with 50 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.  Enemies attacking the Stoneclaw Totem have a 50% chance to be stunned for 3 sec. Stoneclaw totem also protects all your totems, causing them to absorb 21 damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Nature_StoneClawTotem",
+      "iconUrl": "icons/interface-icons-spell_nature_stoneclawtotem.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -2999,15 +3158,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 5730,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_nature_stoneclawtotem.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26639,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Summons a Stoneskin Totem with 5 health at the feet of the caster. The totem protects party and raid members within 50 yards, increasing armor by 95. Lasts 5 min.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Nature_StoneSkinTotem",
+      "iconUrl": "icons/interface-icons-spell_nature_stoneskintotem.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3018,15 +3178,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 8071,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_nature_stoneskintotem.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26241,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 18 as Stormstrike damage and causes a high amount of threat. Effects which increase bleed effects also increase Maul damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Maul_Storm",
+      "iconUrl": "icons/interface-icons-maul_storm.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3037,15 +3198,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904460,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-maul_storm.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26135,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Slams the opponent, causing 65% weapon damage plus 6 Stormstrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Slam_Storm",
+      "iconUrl": "icons/interface-icons-slam_storm.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3056,15 +3218,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 903140,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-slam_storm.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26967,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Swipe nearby enemies, inflicting 12 Stormstrike damage plus 1 Stormstrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Swipe_Storm",
+      "iconUrl": "icons/interface-icons-swipe_storm.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3075,15 +3238,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 912021,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-swipe_storm.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26963,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Swipe nearby enemies, inflicting 90% weapon damage as Stormstrike.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Swipe_Storm",
+      "iconUrl": "icons/interface-icons-swipe_storm.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3094,15 +3258,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 912020,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-swipe_storm.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26265,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "A strong attack that increases melee damage by 5 as Stormstrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\RaptorStrike_Storm_014",
+      "iconUrl": "icons/interface-icons-raptorstrike_storm_014.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3113,15 +3278,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904700,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-raptorstrike_storm_014.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27087,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Pierce the target, causing 100% weapon damage as Stormstrike plus 7 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Backstab_Storm",
+      "iconUrl": "icons/interface-icons-backstab_storm.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3132,15 +3298,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 913366,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-backstab_storm.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26456,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "An instant storm strike that causes 50% weapon damage as Stormstrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\CrusaderStrike_Storm",
+      "iconUrl": "icons/interface-icons-crusaderstrike_storm.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3151,15 +3318,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907861,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-crusaderstrike_storm.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24518,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Summons an Imp under the command of the Warlock.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Shadow_SummonImp",
+      "iconUrl": "icons/interface-icons-spell_shadow_summonimp.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3170,15 +3338,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 688,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_shadow_summonimp.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27557,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Empowers your tamed beast, tamed dragonkin, dominated undead, enslaved demon, summoned demon, wild imp or tethered elemental, increasing their critical strike chance with spells and abilities by 2% and their spell damage done by 3%.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\icons\\5_warlock05_Border",
+      "iconUrl": "icons/interface-icons-5_warlock05_border.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3189,15 +3358,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 701521,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-5_warlock05_border.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12342,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Swipe nearby enemies, inflicting 140% weapon damage.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\INV_Misc_MonsterClaw_03",
+      "iconUrl": "icons/interface-icons-inv_misc_monsterclaw_03.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3208,15 +3378,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 62078,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-inv_misc_monsterclaw_03.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 64943,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Teaches you the necessary abilities to tame a pet companion.\n\nTeaches you Tame Beast, Call Pet, Dismiss Pet, Feed Pet, Revive Pet and Beast Lore.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Hunter_BeastTaming",
+      "iconUrl": "icons/interface-icons-ability_hunter_beasttaming.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3227,15 +3398,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 965200,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_hunter_beasttaming.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 65101,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Teaches you the necessary abilities to tame a Dragonkin companion.\n\nTeaches you Tame Dragonkin, Call Dragonkin, Dismiss Dragonkin, Revive Dragonkin and Dragonkin Lore.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\ability_mount_drake_red",
+      "iconUrl": "icons/interface-icons-ability_mount_drake_red.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3246,15 +3418,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 91634,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_mount_drake_red.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12364,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Blasts nearby enemies dealing 10 Stormstrike damage and increasing the time between their attacks by 10% for 10 sec. This ability causes additional threat.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Thunderclap_Storm",
+      "iconUrl": "icons/interface-icons-thunderclap_storm.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3265,15 +3438,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907480,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-thunderclap_storm.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 65147,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Teaches you the necessary abilities to tether an Elemental companion.\r\n\r\nTeaches you Tether Elemental, Raise Elemental, Dismiss Elemental, Revive Elemental and Elemental Lore.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Nature_ElementalPrecision_1",
+      "iconUrl": "icons/interface-icons-spell_nature_elementalprecision_1.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3284,15 +3458,16 @@
       "qualityCost": 2,
       "rank": 1,
       "spellId": 91606,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_nature_elementalprecision_1.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12268,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Thorns sprout from the friendly target causing 3 Nature damage to attackers when hit.  Lasts 30 min.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Nature_Thorns",
+      "iconUrl": "icons/interface-icons-spell_nature_thorns.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3303,15 +3478,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 467,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_nature_thorns.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12317,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Blasts nearby enemies dealing 15 damage and increasing the time between their attacks by 10% for 10 sec. This ability causes additional threat.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Nature_ThunderClap",
+      "iconUrl": "icons/interface-icons-spell_nature_thunderclap.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3322,15 +3498,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 6343,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_nature_thunderclap.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 27027,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Instantly strike the enemy, causing 25% weapon damage as Stormstrike plus 8, total damage increased by 12.5% for each of your diseases on the target.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Blood_Strike_Storm",
+      "iconUrl": "icons/interface-icons-blood_strike_storm.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3341,15 +3518,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 913144,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-blood_strike_storm.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26253,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Attack the enemy for 13 Stormstrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\MongooseBite_Storm",
+      "iconUrl": "icons/interface-icons-mongoosebite_storm.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3360,15 +3538,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904580,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-mongoosebite_storm.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 24630,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Shows the location of all nearby beasts on the minimap and increases damage dealt to beasts by 1%.\n\nOnly one form of tracking can be active at a time.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Tracking",
+      "iconUrl": "icons/interface-icons-ability_tracking.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3379,15 +3558,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 1494,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_tracking.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12356,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Blasts nearby enemies dealing 10 Shadowstrike damage and increasing the time between their attacks by 10% for 10 sec. This ability causes additional threat.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Thunderclap_Shadow",
+      "iconUrl": "icons/interface-icons-thunderclap_shadow.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3398,15 +3578,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907400,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-thunderclap_shadow.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12325,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Instantly attack the target causing 9 damage.  Can only be used within 20 sec after you kill an enemy that yields experience or honor. Damage is based on your attack power.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Ability_Warrior_Devastate",
+      "iconUrl": "icons/interface-icons-ability_warrior_devastate.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3417,15 +3598,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 34428,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-ability_warrior_devastate.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26816,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "You charge your off-hand weapon with elemental force, instantly dealing 100% off-hand Weapon damage as Shadowstrike damage. \r\n\r\nDamage is increased by 25% if your off-hand weapon is enchanted with Windfury.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\LavaLash_Shadow",
+      "iconUrl": "icons/interface-icons-lavalash_shadow.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3436,15 +3618,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 907100,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-lavalash_shadow.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26115,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "An instant shadow-infused strike that causes 3 Shadowstrike damage in addition to 65% of your normal weapon damage (55% if a two-handed weapon is equipped). Awards 1 combo point.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Sinisterstrike_Shadow",
+      "iconUrl": "icons/interface-icons-sinisterstrike_shadow.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3455,15 +3638,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 903012,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-sinisterstrike_shadow.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26119,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "An instant storm-infused strike that causes 3 Stormstrike damage in addition to 65% of your normal weapon damage (55% if a two-handed weapon is equipped). Awards 1 combo point.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Sinisterstrike_Storm",
+      "iconUrl": "icons/interface-icons-sinisterstrike_storm.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3474,15 +3658,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 903048,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-sinisterstrike_storm.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26251,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Attack the enemy for 13 Froststrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\MongooseBite_Ice",
+      "iconUrl": "icons/interface-icons-mongoosebite_ice.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3493,15 +3678,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904560,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-mongoosebite_ice.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 12312,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Causes 17 to 19 Nature damage to the target.",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\Spell_Nature_AbolishMagic",
+      "iconUrl": "icons/interface-icons-spell_nature_abolishmagic.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3512,15 +3698,16 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 5176,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-spell_nature_abolishmagic.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     },
     {
       "cardId": 26243,
       "category": "starter_skill",
       "class": "CLASS_HERO",
+      "description": "Attack the enemy for 13 Spellstrike damage.\n\n|cff00DDFFHold SHIFT for more information|r",
       "expansion": "EXPANSION_CLASSIC",
       "icon": "Interface\\Icons\\MongooseBite_Arcane",
+      "iconUrl": "icons/interface-icons-mongoosebite_arcane.webp",
       "isDraftMode": true,
       "isStarterCard": true,
       "isWildcard": true,
@@ -3531,8 +3718,7 @@
       "qualityCost": 1,
       "rank": 1,
       "spellId": 904480,
-      "type": "SKILL_CARD_DEFAULT_NORMAL",
-      "iconUrl": "icons/interface-icons-mongoosebite_arcane.webp"
+      "type": "SKILL_CARD_DEFAULT_NORMAL"
     }
   ]
 }

@@ -69,8 +69,9 @@ The scan is saved to:
 WTF/Account/<account>/SavedVariables/AscensionCardScanner.lua
 ```
 
-The scanner exports the complete runtime pool and reads each rendered row's
-displayed required level rather than guessing from static client files.
+The scanner exports the complete runtime pool, including each spell's localized
+description, and reads each rendered row's displayed required level rather than
+guessing from static client files.
 
 ## Convert the runtime pool
 
@@ -84,5 +85,6 @@ luajit scripts/export_runtime_pool.lua \
 ```
 
 `data/darkmoon-card-pool.json` is the authoritative Darkmoon normal-card pool.
-It contains names, spell IDs, item IDs, card IDs, card quality, rank, displayed
-required level, icon, and the `ability`, `starter_skill`, or `talent` category.
+It contains names, descriptions, spell IDs, item IDs, card IDs, card quality,
+rank, displayed required level, icon, and the `ability`, `starter_skill`, or
+`talent` category.
