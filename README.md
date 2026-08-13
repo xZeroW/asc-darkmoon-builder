@@ -60,7 +60,7 @@ In-game:
 
 1. Enable `Ascension Card Scanner` in the addon list.
 2. Open the `N` panel and the `Skill Cards` tab.
-3. Run `/ascexport`. It clears each Skill Cards tab's filter, then scans its normal-card list. Golden cards are not scanned because they have the same skill pool.
+3. Hold Shift and run `/ascexport`. Keep Shift held until the scan completes so it captures expanded spell details. It clears each Skill Cards tab's filter, then scans its normal-card list. Golden cards are not scanned because they have the same skill pool.
 4. Run `/reload` after checking the chat output to save the data.
 
 The scan is saved to:

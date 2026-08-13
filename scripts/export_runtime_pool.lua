@@ -42,6 +42,19 @@ local function encode(value)
     error("Unsupported JSON value: " .. type(value))
 end
 
+local function cleanDescription(value)
+    if type(value) ~= "string" then
+        return nil
+    end
+    value = value:gsub("|c%x%x%x%x%x%x%x%x", "")
+    value = value:gsub("|r", "")
+    value = value:gsub("|T.-|t", "")
+    value = value:gsub("%s*Hold SHIFT for more information%s*", "")
+    value = value:gsub("\r\n", "\n")
+    value = value:gsub("^%s+", ""):gsub("%s+$", "")
+    return value ~= "" and value or nil
+end
+
 local rows = {}
 for _, pool in ipairs(export.pools or {}) do
     for _, item in ipairs(pool.items or {}) do
@@ -55,7 +68,7 @@ for _, pool in ipairs(export.pools or {}) do
             itemId = item.ItemID,
             spellId = item.SpellID,
             name = item.name,
-            description = item.description,
+            description = cleanDescription(item.description),
             rank = item.Rank,
             maxRank = item.MaxRank,
             quality = item.Quality,
