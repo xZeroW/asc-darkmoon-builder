@@ -176,6 +176,10 @@ function App() {
     if (missing.length) missingRequirements.set(slot.card.cardId, missing)
   }
   const activeWarnings = visibleSlots.flatMap((slot) => slot.card ? (missingRequirements.get(slot.card.cardId) ?? []).map((requirement) => `${slot.card!.name}: requires ${requirement}`) : [])
+  const selectedPaths = [...new Set(slots.flatMap((slot) => slot.card?.name.startsWith('Path of ') ? [slot.card.name] : []))]
+  if (selectedPaths.length > 1) {
+    activeWarnings.push(`Only one path can be selected: ${selectedPaths.join(', ')}`)
+  }
   const normalizedSearch = search.toLowerCase()
   const filteredCards = (cardsByCategory[activeTab] ?? []).filter((card) =>
     card.name.toLowerCase().includes(normalizedSearch)
@@ -242,9 +246,6 @@ function App() {
               </div>
             </div>
             <p className="instruction">Select from the collection to add a card. Gold frames indicate Golden Card slots.</p>
-            {activeWarnings.length > 0 && <div className="requirement-warnings" role="alert">
-              {activeWarnings.map((warning) => <p key={warning}>{warning}</p>)}
-            </div>}
             <div className={activeTab === 'starter_skill' ? 'slot-grid starter-slot-grid' : 'slot-grid'}>
               {visibleSlots.map((slot, index) => (
                 <article
@@ -275,6 +276,9 @@ function App() {
                 </article>
               ))}
             </div>
+            {activeWarnings.length > 0 && <div className="requirement-warnings" role="alert">
+              {activeWarnings.map((warning) => <p key={warning}>{warning}</p>)}
+            </div>}
           </section>
 
           <aside className="collection">

@@ -61,7 +61,7 @@ button { cursor: pointer; }
 .eyebrow { color: #a8914b; font-family: Arial, sans-serif; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; }
 .build-heading h2 { margin: 3px 0 0; color: #ffdf22; font-size: 25px; }
 .instruction { color: #aea88e; font-size: 14px; margin: 14px 0 25px; }
-.requirement-warnings { max-width: 720px; margin: -13px auto 18px; border: 1px solid #8e2922; background: #2d100ddd; color: #ff9388; padding: 7px 10px; font: 12px/1.3 Arial, sans-serif; }
+.requirement-warnings { max-width: 720px; margin: 18px auto 0; border: 1px solid #8e2922; background: #2d100ddd; color: #ff9388; padding: 7px 10px; font: 12px/1.3 Arial, sans-serif; }
 .requirement-warnings p { margin: 2px 0; }
 
 .slot-grid { display: grid; grid-template-columns: repeat(3, minmax(150px, 1fr)); gap: 28px 42px; max-width: 720px; margin: 44px auto 0; }
