@@ -1,51 +1,48 @@
-export type Relationship = {
-  title: string
-  cards: string[]
-  steps: string[]
+type RelationshipCard = {
+  cardId: number
+  name: string
+  description?: string | null
+  tooltipLines?: { left?: string | null; right?: string | null }[] | null
 }
 
-// Explicit, reviewable card interactions. Add rules here as game mechanics are verified.
-export const relationships: Relationship[] = [
-  {
-    title: 'Arcane Gunslinger Barrage',
-    cards: ['Arcane Shot', 'Arcane Gunslinger', 'Arcane Barrage'],
-    steps: [
-      'Arcane Shot grants Arcane Gunslinger.',
-      'Arcane Gunslinger increases Arcane Barrage damage and can grant Missile Barrage.',
-    ],
-  },
-  {
-    title: 'Arcane Shelling Barrage',
-    cards: ['Arcane Shot', 'Arcane Shelling', 'Arcane Barrage'],
-    steps: [
-      'Arcane Shot damage grants Arcane Shelling.',
-      'Arcane Shelling stacks to increase Arcane Barrage damage.',
-    ],
-  },
-  {
-    title: 'Missile Barrage Channel',
-    cards: ['Arcane Shot', 'Arcane Gunslinger', 'Arcane Missiles'],
-    steps: [
-      'Arcane Shot grants Arcane Gunslinger.',
-      'Arcane Gunslinger can grant Missile Barrage.',
-      'Missile Barrage shortens and removes the mana cost of Arcane Missiles.',
-    ],
-  },
-  {
-    title: 'Barrage Overload Payoff',
-    cards: ['Arcane Gunslinger', 'Arcane Missiles', 'Barrage Overload', 'Arcane Barrage'],
-    steps: [
-      'Arcane Gunslinger can grant Missile Barrage for Arcane Missiles.',
-      'Consuming Missile Barrage with Arcane Missiles grants Barrage Overload.',
-      'Arcane Barrage consumes Barrage Overload for additional arcane bolts.',
-    ],
-  },
-  {
-    title: 'Shot Weaving Barrage',
-    cards: ['Arcane Gunslinger', 'Arcane Missiles', 'Shot Weaving'],
-    steps: [
-      'Arcane Gunslinger can grant Missile Barrage.',
-      'Shot Weaving adds a ranged shot to each Arcane Missile while Missile Barrage is active.',
-    ],
-  },
-]
+export type Relationship = {
+  source: string
+  target: string
+  evidence: string
+}
+
+function escapeRegex(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+}
+
+function getText(card: RelationshipCard) {
+  return [
+    card.description,
+    ...(card.tooltipLines ?? []).flatMap((line) => [line.left, line.right]),
+  ].filter((value): value is string => Boolean(value)).join('\n')
+}
+
+function getEvidence(text: string, name: string) {
+  const pattern = new RegExp(`(^|[^a-z0-9])${escapeRegex(name)}(?=$|[^a-z0-9])`, 'i')
+  return text.split(/(?<=[.!?])\s+|\n+/).map((line) => line.trim()).find((line) => pattern.test(line))
+}
+
+// Relationships are inferred from exact card-name references in the game tooltip text.
+// Each result includes the source sentence so players can review why it was linked.
+export function discoverRelationships(cards: RelationshipCard[]) {
+  const relationships: Relationship[] = []
+  const seen = new Set<string>()
+  for (const source of cards) {
+    const text = getText(source)
+    for (const target of cards) {
+      if (source.cardId === target.cardId || target.name.length < 4) continue
+      const evidence = getEvidence(text, target.name)
+      if (!evidence) continue
+      const key = `${source.cardId}-${target.cardId}`
+      if (seen.has(key)) continue
+      seen.add(key)
+      relationships.push({ source: source.name, target: target.name, evidence })
+    }
+  }
+  return relationships
+}
