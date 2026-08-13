@@ -65,7 +65,12 @@ function randomize(slots: Slot[], seed: number) {
 
 function CardIcon({ card }: { card: Card }) {
   const initials = card.name.replace(/[^a-zA-Z]/g, '').slice(0, 2).toUpperCase()
-  return <span className={`card-icon ${qualityClass[card.quality] ?? 'common'}`}>{initials}</span>
+  const iconName = card.icon.split('\\').pop()?.toLowerCase()
+  const iconUrl = iconName ? `https://wow.zamimg.com/images/wow/icons/large/${iconName}.jpg` : undefined
+  return <span className={`card-icon ${qualityClass[card.quality] ?? 'common'}`}>
+    {iconUrl && <img src={iconUrl} alt="" onError={(event) => { event.currentTarget.style.display = 'none' }} />}
+    <span>{initials}</span>
+  </span>
 }
 
 function App() {
