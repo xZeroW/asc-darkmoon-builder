@@ -90,10 +90,8 @@ function App() {
     const existing = slots.some((slot) => slot.golden === golden && slot.card?.spellId === card.spellId)
     if (existing) return
     const targetIndex = slots.findIndex((slot) => slot.category === activeTab && slot.golden === golden && !slot.card)
-    const fallbackIndex = slots.findIndex((slot) => slot.category === activeTab && slot.golden === golden)
-    const index = targetIndex === -1 ? fallbackIndex : targetIndex
-    if (index === -1) return
-    setSlots((current) => current.map((slot, itemIndex) => itemIndex === index ? { ...slot, card } : slot))
+    if (targetIndex === -1) return
+    setSlots((current) => current.map((slot, itemIndex) => itemIndex === targetIndex ? { ...slot, card } : slot))
   }
 
   function reset() {
@@ -135,7 +133,15 @@ function App() {
             <p className="instruction">Select from the collection to add a card. Gold frames indicate Golden Card slots.</p>
             <div className={activeTab === 'starter_skill' ? 'slot-grid starter-slot-grid' : 'slot-grid'}>
               {visibleSlots.map((slot, index) => (
-                <article key={`${slot.category}-${index}`} className={`slot ${slot.golden ? 'golden-slot' : ''} ${slot.card ? 'filled' : 'empty'}`}>
+                <article
+                  key={`${slot.category}-${index}`}
+                  className={`slot ${slot.golden ? 'golden-slot' : ''} ${slot.card ? 'filled' : 'empty'}`}
+                  onContextMenu={(event) => {
+                    if (!slot.card) return
+                    event.preventDefault()
+                    removeCard(index)
+                  }}
+                >
                   {slot.card ? <>
                     <div className="slot-corners" />
                     <div className="slot-topline">
