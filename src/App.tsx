@@ -182,6 +182,23 @@ function CardList({ cards, golden, slots, suggestedBy, onSelect, onShowTooltip, 
   </div>
 }
 
+function IconPicker({ cards, selectedCardId, onSelect }: { cards: Card[]; selectedCardId: number | null; onSelect: (cardId: number) => void }) {
+  const [scrollTop, setScrollTop] = useState(0)
+  const columns = 8
+  const rowHeight = 44
+  const visibleRows = 7
+  const firstRow = Math.max(0, Math.floor(scrollTop / rowHeight) - 2)
+  const cardsToRender = cards.slice(firstRow * columns, (firstRow + visibleRows + 4) * columns)
+
+  return <div className="icon-picker" aria-label="Choose a build icon" onScroll={(event) => setScrollTop(event.currentTarget.scrollTop)}>
+    <div className="icon-picker-spacer" style={{ height: Math.ceil(cards.length / columns) * rowHeight }}>
+      <div className="icon-picker-window" style={{ transform: `translateY(${firstRow * rowHeight}px)` }}>
+        {cardsToRender.map((card) => <button key={card.cardId} type="button" className={selectedCardId === card.cardId ? 'selected-icon' : ''} onClick={() => onSelect(card.cardId)} title={card.name} aria-label={card.name}><CardIcon card={card} /></button>)}
+      </div>
+    </div>
+  </div>
+}
+
 function SavedBuilds({ onOpen }: { onOpen: (id: string) => void }) {
   const [builds, setBuilds] = useState<SavedBuild[]>([])
   const [cardsById, setCardsById] = useState<Map<number, Card>>(new Map())
@@ -424,7 +441,7 @@ function App() {
 
   if (route.page === 'builds') return <SavedBuilds onOpen={(id) => navigate({ page: 'builder', buildId: id })} />
 
-  const visibleIconCards = iconCards.filter((card) => card.name.toLowerCase().includes(iconSearch.toLowerCase())).slice(0, 100)
+  const visibleIconCards = iconCards.filter((card) => card.name.toLowerCase().includes(iconSearch.toLowerCase()))
 
   return (
     <main className="world">
@@ -531,10 +548,8 @@ function App() {
           <input id="build-name" value={buildName} maxLength={100} autoFocus onChange={(event) => setBuildName(event.currentTarget.value)} onKeyDown={(event) => { if (event.key === 'Enter') void saveBuild() }} />
           <label htmlFor="icon-search">Build icon</label>
           <input id="icon-search" placeholder="Search spell or ability icons" value={iconSearch} onChange={(event) => setIconSearch(event.currentTarget.value)} />
-          <div className="icon-picker" aria-label="Choose a build icon">
-            {visibleIconCards.map((card) => <button key={card.cardId} type="button" className={iconCardId === card.cardId ? 'selected-icon' : ''} onClick={() => setIconCardId(card.cardId)} title={card.name} aria-label={card.name}><CardIcon card={card} /></button>)}
-          </div>
-          {iconCards.length > 100 && !iconSearch && <p className="icon-picker-help">Search to find any spell or ability icon.</p>}
+          <IconPicker cards={visibleIconCards} selectedCardId={iconCardId} onSelect={setIconCardId} />
+          <p className="icon-picker-help">{visibleIconCards.length.toLocaleString()} icons available. Search by spell or ability name.</p>
           {saveError && <p className="dialog-error" role="alert">{saveError}</p>}
           <div className="dialog-actions"><button onClick={() => setShowSaveDialog(false)} disabled={saving}>Cancel</button><button className="share-button" onClick={() => void saveBuild()} disabled={saving}>{saving ? 'Saving...' : 'Save build'}</button></div>
         </section>

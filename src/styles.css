@@ -137,7 +137,9 @@ button { cursor: pointer; }
 .save-dialog label { display: block; margin-bottom: 6px; color: #ded7b3; font: 12px Arial, sans-serif; }
 .save-dialog input { width: 100%; border: 1px solid #777463; border-radius: 3px; background: #060706; color: #eee8d0; padding: 9px; }
 .save-dialog input + label { margin-top: 16px; }
-.icon-picker { display: grid; grid-template-columns: repeat(auto-fill, minmax(44px, 1fr)); max-height: 210px; overflow-y: auto; border: 1px solid #464332; background: #070806; padding: 7px; scrollbar-color: #877a3c #080907; }
+.icon-picker { height: 210px; overflow-y: auto; border: 1px solid #464332; background: #070806; padding: 7px; scrollbar-color: #877a3c #080907; }
+.icon-picker-spacer { position: relative; min-height: 100%; }
+.icon-picker-window { position: absolute; inset: 0 0 auto; display: grid; grid-template-columns: repeat(8, 1fr); width: 100%; }
 .icon-picker button { display: grid; place-items: center; border: 2px solid transparent; background: transparent; padding: 2px; }
 .icon-picker button:hover, .icon-picker .selected-icon { border-color: #f3ce0b; background: #5b4915; }
 .icon-picker .card-icon { width: 34px; height: 34px; font-size: 10px; }
