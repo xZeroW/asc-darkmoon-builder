@@ -136,6 +136,12 @@ button { cursor: pointer; }
 .save-dialog p { margin: 8px 0 18px; color: #aea88e; }
 .save-dialog label { display: block; margin-bottom: 6px; color: #ded7b3; font: 12px Arial, sans-serif; }
 .save-dialog input { width: 100%; border: 1px solid #777463; border-radius: 3px; background: #060706; color: #eee8d0; padding: 9px; }
+.save-dialog input + label { margin-top: 16px; }
+.icon-picker { display: grid; grid-template-columns: repeat(auto-fill, minmax(44px, 1fr)); max-height: 210px; overflow-y: auto; border: 1px solid #464332; background: #070806; padding: 7px; scrollbar-color: #877a3c #080907; }
+.icon-picker button { display: grid; place-items: center; border: 2px solid transparent; background: transparent; padding: 2px; }
+.icon-picker button:hover, .icon-picker .selected-icon { border-color: #f3ce0b; background: #5b4915; }
+.icon-picker .card-icon { width: 34px; height: 34px; font-size: 10px; }
+.icon-picker-help { margin: 7px 0 0 !important; color: #a8914b !important; font: 11px Arial, sans-serif; }
 .dialog-error { color: #ff9388 !important; font: 12px Arial, sans-serif; }
 .dialog-actions { display: flex; justify-content: end; gap: 9px; margin-top: 20px; }
 .dialog-actions button, .pagination button, .saved-builds-header a { border: 1px solid #625e42; border-radius: 3px; background: linear-gradient(#39392f, #10110f 57%, #050605); color: #f3ce0b; padding: 7px 13px; text-decoration: none; }
@@ -146,6 +152,9 @@ button:disabled { cursor: not-allowed; opacity: .5; }
 .saved-build-list { margin-top: 20px; border-top: 1px solid #464332; }
 .saved-build-list button { width: 100%; display: flex; justify-content: space-between; gap: 16px; border: 0; border-bottom: 1px solid #464332; background: #0d0e0c; color: #d8f5ff; padding: 15px 12px; text-align: left; }
 .saved-build-list button:hover { background: #292819; color: #ffdf22; }
+.saved-build-name { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.saved-build-name .card-icon, .saved-build-placeholder { width: 34px; height: 34px; font-size: 10px; }
+.saved-build-placeholder { display: grid; place-items: center; border: 1px solid #625e42; color: #ffdf22; font-size: 18px; }
 .saved-build-list time { flex: 0 0 auto; color: #a8914b; font: 12px Arial, sans-serif; }
 .pagination { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 25px; color: #aea88e; font: 13px Arial, sans-serif; }
 

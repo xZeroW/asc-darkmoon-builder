@@ -30,7 +30,7 @@ type Tooltip = {
   suggestedBy?: string[]
 }
 type Route = { page: 'builder'; buildId?: string } | { page: 'builds'; buildId?: undefined }
-type SavedBuild = { id: string; name: string; created_at: string }
+type SavedBuild = { id: string; name: string; created_at: string; icon_card_id: number | null }
 
 const tabs: { category: Category; label: string; shortLabel: string }[] = [
   { category: 'starter_skill', label: 'Starter Skill Cards', shortLabel: 'Starter Skills' },
@@ -184,6 +184,7 @@ function CardList({ cards, golden, slots, suggestedBy, onSelect, onShowTooltip, 
 
 function SavedBuilds({ onOpen }: { onOpen: (id: string) => void }) {
   const [builds, setBuilds] = useState<SavedBuild[]>([])
+  const [cardsById, setCardsById] = useState<Map<number, Card>>(new Map())
   const [page, setPage] = useState(0)
   const [total, setTotal] = useState(0)
   const [error, setError] = useState('')
@@ -199,7 +200,7 @@ function SavedBuilds({ onOpen }: { onOpen: (id: string) => void }) {
     let cancelled = false
     setLoading(true)
     setError('')
-    void supabase.from('builds').select('id, name, created_at', { count: 'exact' }).order('created_at', { ascending: false }).range(page * pageSize, page * pageSize + pageSize - 1).then(({ data, error, count }) => {
+    void supabase.from('builds').select('id, name, created_at, icon_card_id', { count: 'exact' }).order('created_at', { ascending: false }).range(page * pageSize, page * pageSize + pageSize - 1).then(({ data, error, count }) => {
       if (cancelled) return
       if (error) setError('Could not load saved builds.')
       else {
@@ -211,11 +212,19 @@ function SavedBuilds({ onOpen }: { onOpen: (id: string) => void }) {
     return () => { cancelled = true }
   }, [page])
 
+  useEffect(() => {
+    let cancelled = false
+    void Promise.all(tabs.map(({ category }) => cardLoaders[category]())).then((pools) => {
+      if (!cancelled) setCardsById(new Map(pools.flatMap(({ default: pool }) => pool.records).map((card) => [card.cardId, card])))
+    })
+    return () => { cancelled = true }
+  }, [])
+
   const totalPages = Math.max(1, Math.ceil(total / pageSize))
   return <main className="world"><section className="saved-builds-page">
     <header className="saved-builds-header"><div><span className="eyebrow">Darkmoon Wildcard</span><h1>Saved Builds</h1></div><a href="#/">Build a deck</a></header>
     {loading ? <p className="saved-builds-message">Loading builds...</p> : error ? <p className="saved-builds-message error-message">{error}</p> : builds.length === 0 ? <p className="saved-builds-message">No builds have been saved yet.</p> : <div className="saved-build-list">
-      {builds.map((build) => <button key={build.id} onClick={() => onOpen(build.id)}><span>{build.name}</span><time dateTime={build.created_at}>{new Date(build.created_at).toLocaleDateString()}</time></button>)}
+      {builds.map((build) => <button key={build.id} onClick={() => onOpen(build.id)}><span className="saved-build-name">{build.icon_card_id && cardsById.get(build.icon_card_id) ? <CardIcon card={cardsById.get(build.icon_card_id)!} /> : <span className="saved-build-placeholder">✦</span>}<span>{build.name}</span></span><time dateTime={build.created_at}>{new Date(build.created_at).toLocaleDateString()}</time></button>)}
     </div>}
     <nav className="pagination" aria-label="Saved builds pages"><button disabled={page === 0} onClick={() => setPage((current) => current - 1)}>Previous</button><span>Page {page + 1} of {totalPages}</span><button disabled={page + 1 >= totalPages} onClick={() => setPage((current) => current + 1)}>Next</button></nav>
   </section></main>
@@ -231,6 +240,9 @@ function App() {
   const [showSuggestions, setShowSuggestions] = useState(false)
   const [showSaveDialog, setShowSaveDialog] = useState(false)
   const [buildName, setBuildName] = useState('')
+  const [iconCards, setIconCards] = useState<Card[]>([])
+  const [iconSearch, setIconSearch] = useState('')
+  const [iconCardId, setIconCardId] = useState<number | null>(null)
   const [saveError, setSaveError] = useState('')
   const [saving, setSaving] = useState(false)
   const [loadingBuild, setLoadingBuild] = useState(false)
@@ -351,8 +363,21 @@ function App() {
   }
 
   function reset() {
+    if (!window.confirm('Reset this build? All selected cards will be removed.')) return
     startNewBuild()
     setSlots(makeSlots())
+  }
+
+  function openSaveDialog() {
+    setBuildName('')
+    setIconSearch('')
+    setIconCardId(slots.find((slot) => slot.card)?.card?.cardId ?? null)
+    setSaveError('')
+    setShowSaveDialog(true)
+    if (iconCards.length) return
+    void Promise.all(tabs.map(({ category }) => cardLoaders[category]())).then((pools) => {
+      setIconCards(pools.flatMap(({ default: pool }) => pool.records))
+    })
   }
 
   async function saveBuild() {
@@ -370,7 +395,7 @@ function App() {
     const cardIds = slots.map((slot) => slot.card?.cardId ?? null)
     for (let attempt = 0; attempt < 3; attempt += 1) {
       const id = createBuildId()
-      const { error } = await supabase.from('builds').insert({ id, name, card_ids: cardIds })
+      const { error } = await supabase.from('builds').insert({ id, name, card_ids: cardIds, icon_card_id: iconCardId })
       if (!error) {
         setSaving(false)
         setShowSaveDialog(false)
@@ -399,6 +424,8 @@ function App() {
 
   if (route.page === 'builds') return <SavedBuilds onOpen={(id) => navigate({ page: 'builder', buildId: id })} />
 
+  const visibleIconCards = iconCards.filter((card) => card.name.toLowerCase().includes(iconSearch.toLowerCase())).slice(0, 100)
+
   return (
     <main className="world">
       <section className="game-frame">
@@ -416,7 +443,7 @@ function App() {
           ))}
           <span className="tabs-spacer" />
             <button className="reset-button" onClick={reset}>Reset build</button>
-            <button className="share-button" onClick={() => { setBuildName(''); setSaveError(''); setShowSaveDialog(true) }}>Share build</button>
+            <button className="share-button" onClick={openSaveDialog}>Share build</button>
             <button className="saved-builds-button" onClick={() => navigate({ page: 'builds' })}>Saved builds</button>
             <button className={showSuggestions ? 'suggestions-toggle active' : 'suggestions-toggle'} onClick={() => setShowSuggestions((show) => !show)}>
               {showSuggestions ? 'Suggested cards' : 'Show suggestions'}
@@ -502,6 +529,12 @@ function App() {
           <p>Give this build a name before publishing its link.</p>
           <label htmlFor="build-name">Build name</label>
           <input id="build-name" value={buildName} maxLength={100} autoFocus onChange={(event) => setBuildName(event.currentTarget.value)} onKeyDown={(event) => { if (event.key === 'Enter') void saveBuild() }} />
+          <label htmlFor="icon-search">Build icon</label>
+          <input id="icon-search" placeholder="Search spell or ability icons" value={iconSearch} onChange={(event) => setIconSearch(event.currentTarget.value)} />
+          <div className="icon-picker" aria-label="Choose a build icon">
+            {visibleIconCards.map((card) => <button key={card.cardId} type="button" className={iconCardId === card.cardId ? 'selected-icon' : ''} onClick={() => setIconCardId(card.cardId)} title={card.name} aria-label={card.name}><CardIcon card={card} /></button>)}
+          </div>
+          {iconCards.length > 100 && !iconSearch && <p className="icon-picker-help">Search to find any spell or ability icon.</p>}
           {saveError && <p className="dialog-error" role="alert">{saveError}</p>}
           <div className="dialog-actions"><button onClick={() => setShowSaveDialog(false)} disabled={saving}>Cancel</button><button className="share-button" onClick={() => void saveBuild()} disabled={saving}>{saving ? 'Saving...' : 'Save build'}</button></div>
         </section>

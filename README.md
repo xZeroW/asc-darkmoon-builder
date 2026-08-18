@@ -17,9 +17,9 @@ workflow deploys the build whenever `main` is pushed.
 
 ### Saved builds
 
-Saved builds use Supabase. Create a Supabase project, then run
-`supabase/migrations/20260818000000_create_builds.sql` in its SQL editor. For
-local development, create `.env.local` with the project URL and anon key:
+Saved builds use Supabase. Create a Supabase project, then run every SQL file
+in `supabase/migrations/` in its SQL editor, in filename order. For local
+development, create `.env.local` with the project URL and anon key:
 
 ```bash
 VITE_SUPABASE_URL=https://your-project.supabase.co
