@@ -107,6 +107,16 @@ function getRoute(): Route {
 
 const createBuildId = customAlphabet('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz', 12)
 
+function uniqueIconCards(cards: Card[]) {
+  const seen = new Set<string>()
+  return cards.filter((card) => {
+    const key = card.iconUrl ?? `missing-${card.cardId}`
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
+}
+
 function CardIcon({ card }: { card: Card }) {
   const initials = card.name.replace(/[^a-zA-Z]/g, '').slice(0, 2).toUpperCase()
   const iconUrl = card.iconUrl ? `${import.meta.env.BASE_URL}${card.iconUrl}` : undefined
@@ -393,7 +403,7 @@ function App() {
     setShowSaveDialog(true)
     if (iconCards.length) return
     void Promise.all(tabs.map(({ category }) => cardLoaders[category]())).then((pools) => {
-      setIconCards(pools.flatMap(({ default: pool }) => pool.records))
+      setIconCards(uniqueIconCards(pools.flatMap(({ default: pool }) => pool.records)))
     })
   }
 
