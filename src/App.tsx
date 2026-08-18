@@ -105,6 +105,14 @@ function getRoute(): Route {
     : { page: 'builder' }
 }
 
+function getLegacyBuildCardIds() {
+  const value = new URLSearchParams(window.location.search).get('build')
+  if (!value) return null
+  const cardIds = value.split('.')
+  if (cardIds.length > 16 || cardIds.some((cardId) => cardId && !/^[a-z0-9]+$/i.test(cardId))) return null
+  return cardIds.map((cardId) => cardId ? Number.parseInt(cardId, 36) : null)
+}
+
 const createBuildId = customAlphabet('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz', 12)
 
 function uniqueIconCards(cards: Card[]) {
@@ -259,12 +267,14 @@ function SavedBuilds({ onOpen }: { onOpen: (id: string) => void }) {
 
 function App() {
   const [route, setRoute] = useState<Route>(getRoute)
+  const [legacyBuildCardIds] = useState(getLegacyBuildCardIds)
   const [activeTab, setActiveTab] = useState<Category>('starter_skill')
   const [slots, setSlots] = useState<Slot[]>(makeSlots)
   const [search, setSearch] = useState('')
   const [cardsByCategory, setCardsByCategory] = useState<Partial<Record<Category, Card[]>>>({})
   const [tooltip, setTooltip] = useState<Tooltip | null>(null)
   const [showSuggestions, setShowSuggestions] = useState(false)
+  const [showResetDialog, setShowResetDialog] = useState(false)
   const [showSaveDialog, setShowSaveDialog] = useState(false)
   const [buildName, setBuildName] = useState('')
   const [iconCards, setIconCards] = useState<Card[]>([])
@@ -331,6 +341,18 @@ function App() {
   }, [route.buildId])
 
   useEffect(() => {
+    if (route.buildId || !legacyBuildCardIds) return
+    let cancelled = false
+    void Promise.all(tabs.map(({ category }) => cardLoaders[category]())).then((pools) => {
+      if (cancelled) return
+      const cardsById = new Map(pools.flatMap(({ default: pool }) => pool.records).map((card) => [card.cardId, card]))
+      setCardsByCategory((current) => ({ ...current, ...Object.fromEntries(tabs.map((tab, index) => [tab.category, pools[index].default.records])) }))
+      setSlots((current) => current.map((slot, index) => ({ ...slot, card: legacyBuildCardIds[index] ? cardsById.get(legacyBuildCardIds[index]) ?? null : null })))
+    })
+    return () => { cancelled = true }
+  }, [legacyBuildCardIds])
+
+  useEffect(() => {
     if (!showSuggestions) return
     for (const category of tabs.map((tab) => tab.category)) {
       if (cardsByCategory[category]) continue
@@ -389,8 +411,8 @@ function App() {
     setSlots((current) => current.map((slot, itemIndex) => itemIndex === targetIndex ? { ...slot, card } : slot))
   }
 
-  function reset() {
-    if (!window.confirm('Reset this build? All selected cards will be removed.')) return
+  function resetBuild() {
+    setShowResetDialog(false)
     startNewBuild()
     setSlots(makeSlots())
   }
@@ -469,7 +491,7 @@ function App() {
             </button>
           ))}
           <span className="tabs-spacer" />
-            <button className="reset-button" onClick={reset}>Reset build</button>
+            <button className="reset-button" onClick={() => setShowResetDialog(true)}>Reset build</button>
             <button className="share-button" onClick={openSaveDialog}>Share build</button>
             <button className="saved-builds-button" onClick={() => navigate({ page: 'builds' })}>Saved builds</button>
             <button className={showSuggestions ? 'suggestions-toggle active' : 'suggestions-toggle'} onClick={() => setShowSuggestions((show) => !show)}>
@@ -562,6 +584,13 @@ function App() {
           <p className="icon-picker-help">{visibleIconCards.length.toLocaleString()} icons available. Search by spell or ability name.</p>
           {saveError && <p className="dialog-error" role="alert">{saveError}</p>}
           <div className="dialog-actions"><button onClick={() => setShowSaveDialog(false)} disabled={saving}>Cancel</button><button className="share-button" onClick={() => void saveBuild()} disabled={saving}>{saving ? 'Saving...' : 'Save build'}</button></div>
+        </section>
+      </div>}
+      {showResetDialog && <div className="modal-backdrop" role="presentation" onMouseDown={() => setShowResetDialog(false)}>
+        <section className="save-dialog reset-dialog" role="dialog" aria-modal="true" aria-labelledby="reset-build-title" onMouseDown={(event) => event.stopPropagation()}>
+          <h2 id="reset-build-title">Reset this build?</h2>
+          <p>All selected cards will be removed.</p>
+          <div className="dialog-actions"><button onClick={() => setShowResetDialog(false)}>Cancel</button><button className="reset-button" onClick={resetBuild}>Reset build</button></div>
         </section>
       </div>}
     </main>
