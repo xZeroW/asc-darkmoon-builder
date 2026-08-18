@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { PointerEvent, RefObject, UIEvent } from 'react'
+import { customAlphabet } from 'nanoid'
 import { discoverRelationships, discoverSuggestions } from './relationships'
+import { supabase } from './supabase'
 
 type Category = 'starter_skill' | 'ability' | 'talent'
 type Card = {
@@ -27,6 +29,8 @@ type Tooltip = {
   y: number
   suggestedBy?: string[]
 }
+type Route = { page: 'builder'; buildId?: string } | { page: 'builds'; buildId?: undefined }
+type SavedBuild = { id: string; name: string; created_at: string }
 
 const tabs: { category: Category; label: string; shortLabel: string }[] = [
   { category: 'starter_skill', label: 'Starter Skill Cards', shortLabel: 'Starter Skills' },
@@ -94,14 +98,14 @@ function makeSlots(): Slot[] {
   })
 }
 
-function encodeBuild(slots: Slot[]) {
-  return slots.map((slot) => slot.card?.cardId.toString(36) ?? '').join('.')
+function getRoute(): Route {
+  const [page, buildId] = window.location.hash.replace(/^#\/?/, '').split('/')
+  return page === 'builds' ? { page: 'builds' } : page === 'build' && /^[A-Za-z0-9]{12}$/.test(buildId)
+    ? { page: 'builder', buildId }
+    : { page: 'builder' }
 }
 
-function decodeBuild(value: string | null) {
-  if (!value) return []
-  return value.split('.').map((id) => id ? Number.parseInt(id, 36) : null)
-}
+const createBuildId = customAlphabet('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz', 12)
 
 function CardIcon({ card }: { card: Card }) {
   const initials = card.name.replace(/[^a-zA-Z]/g, '').slice(0, 2).toUpperCase()
@@ -178,16 +182,74 @@ function CardList({ cards, golden, slots, suggestedBy, onSelect, onShowTooltip, 
   </div>
 }
 
+function SavedBuilds({ onOpen }: { onOpen: (id: string) => void }) {
+  const [builds, setBuilds] = useState<SavedBuild[]>([])
+  const [page, setPage] = useState(0)
+  const [total, setTotal] = useState(0)
+  const [error, setError] = useState('')
+  const [loading, setLoading] = useState(true)
+  const pageSize = 20
+
+  useEffect(() => {
+    if (!supabase) {
+      setError('Saved builds are not configured.')
+      setLoading(false)
+      return
+    }
+    let cancelled = false
+    setLoading(true)
+    setError('')
+    void supabase.from('builds').select('id, name, created_at', { count: 'exact' }).order('created_at', { ascending: false }).range(page * pageSize, page * pageSize + pageSize - 1).then(({ data, error, count }) => {
+      if (cancelled) return
+      if (error) setError('Could not load saved builds.')
+      else {
+        setBuilds(data ?? [])
+        setTotal(count ?? 0)
+      }
+      setLoading(false)
+    })
+    return () => { cancelled = true }
+  }, [page])
+
+  const totalPages = Math.max(1, Math.ceil(total / pageSize))
+  return <main className="world"><section className="saved-builds-page">
+    <header className="saved-builds-header"><div><span className="eyebrow">Darkmoon Wildcard</span><h1>Saved Builds</h1></div><a href="#/">Build a deck</a></header>
+    {loading ? <p className="saved-builds-message">Loading builds...</p> : error ? <p className="saved-builds-message error-message">{error}</p> : builds.length === 0 ? <p className="saved-builds-message">No builds have been saved yet.</p> : <div className="saved-build-list">
+      {builds.map((build) => <button key={build.id} onClick={() => onOpen(build.id)}><span>{build.name}</span><time dateTime={build.created_at}>{new Date(build.created_at).toLocaleDateString()}</time></button>)}
+    </div>}
+    <nav className="pagination" aria-label="Saved builds pages"><button disabled={page === 0} onClick={() => setPage((current) => current - 1)}>Previous</button><span>Page {page + 1} of {totalPages}</span><button disabled={page + 1 >= totalPages} onClick={() => setPage((current) => current + 1)}>Next</button></nav>
+  </section></main>
+}
+
 function App() {
+  const [route, setRoute] = useState<Route>(getRoute)
   const [activeTab, setActiveTab] = useState<Category>('starter_skill')
   const [slots, setSlots] = useState<Slot[]>(makeSlots)
   const [search, setSearch] = useState('')
   const [cardsByCategory, setCardsByCategory] = useState<Partial<Record<Category, Card[]>>>({})
   const [tooltip, setTooltip] = useState<Tooltip | null>(null)
   const [showSuggestions, setShowSuggestions] = useState(false)
-  const [shareStatus, setShareStatus] = useState('Share build')
-  const [buildRestored, setBuildRestored] = useState(() => !new URLSearchParams(window.location.search).has('build'))
+  const [showSaveDialog, setShowSaveDialog] = useState(false)
+  const [buildName, setBuildName] = useState('')
+  const [saveError, setSaveError] = useState('')
+  const [saving, setSaving] = useState(false)
+  const [loadingBuild, setLoadingBuild] = useState(false)
+  const [loadError, setLoadError] = useState('')
   const tooltipElement = useRef<HTMLElement | null>(null)
+
+  function navigate(nextRoute: Route) {
+    window.location.hash = nextRoute.page === 'builds' ? '/builds' : nextRoute.buildId ? `/build/${nextRoute.buildId}` : '/'
+  }
+
+  function startNewBuild() {
+    if (route.buildId) navigate({ page: 'builder' })
+  }
+
+  useEffect(() => {
+    const updateRoute = () => setRoute(getRoute())
+    window.addEventListener('hashchange', updateRoute)
+    return () => window.removeEventListener('hashchange', updateRoute)
+  }, [])
 
   useEffect(() => {
     if (cardsByCategory[activeTab]) return
@@ -201,33 +263,33 @@ function App() {
   }, [activeTab, cardsByCategory])
 
   useEffect(() => {
-    const cardIds = decodeBuild(new URLSearchParams(window.location.search).get('build'))
-    if (!cardIds.length) {
-      setBuildRestored(true)
+    if (!route.buildId) {
+      setLoadError('')
+      return
+    }
+    if (!supabase) {
+      setLoadError('Saved builds are not configured.')
       return
     }
     let cancelled = false
-    void Promise.all(tabs.map(({ category }) => cardLoaders[category]())).then((pools) => {
+    setLoadingBuild(true)
+    setLoadError('')
+    void supabase.from('builds').select('card_ids').eq('id', route.buildId).maybeSingle().then(async ({ data, error }) => {
+      if (cancelled) return
+      if (error || !data || !Array.isArray(data.card_ids)) {
+        setLoadError(error ? 'Could not load this build.' : 'This build does not exist.')
+        setLoadingBuild(false)
+        return
+      }
+      const pools = await Promise.all(tabs.map(({ category }) => cardLoaders[category]()))
       if (cancelled) return
       const cardsById = new Map(pools.flatMap(({ default: pool }) => pool.records).map((card) => [card.cardId, card]))
-      setCardsByCategory((current) => ({
-        ...current,
-        ...Object.fromEntries(tabs.map((tab, index) => [tab.category, pools[index].default.records])),
-      }))
-      setSlots((current) => current.map((slot, index) => ({ ...slot, card: cardIds[index] ? cardsById.get(cardIds[index]!) ?? null : null })))
-      setBuildRestored(true)
+      setCardsByCategory((current) => ({ ...current, ...Object.fromEntries(tabs.map((tab, index) => [tab.category, pools[index].default.records])) }))
+      setSlots((current) => current.map((slot, index) => ({ ...slot, card: typeof data.card_ids[index] === 'number' ? cardsById.get(data.card_ids[index]) ?? null : null })))
+      setLoadingBuild(false)
     })
     return () => { cancelled = true }
-  }, [])
-
-  useEffect(() => {
-    if (!buildRestored) return
-    const url = new URL(window.location.href)
-    const build = encodeBuild(slots)
-    if (build.replace(/\./g, '')) url.searchParams.set('build', build)
-    else url.searchParams.delete('build')
-    window.history.replaceState(null, '', url)
-  }, [buildRestored, slots])
+  }, [route.buildId])
 
   useEffect(() => {
     if (!showSuggestions) return
@@ -274,6 +336,7 @@ function App() {
     const indexes = slots.map((slot, index) => ({ slot, index })).filter(({ slot }) => slot.category === activeTab)
     const index = indexes[slotIndex]?.index
     if (index === undefined) return
+    startNewBuild()
     setTooltip(null)
     setSlots((current) => current.map((slot, itemIndex) => itemIndex === index ? { ...slot, card: null } : slot))
   }
@@ -283,20 +346,45 @@ function App() {
     if (existing) return
     const targetIndex = slots.findIndex((slot) => slot.category === activeTab && slot.golden === golden && !slot.card)
     if (targetIndex === -1) return
+    startNewBuild()
     setSlots((current) => current.map((slot, itemIndex) => itemIndex === targetIndex ? { ...slot, card } : slot))
   }
 
   function reset() {
+    startNewBuild()
     setSlots(makeSlots())
   }
 
-  async function shareBuild() {
-    try {
-      await navigator.clipboard.writeText(window.location.href)
-      setShareStatus('Link copied')
-    } catch {
-      setShareStatus('Copy the URL')
+  async function saveBuild() {
+    const name = buildName.trim()
+    if (!name) {
+      setSaveError('Enter a build name.')
+      return
     }
+    if (!supabase) {
+      setSaveError('Saved builds are not configured.')
+      return
+    }
+    setSaving(true)
+    setSaveError('')
+    const cardIds = slots.map((slot) => slot.card?.cardId ?? null)
+    for (let attempt = 0; attempt < 3; attempt += 1) {
+      const id = createBuildId()
+      const { error } = await supabase.from('builds').insert({ id, name, card_ids: cardIds })
+      if (!error) {
+        setSaving(false)
+        setShowSaveDialog(false)
+        navigate({ page: 'builder', buildId: id })
+        return
+      }
+      if (error.code !== '23505') {
+        setSaveError('Could not save this build. Please try again.')
+        setSaving(false)
+        return
+      }
+    }
+    setSaveError('Could not create a unique build ID. Please try again.')
+    setSaving(false)
   }
 
   function showTooltip(card: Card, event: PointerEvent, suggestedBy?: string[]) {
@@ -308,6 +396,8 @@ function App() {
     tooltipElement.current.style.left = `${event.clientX + 16}px`
     tooltipElement.current.style.top = `${event.clientY + 16}px`
   }
+
+  if (route.page === 'builds') return <SavedBuilds onOpen={(id) => navigate({ page: 'builder', buildId: id })} />
 
   return (
     <main className="world">
@@ -326,7 +416,8 @@ function App() {
           ))}
           <span className="tabs-spacer" />
             <button className="reset-button" onClick={reset}>Reset build</button>
-            <button className="share-button" onClick={() => void shareBuild()}>{shareStatus}</button>
+            <button className="share-button" onClick={() => { setBuildName(''); setSaveError(''); setShowSaveDialog(true) }}>Share build</button>
+            <button className="saved-builds-button" onClick={() => navigate({ page: 'builds' })}>Saved builds</button>
             <button className={showSuggestions ? 'suggestions-toggle active' : 'suggestions-toggle'} onClick={() => setShowSuggestions((show) => !show)}>
               {showSuggestions ? 'Suggested cards' : 'Show suggestions'}
             </button>
@@ -339,6 +430,8 @@ function App() {
 
         <div className="content">
           <section className="build-area">
+            {loadingBuild && <p className="build-load-status">Loading saved build...</p>}
+            {loadError && <p className="build-load-status error-message">{loadError}</p>}
             <div className="build-heading">
               <div>
                 <span className="eyebrow">Darkmoon Wildcard</span>
@@ -403,6 +496,16 @@ function App() {
 
       </section>
       {tooltip && <SpellTooltip tooltip={tooltip} tooltipRef={tooltipElement} />}
+      {showSaveDialog && <div className="modal-backdrop" role="presentation" onMouseDown={() => !saving && setShowSaveDialog(false)}>
+        <section className="save-dialog" role="dialog" aria-modal="true" aria-labelledby="save-build-title" onMouseDown={(event) => event.stopPropagation()}>
+          <h2 id="save-build-title">Share this build</h2>
+          <p>Give this build a name before publishing its link.</p>
+          <label htmlFor="build-name">Build name</label>
+          <input id="build-name" value={buildName} maxLength={100} autoFocus onChange={(event) => setBuildName(event.currentTarget.value)} onKeyDown={(event) => { if (event.key === 'Enter') void saveBuild() }} />
+          {saveError && <p className="dialog-error" role="alert">{saveError}</p>}
+          <div className="dialog-actions"><button onClick={() => setShowSaveDialog(false)} disabled={saving}>Cancel</button><button className="share-button" onClick={() => void saveBuild()} disabled={saving}>{saving ? 'Saving...' : 'Save build'}</button></div>
+        </section>
+      </div>}
     </main>
   )
 }

@@ -15,6 +15,21 @@ npm run dev
 Run `npm run build` to create the production site in `dist/`. The GitHub Pages
 workflow deploys the build whenever `main` is pushed.
 
+### Saved builds
+
+Saved builds use Supabase. Create a Supabase project, then run
+`supabase/migrations/20260818000000_create_builds.sql` in its SQL editor. For
+local development, create `.env.local` with the project URL and anon key:
+
+```bash
+VITE_SUPABASE_URL=https://your-project.supabase.co
+VITE_SUPABASE_ANON_KEY=your-anon-key
+```
+
+For GitHub Pages deployments, add repository Actions secrets with those same
+names. The anon key is safe to publish; row-level security permits only public
+read and build creation.
+
 The generator supports the current slot layout:
 
 - Starter Skill Cards: 2 normal and 2 golden slots
