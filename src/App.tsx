@@ -274,6 +274,7 @@ function App() {
   const [cardsByCategory, setCardsByCategory] = useState<Partial<Record<Category, Card[]>>>({})
   const [tooltip, setTooltip] = useState<Tooltip | null>(null)
   const [showSuggestions, setShowSuggestions] = useState(false)
+  const [excludedSuggestionCardIds, setExcludedSuggestionCardIds] = useState<Set<number>>(new Set())
   const [showResetDialog, setShowResetDialog] = useState(false)
   const [showSaveDialog, setShowSaveDialog] = useState(false)
   const [buildName, setBuildName] = useState('')
@@ -367,8 +368,8 @@ function App() {
   const selectedNames = new Set(selectedCards.map((card) => normalizeName(card.name)))
   const activeRelationships = discoverRelationships(slots.flatMap((slot) => slot.card ? [slot.card] : []))
   const suggestedByCardId = useMemo(() => showSuggestions
-    ? discoverSuggestions(selectedCards, Object.values(cardsByCategory).flat())
-    : new Map<number, string[]>(), [cardsByCategory, selectedCards, showSuggestions])
+    ? discoverSuggestions(selectedCards.filter((card) => !excludedSuggestionCardIds.has(card.cardId)), Object.values(cardsByCategory).flat())
+    : new Map<number, string[]>(), [cardsByCategory, excludedSuggestionCardIds, selectedCards, showSuggestions])
   const missingRequirements = new Map<number, string[]>()
   for (const slot of slots) {
     if (!slot.card) continue
@@ -399,7 +400,22 @@ function App() {
     if (index === undefined) return
     startNewBuild()
     setTooltip(null)
+    const cardId = slots[index].card?.cardId
+    if (cardId !== undefined) setExcludedSuggestionCardIds((current) => {
+      const next = new Set(current)
+      next.delete(cardId)
+      return next
+    })
     setSlots((current) => current.map((slot, itemIndex) => itemIndex === index ? { ...slot, card: null } : slot))
+  }
+
+  function toggleSuggestionExclusion(cardId: number) {
+    setExcludedSuggestionCardIds((current) => {
+      const next = new Set(current)
+      if (next.has(cardId)) next.delete(cardId)
+      else next.add(cardId)
+      return next
+    })
   }
 
   function selectCard(card: Card, golden: boolean) {
@@ -414,6 +430,7 @@ function App() {
   function resetBuild() {
     setShowResetDialog(false)
     startNewBuild()
+    setExcludedSuggestionCardIds(new Set())
     setSlots(makeSlots())
   }
 
@@ -533,8 +550,9 @@ function App() {
                     <div className="slot-corners" />
                     <div className="slot-topline">
                       <span className={qualityClass[slot.card.quality] ?? 'common'}>{slot.card.quality.replace('SKILL_CARD_', '')}</span>
-                      <button className="remove" aria-label={`Remove ${slot.card.name}`} onClick={() => removeCard(index)}>×</button>
+                      <button className="remove" aria-label={`Remove ${slot.card.name}`} title="Remove card" onClick={() => removeCard(index)}>×</button>
                     </div>
+                    <button className={excludedSuggestionCardIds.has(slot.card.cardId) ? 'exclude-suggestions active' : 'exclude-suggestions'} aria-label={`${excludedSuggestionCardIds.has(slot.card.cardId) ? 'Use' : 'Exclude'} ${slot.card.name} for suggestions`} aria-pressed={excludedSuggestionCardIds.has(slot.card.cardId)} title={excludedSuggestionCardIds.has(slot.card.cardId) ? 'Use this card for suggestions' : 'Exclude this card from suggestions'} onClick={() => toggleSuggestionExclusion(slot.card!.cardId)}>⊘</button>
                     <CardIcon card={slot.card} />
                     <h3>{slot.card.name}</h3>
                     {missingRequirements.has(slot.card.cardId) && <span className="requirement-marker">Missing requirement</span>}

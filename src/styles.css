@@ -82,6 +82,8 @@ button { cursor: pointer; }
 .slot-corners { position: absolute; inset: 7px; border: 1px solid #c0952d77; clip-path: polygon(0 13%, 13% 0, 87% 0, 100% 13%, 100% 87%, 87% 100%, 13% 100%, 0 87%); pointer-events: none; }
 .slot-topline { position: absolute; inset: 9px 10px auto; display: flex; justify-content: space-between; font: 700 10px Arial, sans-serif; }
 .remove { border: 0; color: #f7cf20; background: #6a120d; border-radius: 3px; font-size: 19px; line-height: 17px; }
+.exclude-suggestions { position: absolute; right: 10px; bottom: 9px; width: 22px; height: 22px; border: 0; border-radius: 50%; background: #2f3330; color: #c9c5af; font: 22px/18px Arial, sans-serif; }
+.exclude-suggestions:hover, .exclude-suggestions.active { background: #6a120d; color: #f7cf20; }
 .card-icon { display: grid; place-items: center; position: relative; flex: 0 0 auto; overflow: hidden; width: 62px; height: 62px; border: 2px solid #171717; border-radius: 7px; color: #fff; font: bold 17px Arial, sans-serif; text-shadow: 1px 1px #000; box-shadow: inset 0 0 18px #0008, 0 0 0 2px currentColor; }
 .card-icon img { width: 100%; height: 100%; object-fit: cover; }
 .card-icon > span { position: absolute; inset: 0; display: grid; place-items: center; background: radial-gradient(circle, #18212a55, #050606a8); opacity: 0; }
