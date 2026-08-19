@@ -550,9 +550,9 @@ function App() {
                     <div className="slot-corners" />
                     <div className="slot-topline">
                       <span className={qualityClass[slot.card.quality] ?? 'common'}>{slot.card.quality.replace('SKILL_CARD_', '')}</span>
-                      <button className="remove" aria-label={`Remove ${slot.card.name}`} title="Remove card" onClick={() => removeCard(index)}>×</button>
+                      <button className="remove" aria-label={`Remove ${slot.card.name}`} title="Remove card" onPointerEnter={() => setTooltip(null)} onPointerMove={(event) => event.stopPropagation()} onPointerLeave={(event) => showTooltip(slot.card!, event)} onClick={() => removeCard(index)}>×</button>
                     </div>
-                    <button className={excludedSuggestionCardIds.has(slot.card.cardId) ? 'exclude-suggestions active' : 'exclude-suggestions'} aria-label={`${excludedSuggestionCardIds.has(slot.card.cardId) ? 'Use' : 'Exclude'} ${slot.card.name} for suggestions`} aria-pressed={excludedSuggestionCardIds.has(slot.card.cardId)} title={excludedSuggestionCardIds.has(slot.card.cardId) ? 'Use this card for suggestions' : 'Exclude this card from suggestions'} onClick={() => toggleSuggestionExclusion(slot.card!.cardId)}>⊘</button>
+                    <button className={excludedSuggestionCardIds.has(slot.card.cardId) ? 'exclude-suggestions active' : 'exclude-suggestions'} aria-label={`${excludedSuggestionCardIds.has(slot.card.cardId) ? 'Use' : 'Exclude'} ${slot.card.name} for suggestions`} aria-pressed={excludedSuggestionCardIds.has(slot.card.cardId)} title={excludedSuggestionCardIds.has(slot.card.cardId) ? 'Use this card for suggestions' : 'Exclude this card from suggestions'} onPointerEnter={() => setTooltip(null)} onPointerMove={(event) => event.stopPropagation()} onPointerLeave={(event) => showTooltip(slot.card!, event)} onClick={() => toggleSuggestionExclusion(slot.card!.cardId)}>{excludedSuggestionCardIds.has(slot.card.cardId) ? '✓' : '⊘'}</button>
                     <CardIcon card={slot.card} />
                     <h3>{slot.card.name}</h3>
                     {missingRequirements.has(slot.card.cardId) && <span className="requirement-marker">Missing requirement</span>}
